@@ -1715,7 +1715,7 @@ Vous trouverez plus d’informations sur VolFs et DriveFs sur le [WSL Blog](http
 - La solution de contournement udev apt-get update dans le Forum aux questions est désormais fournie par défaut sur la première exécution
 - Activé des liens symboliques dans DriveFs (/mnt/<drive>) répertoires
 - Fonctionnent désormais de liens symboliques entre DriveFs et VolFs
-- Adressée supérieur au niveau chemin d’accès de l’analyse du problème : %.*ls. / / fonctionne désormais comme prévu
+- Adressée supérieur au niveau chemin d’accès de l’analyse du problème : %.ls. / / fonctionne désormais comme prévu
 - npm installez-y DriveFs et les options -g sont maintenant opérationnelles.
 - Correction d’un problème empêchant le lancement de serveur PHP
 - Valeurs d’environnement par défaut de mise à jour, telles que $PATH pour rapprocher correspond à Ubuntu natif
