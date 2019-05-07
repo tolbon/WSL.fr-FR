@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: 40bbe73acbfd0483e18ab6ff1696fdb44eaff2e4
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063287"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Sous-système Windows pour le Guide d’Installation de Linux pour Windows 10
@@ -45,7 +45,7 @@ Pour télécharger et installer votre distro(s) préférée, vous avez trois pos
     Les liens suivants seront ouvre à la page magasin de Windows pour chaque distribution :
 
     * [Ubuntu](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6)
-    * [openSUSE](https://www.microsoft.com/store/apps/9njvjts82tjx)
+    * [OpenSUSE](https://www.microsoft.com/store/apps/9njvjts82tjx)
     * [SLES](https://www.microsoft.com/store/apps/9p32mwbh6cns)
     * [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     * [Debian GNU/Linux](https://www.microsoft.com/store/apps/9MSVKQC78PK6)

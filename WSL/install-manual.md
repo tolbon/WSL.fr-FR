@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
 ms.openlocfilehash: be1c1331183317d4f970696464110b9968208d21
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063567"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Télécharger manuellement le sous-système de Windows pour les packages de distribution de Linux
@@ -31,7 +31,7 @@ Si l’application Microsoft Store n’est pas disponible, vous pouvez télécha
 * [Ubuntu 16.04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
 * [Kali Linux](https://aka.ms/wsl-kali-linux)
-* [openSUSE](https://aka.ms/wsl-opensuse-42)
+* [OpenSUSE](https://aka.ms/wsl-opensuse-42)
 * [SLES](https://aka.ms/wsl-sles-12)
 
 Cela entraîne le `<distro>.appx` packages à télécharger vers un dossier de votre choix. Suivez le [instructions d’installation](#installing-your-distro) pour installer votre distro(s) téléchargé.

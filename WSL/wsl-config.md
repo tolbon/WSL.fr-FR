@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
 ms.openlocfilehash: c806552750f413fcb75f989d868a57cc939af64a
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063497"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Gérer et configurer le sous-système de Windows pour Linux
@@ -23,9 +23,9 @@ ms.locfileid: "59063497"
 
 Il existe de nombreuses façons d’exécuter Linux avec le sous-système Windows pour Linux.
 
-1. `[distro]` ie `ubuntu`
-1. `wsl.exe` ou Gestionnaire de configuration `bash.exe`
-1. `wsl [command]` ou Gestionnaire de configuration `bash -c [command]`
+1. `[distro]` Internet Explorer `ubuntu`
+1. `wsl.exe` ou `bash.exe`
+1. `wsl [command]` ou `bash -c [command]`
 
 Quelle méthode vous devez utiliser dépend de ce que vous faites.
 
@@ -270,8 +270,8 @@ Section : `[automount]`
 
 | Clé        | valeur                          | par défaut      | notes                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| enabled    | booléen                        | true         | `true` causes fixé de lecteurs (ex.) `C:/` ou `D:/`) soit monté automatiquement avec DrvFs sous `/mnt`.  `false` signifie que les lecteurs ne sont pas automatiquement montés, mais vous pouvez toujours Montez-les manuellement ou via `fstab`.                                                                                                             |
-| mountFsTab | booléen                        | true         | `true` définit `/etc/fstab` à traiter au démarrage WSL. / etc/fstab est un fichier dans lequel vous pouvez déclarer des autres systèmes de fichiers, comme un partage SMB. Par conséquent, vous pouvez monter ces systèmes de fichiers automatiquement dans WSL au démarrage de.                                                                                                                |
+| enabled    | booléenne                        | true         | `true` causes fixé de lecteurs (ex.) `C:/` ou `D:/`) soit monté automatiquement avec DrvFs sous `/mnt`.  `false` signifie que les lecteurs ne sont pas automatiquement montés, mais vous pouvez toujours Montez-les manuellement ou via `fstab`.                                                                                                             |
+| mountFsTab | booléenne                        | true         | `true` définit `/etc/fstab` à traiter au démarrage WSL. / etc/fstab est un fichier dans lequel vous pouvez déclarer des autres systèmes de fichiers, comme un partage SMB. Par conséquent, vous pouvez monter ces systèmes de fichiers automatiquement dans WSL au démarrage de.                                                                                                                |
 | Racine       | Chaîne                         | `/mnt/`      | Définit le répertoire dans lequel les lecteurs fixes seront automatiquement montés. Par exemple, si vous avez un répertoire dans WSL à `/windir/` et que vous spécifiez comme racine, vous pourriez l’exiger voir votre montés sur les lecteurs fixes `/windir/c`                                                                                              |
 | options    | virgule comme séparateur de liste de valeurs | Chaîne vide | Cette valeur est ajoutée à la chaîne par défaut des options de montage de DrvFs. **Uniquement les options DrvFs spécifiques peuvent être spécifiées.** Options qui le montage binaire est alors normalement analysée en un indicateur ne sont pas prises en charge. Si vous souhaitez explicitement spécifier ces options, vous devez inclure chaque lecteur pour lequel vous souhaitez le faire dans/etc/fstab. |
 
@@ -285,8 +285,8 @@ Par défaut, WSL définit l’uid et gid à la valeur de l’utilisateur par dé
 
 | Clé | valeur | par défaut | notes|
 |:----|:----|:----|:----|
-| generateHosts | booléen | `true` | `true` définit WSL pour générer `/etc/hosts`. Le `hosts` fichier contient un mappage statique de l’adresse IP correspondante de noms d’hôte. |
-| generateResolvConf | booléen | `true` | `true` Définissez WSL pour générer `/etc/resolv.conf`. Le `resolv.conf` contient une liste DNS qui sont capables de résoudre un nom d’hôte donné à son adresse IP. | 
+| generateHosts | booléenne | `true` | `true` définit WSL pour générer `/etc/hosts`. Le `hosts` fichier contient un mappage statique de l’adresse IP correspondante de noms d’hôte. |
+| generateResolvConf | booléenne | `true` | `true` Définissez WSL pour générer `/etc/resolv.conf`. Le `resolv.conf` contient une liste DNS qui sont capables de résoudre un nom d’hôte donné à son adresse IP. | 
 
 #### <a name="interop"></a>Interop
 
@@ -296,5 +296,5 @@ Ces options sont disponibles dans les initiés Build 17713 et versions ultérieu
 
 | Clé | valeur | par défaut | notes|
 |:----|:----|:----|:----|
-| enabled | booléen | `true` | Paramètre de cette clé déterminent si WSL prendra en charge les processus de lancement Windows. |
-| appendWindowsPath | booléen | `true` | Paramètre de cette clé déterminent si WSL ajoute des éléments de chemin d’accès de Windows à la variable d’environnement $PATH. | 
+| enabled | booléenne | `true` | Paramètre de cette clé déterminent si WSL prendra en charge les processus de lancement Windows. |
+| appendWindowsPath | booléenne | `true` | Paramètre de cette clé déterminent si WSL ajoute des éléments de chemin d’accès de Windows à la variable d’environnement $PATH. | 

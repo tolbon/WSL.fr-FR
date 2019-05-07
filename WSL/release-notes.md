@@ -7,14 +7,27 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: 3eee7ff6d1f8302e98cde84fccabf5d9113c83f2
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.openlocfilehash: 2567e68ca0e9897a7b7bc7315760b81ff4923c1a
+ms.sourcegitcommit: 8c74868b8d8ff0106e15e4bce5e8337642883ec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59063627"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64988260"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de version de sous-système Windows pour Linux
+
+## <a name="build-18890"></a>Build 18890
+Pour Windows général plus d’informations sur la build 18890 visitez le [Windows blog](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/).
+
+### <a name="wsl"></a>WSL
+* Fuite de socket non bloquant [GH 2913]
+* Entrée EOF à Terminal Server peut bloquer les lectures suivantes [GH 3421]
+* Mettre à jour resolv.conf en-tête pour faire référence à wsl.conf [abordées dans GH 3928]
+* Interblocage dans du code de suppression epoll [GH 3922]
+* Gérer les espaces dans les arguments à--importer et – exporter [GH 3932]
+* Extension mmap des fichiers ne fonctionne pas correctement [GH 3939]
+* Résoudre un problème avec ARM64 \\accès de $ wsl ne fonctionne ne pas correctement
+* Ajouter une meilleure icône par défaut pour wsl.exe
 
 ## <a name="build-18342"></a>Build 18342
 Pour Windows général plus d’informations sur la build 18342 visitez le [Windows blog](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/).
@@ -349,8 +362,7 @@ Pour Windows général plus d’informations sur la build 17627 visitez le [Wind
 * Ajouter la prise en charge pour les opérations prenant en charge les pi futex. [GH 1006]
     * Notez que les priorités ne sont pas actuellement une fonctionnalité WSL pris en charge par conséquent, il existe des limitations, mais l’utilisation standard doit être débloquée.
 * Prise en charge des pare-feu Windows pour les processus WSL. [GH 1852]
-    * Par exemple, pour autoriser la WSL python traite pour écouter sur n’importe quel port, utilisez la commande Windows élevée :
-```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
+    * Par exemple, pour autoriser la WSL python traite pour écouter sur n’importe quel port, utilisez la commande Windows élevée : ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
     * Pour plus d’informations sur l’ajout de règles de pare-feu, consultez [lien](https://support.microsoft.com/en-us/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
 * Respecter le shell par défaut de l’utilisateur lors de l’utilisation de wsl.exe. [GH 2372]
 * Déclarer toutes les interfaces réseau ethernet. [GH 2996]
@@ -793,7 +805,7 @@ Voici une liste des nouvelles ou améliorées syscalls qui ont une implémentati
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Problèmes connus
-#### [<a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>Problème GitHub 2392 : Dossiers de Windows n’est ne pas reconnu par WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[Problème GitHub 2392 : Dossiers de Windows n’est ne pas reconnu par WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
 Dans la build 16257, WSL présente des problèmes lors de l’énumération des fichiers/dossiers de Windows via `/mnt/c/...`.
 Ce problème a été résolu et doivent être libéré dans Insiders build pendant la semaine 14/8/2017.
 

@@ -1,5 +1,5 @@
 ---
-title: Sous-système Windows pour Linux pour l’entreprise
+title: Sous-système Windows pour Linux Enterprise
 description: Ressources et obtenir des instructions sur comment mieux utilisent le sous-système Windows pour Linux dans un environnement d’entreprise.
 keywords: Installer BashOnWindows, bash, wsl, windows, le sous-système windows pour linux, windowssubsystem, ubuntu, debian, suse, windows 10, entreprise, déploiement, hors connexion, de création de package, store, distribution, installation
 author: mscraigloewen
@@ -9,13 +9,13 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: 9d867654d1b66fc14b58bc5e111986a7d38ef79c
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063277"
 ---
-# <a name="windows-subsystem-for-linux-for-enterprise"></a>Sous-système Windows pour Linux pour l’entreprise
+# <a name="windows-subsystem-for-linux-for-enterprise"></a>Sous-système Windows pour Linux Enterprise
 
 Le Microsoft Store pour entreprises offre un large éventail de solutions pour les entreprises qui souhaitent déployer WSL à leur entreprise. Le [documentation en ligne de](https://docs.microsoft.com/en-us/microsoft-store/) pour le Microsoft Store pour entreprises sont une ressource précieuse pour obtenir des informations générales sur l’expérience de Store.
 
