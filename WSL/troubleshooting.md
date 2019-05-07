@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.openlocfilehash: 055bdc02dcf8f078caa014abd6dd755a47c99cfe
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063297"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes sous-système Windows pour Linux
@@ -98,7 +98,7 @@ sudo update-locale LANG=en_US.UTF8
 
 ### <a name="installation-issues-after-windows-system-restore"></a>Problèmes d’installation après la restauration du système Windows
 1.  Supprimer le `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux` dossier. <br/>
-  **Remarque: Ne le faites pas cela si votre fonctionnalité facultative est entièrement installée et fonctionne.**
+  **Remarque : Ne le faites pas cela si votre fonctionnalité facultative est entièrement installée et fonctionne.**
 2.  Activer la fonctionnalité facultative WSL (si pas déjà)
 3.  Redémarrer
 4.  lxrun / désinstaller/total
@@ -114,11 +114,11 @@ Certains utilisateurs ont signalé des problèmes avec les applications de pare-
 Dans certains cas désactiver le pare-feu autorise l’accès.  Dans certains cas le simple fait d’avoir le pare-feu installé recherche pour bloquer l’accès.
 
 ### <a name="permission-denied-error-when-using-ping"></a>Erreur autorisation refusée lors de l’utilisation de ping
-#### [<a name="anniversary-update"></a>Mise à jour anniversaire](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
+#### <a name="anniversary-updatehttpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14388-to-windows-10-anniversary-update"></a>[Mise à jour anniversaire](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
 
 Privilèges d’administrateur dans Windows sont requis pour exécuter un test ping dans WSL.  Pour exécuter la commande ping, exécutez Bash sur Ubuntu sur Windows en tant qu’administrateur, ou exécutez bash.exe à partir d’une invite CMD/PowerShell avec des privilèges d’administrateur.
 
-#### [<a name="build-14926"></a>Build 14926 +](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
+#### <a name="build-14926httpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14926"></a>[Build 14926 +](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
   Privilèges d’administrateur n’est plus nécessaires.
 
 ### <a name="bash-is-hung"></a>Bash est bloqué
