@@ -86,7 +86,7 @@ Pour désactiver l’ancienne console :
 1. Cliquez sur OK
 
 ### <a name="error-0x80040154-after-windows-update"></a>« Erreur : 0 x 80040154 » après la mise à jour de Windows
-Le sous-système Windows pour Linux fonctionnalité peut être désactivé pendant une mise à jour de Windows. Dans ce cas, la fonctionnalité de Windows doit être réactivée. Des instructions pour activer le sous-système Windows pour Linux sont disponibles dans le [Guide d’Installation](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Le sous-système Windows pour Linux fonctionnalité peut être désactivé pendant une mise à jour de Windows. Dans ce cas, la fonctionnalité de Windows doit être réactivée. Des instructions pour activer le sous-système Windows pour Linux sont disponibles dans le [Guide d’Installation](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ### <a name="changing-the-display-language"></a>Modification de la langue d’affichage
 Installation WSL tente de modifier automatiquement les paramètres régionaux Ubuntu pour faire correspondre les paramètres régionaux de votre installation de Windows.  Si vous ne souhaitez pas ce comportement, vous pouvez exécuter cette commande pour modifier les paramètres régionaux Ubuntu, une fois l’installation terminée.  Vous devez relancer bash.exe pour que cette modification prenne effet.
