@@ -8,12 +8,12 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
-ms.openlocfilehash: 5820d701d5c0e22f14bf76e3dc6fe70bacb5213a
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 0d00b43d059e72edd4e2a5b9591c29441f461fca
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063597"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040823"
 ---
 # <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Comptes d’utilisateur et les autorisations pour le sous-système de Windows pour Linux
 
@@ -128,11 +128,11 @@ Lors de l’exécution de Linux sur WSL, Linux aura les mêmes autorisations Win
 * Normal (non élevés) : Linux s’exécute avec les autorisations de l’utilisateur connecté
 * Avec élévation de privilèges/admin : Linux s’exécute avec des autorisations Windows avec élévation de privilèges/admin
 
-> Étant donné que qui élevés processus peuvent modifier/dommages des paramètres système et des données, et peut modifier/accès protégé de fichiers et dossiers, **Évitez** lançant des processus élevés, sauf si vous avez absolument - pour qu’ils soient Windows ou Applications/tools/shells Linux !
+> Étant donné que le processus avec élévation de privilèges peuvent modifier/accès (et par conséquent endommager) les paramètres de l’échelle du système et le système à l’échelle du/des données protégées **Évitez** lançant des processus avec élévation de privilèges, sauf si vous avez absolument - pour qu’ils soient Windows ou Linux outils/applications/shells !
 
 Les autorisations Windows ci-dessus sont indépendantes des autorisations au sein d’une instance de Linux : Linux « privilèges racine » uniquement avoir un impact sur les droits d’utilisateur dans l’environnement Linux & système de fichiers ; ils n’ont aucun impact sur les privilèges Windows octroyés. Par conséquent, en exécutant un processus Linux en tant que racine (par exemple, via `sudo`) accorde uniquement qui traitent les droits d’administrateur dans l’environnement Linux.
 
-**Exemple :**    
+**Exemple :**     
 Une session d’interpréteur de commandes avec des privilèges d’administrateur Windows peut-être accéder à `cd /mnt/c/Users/Administrator` lors d’une session Bash sans privilèges d’administrateur pouvez voir une erreur « Autorisation refusée ».
 
 Sous Linux, en tapant `sudo cd /mnt/c/Users/Administrator` pas accorde l’accès au répertoire de l’administrateur dans la mesure où les autorisations dans Windows sont gérées par Windows.

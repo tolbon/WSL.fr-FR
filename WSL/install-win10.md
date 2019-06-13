@@ -8,12 +8,12 @@ ms.date: 07/23/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 40bbe73acbfd0483e18ab6ff1696fdb44eaff2e4
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: d30a5883d648e084193659e997c55d203eb5a735
+ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063287"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67035054"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Sous-système Windows pour le Guide d’Installation de Linux pour Windows 10
 
@@ -44,11 +44,18 @@ Pour télécharger et installer votre distro(s) préférée, vous avez trois pos
 
     Les liens suivants seront ouvre à la page magasin de Windows pour chaque distribution :
 
-    * [Ubuntu](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6)
-    * [OpenSUSE](https://www.microsoft.com/store/apps/9njvjts82tjx)
-    * [SLES](https://www.microsoft.com/store/apps/9p32mwbh6cns)
+    * [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9)
+    * [Ubuntu 18.04 LTS](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    * [OpenSUSE Leap 15](https://www.microsoft.com/store/apps/9n1tb6fpvj8c)
+    * [OpenSUSE Leap 42](https://www.microsoft.com/store/apps/9njvjts82tjx)
+    * [SUSE Linux Enterprise Server 12](https://www.microsoft.com/store/apps/9p32mwbh6cns)
+    * [SUSE Linux Enterprise Server 15](https://www.microsoft.com/store/apps/9pmw35d7fnlx)
     * [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     * [Debian GNU/Linux](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
+    * [Remix Fedora pour WSL](https://www.microsoft.com/store/apps/9n6gdm4k2hnc)
+    * [WLinux](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
+    * [WLinux Enterprise](https://www.microsoft.com/store/apps/9N8LP0X93VCP)
+    * [Alpine WSL](https://www.microsoft.com/store/apps/9p804crf0395)
 
 1. À partir de la page de la distribution, sélectionnez « Get »
 
@@ -65,3 +72,8 @@ Voici les erreurs associées et des suggestions de correction. Reportez-vous à 
     * Le sous-système Windows pour Linux s’exécute uniquement sur votre lecteur système (il s’agit généralement votre `C:` lecteur). Assurez-vous que les distributions sont stockées sur votre lecteur système :  
     * Ouvrez **paramètres** -> **stockage** -> **davantage de paramètres de stockage : Modification dans lequel le nouveau contenu est enregistré**
     ![image des paramètres système pour installer des applications sur le lecteur C:](media/AppStorage.png)
+    
+    
+ * **WslRegisterDistribution a échoué avec l’erreur 0x8007019e**   
+  * Le sous-système Windows pour Linux, composant facultatif n’est pas activé : 
+   * Ouvrez **le panneau de configuration** -> **programmes et fonctionnalités** -> ** activer ou désactiver la fonction Windows ** -> cochez **sous-système Windows pour Linux** ou à l’aide de la Applet de commande PowerShell mentionné au début de cet article.

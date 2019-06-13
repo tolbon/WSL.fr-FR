@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
 ms.localizationpriority: High
-ms.openlocfilehash: ad582d1b3a3d4277ee1b9b7adb0dc63a644abce9
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: f2df3c06d6c56aa8bc5a41ea9f075635b70c8685
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59529063"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040807"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Sous-système Windows pour obtenir une Documentation Linux
 
@@ -34,7 +34,7 @@ Vous pouvez :
 
 ## <a name="getting-started"></a>Prise en main
 
-* [Installer Linux sur Windows](install_guide.md)
+* [Installer Linux sur Windows 10](install-win10.md)
 * [Consultez la référence des commandes](reference.md)
 * [Consultez les questions fréquemment posées](faq.md)
 

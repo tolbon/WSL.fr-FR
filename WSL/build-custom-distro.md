@@ -8,12 +8,12 @@ ms.date: 03/27/2018
 ms.topic: article
 ms.assetid: a5095219-0c82-4ce5-9a6d-5c2fc00835a3
 ms.custom: seodec18
-ms.openlocfilehash: b98101c19d7d450548531521c3f8ee15ce62f9f1
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 4072df5fa81f65fd9a3ff875ab887c03b234bce1
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063257"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040777"
 ---
 # <a name="creating-a-custom-linux-distro-for-wsl"></a>Création d’une distribution Linux personnalisée pour WSL
 
@@ -24,7 +24,7 @@ Ce projet permet de :
 * Aux développeurs de créer des distributions de Linux qui peuvent être chargées indépendamment sur son ordinateur de développement
 
 ## <a name="background"></a>Arrière-plan
-Nous distribuons des distributions Linux pour WSL en tant qu’applications UWP via le Microsoft Store. Vous pouvez installer les applications qui pourra ensuite s’exécuter sur WSL - le sous-système qui se trouve dans le noyau Windows. Ce mécanisme de livraison présente de nombreux avantages comme indiqué dans un billet de blog antérieures.
+Nous distribuons des distributions Linux pour WSL en tant qu’applications UWP via le Microsoft Store. Vous pouvez installer les applications qui pourra ensuite s’exécuter sur WSL - le sous-système qui se trouve dans le noyau Windows. Ce mécanisme de livraison présente de nombreux avantages comme indiqué dans un [antérieures billet de blog](https://blogs.msdn.microsoft.com/commandline/2017/07/10/ubuntu-now-available-from-the-windows-store/).
 
 ## <a name="sideloading-a-custom-linux-distro-package"></a>Chargement de version test un Package de distribution Linux personnalisée
 Vous pouvez créer un package de distribution Linux personnalisé en tant qu’application à charger une version test sur votre ordinateur personnel. Veuillez noter que votre package personnalisé ne serait pas distribué via le Microsoft Store, sauf si vous envoyez en tant que responsable de maintenance de la distribution.
@@ -42,6 +42,6 @@ Suivez les instructions la [référentiel GitHub de lanceur distributeur](https:
 * [Blog de ligne de commande](https://blogs.msdn.microsoft.com/commandline/)
 
 ## <a name="provide-feedback"></a>Commentaires
-* [Référentiel de distributeur Lanceur Github](https://github.com/Microsoft/WSL-DistroLauncher)
+* [Référentiel GitHub de Lanceur de distribution](https://github.com/Microsoft/WSL-DistroLauncher)
 * [Suivi des problèmes GitHub pour WSL](https://github.com/Microsoft/BashOnWindows/issues)
 * [Portail de UserVoice de ligne de commande](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)

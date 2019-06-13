@@ -19,3 +19,6 @@ Ce projet a adopté le [Microsoft Code de conduite Open Source](https://opensour
 Pour plus d’informations, consultez le [Code de conduite Forum aux questions](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [ opencode@microsoft.com ](mailto:opencode@microsoft.com) avec des questions ou commentaires supplémentaires.
 
 Bienvenue dans la source de markdown pour les interpréteurs de commandes de ligne de commande de Microsoft et documentation de la console.
+
+## <a name="license"></a>Licence
+Distribué sous licence Creative Commons Attribution 4.0 International (CC par 4.0) publique.
