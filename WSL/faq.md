@@ -7,12 +7,12 @@ ms.author: taraj
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
-ms.openlocfilehash: 80675d8452b626ebe1d235774167c5ff27e4b44d
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 07461f7db4a351f5b79ab0c5179d3d917ef1bdf7
+ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063267"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67035060"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Forum aux Questions sur le sous-système de Windows pour Linux
 
@@ -82,7 +82,7 @@ Un des avantages de WSL est de pouvoir accéder à vos fichiers via les applicat
 
 WSL monte les lecteurs fixes de votre ordinateur sous le `/mnt/<drive>` dossier dans vos distributions Linux. Par exemple, votre `C:` lecteur est monté sous `/mnt/c/` 
 
-Vos lecteurs montés, vous pouvez modifier le code, par exemple, `C:\dev\myproj\` à l’aide de [Visual Studio](https://visualstudio.microsoft.com/vs/) / ou [VS Code](https://code.visualstudio.com/)et que le code de Linux de génération/test en accédant aux mêmes fichiers via `\mnt\c\dev\myproj`.
+Vos lecteurs montés, vous pouvez modifier le code, par exemple, `C:\dev\myproj\` à l’aide de [Visual Studio](https://visualstudio.microsoft.com/vs/) / ou [VS Code](https://code.visualstudio.com/)et que le code de Linux de génération/test en accédant aux mêmes fichiers via `/mnt/c/dev/myproj`.
 
 > **REMARQUE IMPORTANTE**: Les principales limitations de l’utilisation de WSL est que l’accès à/modifier directement les fichiers du système de fichiers des vos distributions Linux à l’aide d’applications de Windows ou d’outils n’est pas pris en charge. Consultez : [Ne modifiez pas les fichiers de Linux à l’aide des outils et applications de Windows](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
 
@@ -146,7 +146,7 @@ WSL ne prend pas en charge en cours d’exécution dans une console héritée. P
 1. Cliquez sur OK
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Pourquoi reçois-je « erreur : 0 x 80040154 » lors de l’exécution bash.exe après la mise à niveau de Windows ?
-La fonctionnalité de « Sous-système Windows pour Linux » peut être désactivée pendant une mise à jour de Windows. Dans ce cas, la fonctionnalité de Windows doit être réactivée. Vous trouverez des instructions pour activer la fonctionnalité « Sous-système Windows pour Linux » dans le [Guide d’Installation](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+La fonctionnalité de « Sous-système Windows pour Linux » peut être désactivée pendant une mise à jour de Windows. Dans ce cas, la fonctionnalité de Windows doit être réactivée. Vous trouverez des instructions pour activer la fonctionnalité « Sous-système Windows pour Linux » dans le [Guide d’Installation](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>Comment modifier la langue d’affichage de WSL ?
 Installation WSL tente de modifier automatiquement les paramètres régionaux Ubuntu pour faire correspondre les paramètres régionaux de votre installation de Windows. Si vous ne souhaitez pas ce comportement, vous pouvez exécuter cette commande pour modifier les paramètres régionaux Ubuntu, une fois l’installation terminée. Vous devez relancer bash.exe pour que cette modification prenne effet.
