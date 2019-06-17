@@ -1,0 +1,3 @@
+# <a name="af-unix-sample"></a><span data-ttu-id="9a788-101">AF-Unix-Sample</span><span class="sxs-lookup"><span data-stu-id="9a788-101">AF-Unix-Sample</span></span>
+
+<span data-ttu-id="9a788-102">Démonstration illustrant interop AF_UNIX entre un processus WSL et Windows.</span><span class="sxs-lookup"><span data-stu-id="9a788-102">Demo demonstrating AF_UNIX interop between a WSL and Windows process.</span></span> <span data-ttu-id="9a788-103">Pour plus d’informations sur la fonctionnalité, consultez le blog de ligne de commande WSL.</span><span class="sxs-lookup"><span data-stu-id="9a788-103">COnsult the WSL Commandline blog for more information on the feature.</span></span>
