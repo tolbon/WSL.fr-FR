@@ -1,54 +1,66 @@
 ---
-title: Installer WSL 2
-description: Instructions d’installation pour WSL 2
-keywords: BashOnWindows, bash, wsl, wsl2, windows, le sous-système windows pour linux, windowssubsystem, ubuntu, debian, suse, windows 10, installer
+title: Installer WSL 2
+description: Instructions d’installation pour WSL 2
+keywords: BashOnWindows, bash, wsl, wsl2, windows, sous-système windows pour linux, sous-système windows, ubuntu, debian, suse, windows 10, installation
 author: mscraigloewen
 ms.author: mscraigloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 2af43a046333fc8c7b4142cdc5077cdfbf29fea7
-ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
-ms.translationtype: MT
+ms.openlocfilehash: 3ad180ecc9deaa1566e9870700b26f82f631c7f1
+ms.sourcegitcommit: 9ad7a54668f39677e9660186e4f5172ea2597e2b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67038079"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246866"
 ---
-# <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
+# <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
-Pour installer et commencer à utiliser WSL 2 procédez comme suit :
+Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes :
 
-- Activer le composant facultatif « Plateforme de Machine virtuelle »
-- Définir un distributeur pour être sauvegardé par 2 WSL à l’aide de la ligne de commande
-- Vérifiez que les versions de WSL vos distributions sont à l’aide de
+- Activer le composant facultatif « Plateforme de machine virtuelle »
+- Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
+- Vérifier les versions de WSL que vos distributions utilisent
 
-## <a name="enable-the-virtual-machine-platform-optional-component"></a>Activer le composant facultatif « Plateforme de Machine virtuelle »
+Notez que vous devez exécuter Windows 10 build 18917 ou ultérieure pour utiliser WSL 2 et que vous devez déjà avoir WSL installé (vous trouverez des instructions pour ce faire [ici](./install-win10.md)). 
+
+## <a name="enable-the-virtual-machine-platform-optional-component"></a>Activer le composant facultatif « Plateforme de machine virtuelle »
 
 Ouvrez PowerShell en tant qu’administrateur et exécutez :
 
 `Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform`
 
-Une fois ces modifications sont activées, vous devrez redémarrer votre ordinateur.
+Une fois que ces changements sont activés, vous devez redémarrer votre ordinateur.
 
-## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Définir un distributeur pour être sauvegardé par 2 WSL à l’aide de la ligne de commande
+## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
 
-Dans l’exécution de PowerShell :
+Dans PowerShell, exécutez :
 
 `wsl --set-version <Distro> 2`
 
-et veillez à remplacer `<Distro>` par le nom réel de votre distribution. (Vous pouvez trouver ces éléments avec la commande : `wsl -l`). Vous pouvez modifier à tout moment à 1 WSL à en exécutant la même commande que ci-dessus, mais en remplaçant ' 2' avec un ' 1'.
+et veillez à remplacer `<Distro>` par le vrai nom de votre distribution. (Vous pouvez le trouver avec la commande : `wsl -l`). Vous pouvez revenir à WSL 1 quand vous voulez en exécutant la même commande que ci-dessus, mais en remplaçant le « 2 » par un « 1 ».
 
-En outre, si vous souhaitez rendre WSL 2 votre architecture par défaut vous pouvez le faire avec cette commande :
+Par ailleurs, si vous souhaitez faire de WSL 2 votre architecture par défaut, utilisez cette commande :
 
 `wsl --set-default-version 2`
 
-Vous serez ainsi une nouvelle distribution que vous installez initialisé dans une distribution WSL 2.
+Ainsi, toutes les nouvelles distributions que vous installerez seront initialisées en tant que distributions WSL 2.
 
-## <a name="finish-with-verifying-what-versions-of-wsl-your-distro-are-using"></a>Terminer avec la vérification de ce que les versions de WSL votre distributeur sont à l’aide de
+## <a name="finish-with-verifying-what-versions-of-wsl-your-distro-are-using"></a>Pour terminer, vérifiez quelles versions de WSL utilisent vos distributions.
 
-Pour vérifier quelles versions de chaque distributeur est à l’aide de WSL utilisent la commande suivante :
+Pour vérifier quelles versions de WSL utilise chaque distribution, utilisez la commande suivante :
 
 `wsl --list --verbose` ou `wsl -l -v`
 
-La distribution que vous avez choisi ci-dessus doit maintenant s’afficher un « 2 » dans la colonne « version ». Maintenant que vous avez terminé n’hésitez pas à démarrer à l’aide de votre distribution WSL 2 ! 
+La distribution que vous avez choisie ci-dessus doit maintenant afficher un « 2 » dans la colonne « version ». Maintenant que vous avez terminé, n’hésitez pas à commencer à utiliser votre distribution WSL 2 ! 
+
+## <a name="troubleshooting"></a>Dépannage : 
+
+Vous trouverez ci-dessous des erreurs associées et des suggestions de correction lors de l’installation de WSL 2. Reportez-vous à la [page de résolution des problèmes WSL](troubleshooting.md) pour voir d’autres erreurs WSL générales et leurs solutions.
+
+* **Échec de l’installation avec l’erreur 0x80070003 ou l’erreur 0x80370102**
+    * Assurez-vous que la virtualisation est activée dans le BIOS de votre ordinateur. Les instructions sur la façon de procéder varient d’un ordinateur à l’autre et se trouvent très probablement sous les options liées au processeur.
+   
+* **Erreur lors d’une tentative de mise à niveau : `Invalid command line option: wsl --set-version Ubuntu 2`**
+    * Vérifiez que le sous-système Windows pour Linux est activé et que vous utilisez Windows version de build 18917 ou ultérieure. Pour activer WSL, exécutez cette commande dans une invite PowerShell avec des privilèges d’administrateur : `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. Vous trouverez les instructions complètes de l’installation de WSL [ici](./install-win10.md).
