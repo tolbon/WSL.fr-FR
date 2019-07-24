@@ -1,24 +1,24 @@
-# <a name="windows-subsystem-for-linux-wsl-documentation"></a>Sous-système Windows pour obtenir une Documentation Linux (WSL)
+# <a name="windows-subsystem-for-linux-wsl-documentation"></a>Documentation sur le sous-système Windows pour Linux (WSL)
 
-## <a name="issues"></a>Problèmes
-Si vous détectez des problèmes de doc / erreurs ou ont une amélioration que vous souhaitez suggérer, Veuillez signaler un problème et/ou envoyez une demande de tirage - nous vous remercions de demande de tirage en particulier  :)
+## <a name="issues"></a>Liés
+Si vous trouvez des problèmes ou des erreurs dans le document ou si vous avez une amélioration que vous souhaitez suggérer, veuillez signaler un problème et/ou envoyer une demande de tirage (pull-request). en particulier:)
 
-> **Remarque :** Suivi des problèmes de ce dépôt est uniquement pour signaler des problèmes avec les documents WSL. Autre problème connexe du référentiel :
-> * WSL : https://github.com/Microsoft/WSL/
-> * Console de Windows : https://github.com/Microsoft/Console/
+> **Remarque :** Ce suivi des problèmes de référentiel est destiné uniquement à la création de rapports sur les documents WSL. Autres problèmes liés à référentiel:
+> * WSL https://github.com/Microsoft/WSL/
+> * Console Windows: https://github.com/Microsoft/Console/
 
 ## <a name="external-links"></a>Liens externes
 
-[Site Web de documentation de rendu](https://docs.microsoft.com/windows/wsl/) 
+[Site Web de documentation rendu](https://docs.microsoft.com/windows/wsl/) 
 
 [Notes de publication pour WSL](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite de Microsoft Open Source
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de réalisation Microsoft Open source
 
-Ce projet a adopté le [Microsoft Code de conduite Open Source](https://opensource.microsoft.com/codeofconduct/).
-Pour plus d’informations, consultez le [Code de conduite Forum aux questions](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [ opencode@microsoft.com ](mailto:opencode@microsoft.com) avec des questions ou commentaires supplémentaires.
+Ce projet a adopté le [Code de réalisation de Microsoft Open source](https://opensource.microsoft.com/codeofconduct/).
+Pour plus d’informations, consultez le [Forum aux questions sur le code de réalisation](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec des questions ou des commentaires supplémentaires.
 
-Bienvenue dans la source de markdown pour les interpréteurs de commandes de ligne de commande de Microsoft et documentation de la console.
+Bienvenue dans la source de la démarque pour les interpréteurs de ligne de commande et la documentation de la console Microsoft.
 
 ## <a name="license"></a>Licence
-Distribué sous licence Creative Commons Attribution 4.0 International (CC par 4.0) publique.
+Distribué dans le cadre de la licence publique de l’attribution 4,0 internationale (CC par 4,0) de Creative-licence.
