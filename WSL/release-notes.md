@@ -7,15 +7,49 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: e2d9d5fc70c173e9b516ab7af01599b623b40b39
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
+ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67042425"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501583"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
 
+
+## <a name="build-18947"></a>Build 18947
+Pour obtenir des informations générales sur Windows sur la build 18947, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+
+### <a name="wsl"></a>WSL
+* [WSL2] Autoriser l’accès des sockets TCP d’écoute dans WSL2 à partir de l’hôte à l’aide de localhost: port
+* [WSL2] Correctifs pour les échecs d’installation/conversion et les Diagnostics supplémentaires pour suivre les problèmes futurs [GH 4105] 
+* [WSL2] Améliorez les diagnostics des problèmes de réseau WSL2
+* [WSL2] Mettre à jour la version du noyau vers 4.19.55
+* [WSL2] Mise à jour du noyau avec les options de configuration requises pour l’ancrage [GH 4165]
+* [WSL2] Augmentez le nombre de processeurs affectés à la machine virtuelle utilitaire légère pour qu’ils soient identiques à ceux de l’ordinateur hôte (précédemment plafonné à 8 par CONFIG_NR_CPUS dans la configuration du noyau) [GH 4137]
+* [WSL2] Créer un fichier d’échange pour la machine virtuelle légère WSL2
+* [WSL2] Autoriser l’affichage des montages utilisateur via \\ \\WSL $\\distribution (par exemple sshfs) [GH 4172]
+* [WSL2] Améliorer les performances du système de fichiers 9P
+* [WSL2] S’assurer que la liste ACL VHD n’augmente pas sans limite [GH 4126]
+* [WSL2] Mise à jour de la configuration du noyau pour prendre en charge squashfs et xt_conntrack [GH 4107, 4123]
+* [WSL2] Correctif pour Interop. option/etc/WSL.conf activée [GH 4140]
+* [WSL2] Retourne ENOTSUP si le système de fichiers ne prend pas en charge EAs
+* [WSL2] Corriger le blocage de \\CopyFile avec \\WSL $
+* Changez l’umask par défaut en 0022 et ajoutez le paramètre FileSystem. umask à/etc/WSL.conf
+* Corriger wslpath pour résoudre correctement liens symboliques, ceci a été régressé dans 19h1 [GH 4078]
+* Introduire le fichier%\.UserProfile% wslconfig pour la modification des paramètres WSL2
+```
+[wsl2]
+kernel=<path>              # An absolute Windows path to a custom Linux kernel.
+memory=<size>              # How much memory to assign to the WSL2 VM.
+processors=<number>        # How many processors to assign to the WSL2 VM.
+swap=<size>                # How much swap space to add to the WSL2 VM. 0 for no swap file.
+swapFile=<path>            # An absolute Windows path to the swap vhd.
+localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
+
+# <path> entries must be absolute Windows paths with escaped backslashes, for example C:\\Users\\Ben\\kernel
+# <size> entries must be size followed by unit, for example 8GB or 512MB
+```
 
 ## <a name="build-18917"></a>Build 18917
 Pour obtenir des informations générales sur Windows sur la build 18917, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/).
