@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: a74f5e3f5879d0af274d2e2b10aaf05e95a97a6f
-ms.sourcegitcommit: e16097a3d863bbda8c4655054f154415cdd7f2f5
+ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 07/26/2019
 ms.locfileid: "67587142"
 ---
 # <a name="wsl-2-faq"></a>FAQ WSL 2
@@ -33,7 +33,7 @@ Nous n’avons actuellement aucun projet de dépréciation de WSL 1. Vous pouvez
 
 Certaines applications tierces ne fonctionnent pas quand Hyper-V est en cours d’utilisation, ce qui signifie qu’elles ne peuvent pas s’exécuter quand WSL 2 est activé. Malheureusement, cela inclut VMware, et les versions de VirtualBox antérieures à VirtualBox 6 (VirtualBox 6.0.0 publiée en décembre 2018 [prennent désormais en charge Hyper-V comme noyau d’exécution de secours sur un hôte Windows][1]!)
 
-Nous étudions des moyens d’aider à résoudre ce problème. Par exemple, nous exposons un ensemble d’API appelé [plateforme][2] that third-party virtualization providers can use to make their software compatible with Hyper-V’s. This lets applications use the Hyper-V architecture for their emulation such as [the Google Android Emulator][3]hyperviseur, et VirtualBox 6 et versions ultérieures, qui sont désormais compatibles avec Hyper-V.
+Nous étudions des moyens d’aider à résoudre ce problème. Par exemple, nous exposons un ensemble d’API appelé [plateforme][2] d’hyperviseur que les fournisseurs de virtualisation tiers peuvent utiliser pour rendre leurs logiciels compatibles avec Hyper-V. Cela permet aux applications d’utiliser l’architecture Hyper-V pour leur émulation, telles que [Google émulateur Android][3]et VirtualBox 6 et versions ultérieures, qui sont désormais compatibles avec Hyper-V.
 
 ## <a name="can-i-access-the-gpu-in-wsl-2-are-there-plans-to-increase-hardware-support"></a>Puis-je accéder au GPU dans WSL 2? Existe-t-il des plans pour augmenter la prise en charge du matériel?
 

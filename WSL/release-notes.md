@@ -7,18 +7,18 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
-ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
+ms.openlocfilehash: c262ddb359507c1654f0089050bfd15ec16402f9
+ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501583"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523782"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
 
 
-## <a name="build-18947"></a>Build 18947
-Pour obtenir des informations générales sur Windows sur la build 18947, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+## <a name="build-18945"></a>Build 18945
+Pour obtenir des informations générales sur Windows sur la build 18945, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/).
 
 ### <a name="wsl"></a>WSL
 * [WSL2] Autoriser l’accès des sockets TCP d’écoute dans WSL2 à partir de l’hôte à l’aide de localhost: port
