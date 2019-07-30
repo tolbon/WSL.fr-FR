@@ -51,7 +51,7 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseB
 > Si le téléchargement prend beaucoup de temps, désactivez la barre de progression en définissant`$ProgressPreference = 'SilentlyContinue'`
 
 ### <a name="download-using-curl"></a>Télécharger à l’aide de la boucle
-La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend l' [utilitaire de ligne de commande de boucles](https://curl.haxx.se/) populaires avec lequel vous pouvez appeler des requêtes Web (par exemple, des commandes HTTP, http, put, etc.) à partir de la ligne de commande. Vous pouvez utiliser `curl.exe` pour télécharger les distributions ci-dessus:
+La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend le populaire [utilitaire en ligne de commande curl](https://curl.haxx.se/) avec lequel vous pouvez appeler des requêtes Web (par exemple, des commandes HTTP, http, put, etc.) à partir de la ligne de commande. Vous pouvez utiliser `curl.exe` pour télécharger les distributions ci-dessus:
 
 ```console
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
