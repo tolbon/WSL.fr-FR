@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: bf2f2e24fb8a2db49270fb77558d4fda1828dedf
-ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
+ms.openlocfilehash: ded81ec9672d75203e0d289c551c86cd90bde606
+ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523779"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832096"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Télécharger manuellement le sous-système Windows pour les packages distribution Linux
 
@@ -30,7 +30,7 @@ Si l’application Microsoft Store n’est pas disponible, vous pouvez télécha
 * [Ubuntu 18,04 ARM](https://aka.ms/wsl-ubuntu-1804-arm)
 * [Ubuntu 16,04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
-* [Kali Linux](https://aka.ms/wsl-kali-linux)
+* [Kali Linux](https://aka.ms/wsl-kali-linux-new)
 * [OpenSUSE LEAP 42](https://aka.ms/wsl-opensuse-42)
 * [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
 * [Fedora Remix pour WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
@@ -51,7 +51,7 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseB
 > Si le téléchargement prend beaucoup de temps, désactivez la barre de progression en définissant`$ProgressPreference = 'SilentlyContinue'`
 
 ### <a name="download-using-curl"></a>Télécharger à l’aide de la boucle
-La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend le populaire [utilitaire en ligne de commande curl](https://curl.haxx.se/) avec lequel vous pouvez appeler des requêtes Web (par exemple, des commandes HTTP, http, put, etc.) à partir de la ligne de commande. Vous pouvez utiliser `curl.exe` pour télécharger les distributions ci-dessus:
+La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend l' [utilitaire de ligne de commande de boucles](https://curl.haxx.se/) populaires avec lequel vous pouvez appeler des requêtes Web (par exemple, des commandes HTTP, http, put, etc.) à partir de la ligne de commande. Vous pouvez utiliser `curl.exe` pour télécharger les distributions ci-dessus:
 
 ```console
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
