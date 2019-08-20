@@ -8,78 +8,84 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 82908295-a6bd-483c-a995-613674c2677e
 ms.custom: seodec18
-ms.openlocfilehash: 465f55f8ba210cd366adc66d433f1873e295136f
-ms.sourcegitcommit: ead64b13501d6cb7170adafbb5624f4984a0af16
+ms.openlocfilehash: 018b02b43e859476f7ee38f54df8efa0ca0e652b
+ms.sourcegitcommit: 62c49d435a91f2e390c3c495f3e09e62b5ada13c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67307653"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69578841"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>Informations de référence sur les commandes pour le sous-système Windows pour Linux
 
 La meilleure façon d’interagir avec le sous-système Windows pour Linux consiste à utiliser `wsl.exe` la commande. 
 
-## `wsl.exe` 
+
+## `wsl.exe`
 
 Voici une liste contenant toutes les options lors de `wsl.exe` l’utilisation de à partir de la version 1903 de Windows.
 
-* Arguments pour l’exécution des fichiers binaires Linux:
+À`wsl [Argument] [Options...] [CommandLine]`
 
-    * Si aucune ligne de commande n’est fournie, WSL. exe lance l’interpréteur de commandes par défaut.
+### <a name="arguments-for-running-linux-binaries"></a>Arguments pour l’exécution des fichiers binaires Linux
 
-    * --Exec,-e<CommandLine>
-        * Exécutez la commande spécifiée sans utiliser l’interpréteur de commandes Linux par défaut.
+* **Sans arguments**
 
-    * --
-        * Transmettez la ligne de commande restante telle quelle.
+  Si aucune ligne de commande n’est fournie, WSL. exe lance l’interpréteur de commandes par défaut.
 
-* Options :
-    * --distribution,-d<Distro>
-        * Exécutez la distribution spécifiée.
+* **--Exec,-e \<CommandLine >**
+  
+  Exécutez la commande spécifiée sans utiliser l’interpréteur de commandes Linux par défaut.
 
-    * --utilisateur,-u<UserName>
-        * Exécuter en tant qu’utilisateur spécifié.
+* **--**
+  
+  Transmettez la ligne de commande restante telle quelle.
 
-* Arguments pour la gestion du sous-système Windows pour Linux:
+Les commandes ci-dessus acceptent également les options suivantes:
 
-    * --exporter <Distro><FileName>
-        * Exporte la distribution vers un fichier tar.
-        Le nom de fichier peut être-pour la sortie standard.
+* **--distribution,-d \<distribution >**
 
-    * --import <Distro> <InstallLocation>[options <FileName> ]
-        * Importe le fichier tar spécifié en tant que nouvelle distribution.
-        Le nom de fichier peut être-pour une entrée standard.
+  Exécutez la distribution spécifiée.
 
-        * Options :
-            * --version <Version> spécifie la version à utiliser pour la nouvelle distribution.
+* **--User,-u \<nom_utilisateur >**
 
-    * --List,-l [options]
-        * Répertorie les distributions.
+  Exécuter en tant qu’utilisateur spécifié.
 
-        * Options :
-            * --tout
-                * Répertorie toutes les distributions, y compris les distributions en cours d’installation ou de désinstallation.
+### <a name="arguments-for-managing-windows-subsystem-for-linux"></a>Arguments pour la gestion du sous-système Windows pour Linux
 
-            * --en cours d’exécution
-                * Répertorier uniquement les distributions en cours d’exécution.
+* **--Export \<distribution > \<filename >**
+  
+  Exporte la distribution vers un fichier tar. Le nom de fichier peut être-pour la sortie standard.
 
-    * --Set-Default,-s<Distro>
-        * Définit la distribution comme valeur par défaut.
+* **--import \<distribution > \<INSTALLLOCATION > \<nom de fichier >**
+  
+  Importe le fichier tar spécifié en tant que nouvelle distribution. Le nom de fichier peut être-pour une entrée standard.
 
-    * --set-default-version<Version>
-        * Modifie la version d’installation par défaut pour les nouvelles distributions.
+* **--List,-l [options]**
+  
+  Répertorie les distributions.
 
-    * --set-version <Distro><Version>
-        * Modifie la version de la distribution spécifiée.
+  Options :
+  * **--tout**
+      
+    Répertorie toutes les distributions, y compris les distributions en cours d’installation ou de désinstallation.
 
-    * --Terminate,-t<Distro>
-        * Met fin à la distribution spécifiée.
+  * **--en cours d’exécution**
+      
+    Répertorier uniquement les distributions en cours d’exécution.
 
-    * --annuler l’inscription<Distro>
-        * Annule l’inscription de la distribution.
+* **--Set-Default,-s \<distribution >**
+  
+  Définit la distribution comme valeur par défaut.
 
-    * --help
-        * Affichez les informations d’utilisation.
+* **--Terminate,-t \<distribution >**
+  
+  Met fin à la distribution spécifiée.
+
+* **--annuler l' \<inscription de la > distribution**
+  
+  Annule l’inscription de la distribution.
+   
+* **--aide** Affichez les informations d’utilisation.
 
 ## <a name="additional-commands"></a>Commandes supplémentaires
 
@@ -89,33 +95,57 @@ Il existe également des commandes historiques pour interagir avec le sous-syst�
 
 Cette commande vous permet de configurer votre distribution WSL. Vous trouverez ci-dessous une liste de ses options.
 
-* /l,/list [option]
-    * Répertorie les distributions inscrites.
-        * /All: répertorie éventuellement toutes les distributions, y compris les distributions en cours d’installation ou de désinstallation.
+À`wslconfig [Argument] [Options...]`
 
-        * /Running-répertorier uniquement les distributions en cours d’exécution.
+#### <a name="arguments"></a>Arguments
+* **/l,/list [options]**
+  
+  Répertorie les distributions inscrites.
+  
+  Options :
+    * **All**
+    
+      Répertoriez éventuellement toutes les distributions, y compris les distributions en cours d’installation ou de désinstallation.
 
-* /s,/SetDefault<DistributionName>
-    * Définit la distribution comme valeur par défaut.
+    * **/running**
+      
+      Répertorier uniquement les distributions en cours d’exécution.
 
-* /t,/Terminate<DistributionName>
-    * Met fin à la distribution.
+* **/s,/SetDefault \<distribution >**
+  
+  Définit la distribution comme valeur par défaut.
 
-* /u,/Unregister<DistributionName>
-    * Annule l’inscription de la distribution.
+* **/t,/Terminate \<distribution >**
+  
+  Met fin à la distribution.
+
+* **/u,/Unregister \<distribution >**
+  
+  Annule l’inscription de la distribution.
+   
+* **/Upgrade \<distribution >**
+  
+  Met à niveau la distribution vers le format du système de fichiers WslFs.
 
 ### `bash.exe`
 
 Cette commande permet de démarrer un interpréteur de commandes bash. Vous trouverez ci-dessous les options que vous pouvez utiliser avec cette commande.
 
-* Aucune option donnée
-    * Lance l’interpréteur de commandes bash dans le répertoire actif. Si l’interpréteur de commandes bash n’est pas installé automatiquement`lxrun /install`
+À`bash [Options...]`
 
-* bash ~
-    * Lance l’interpréteur de commandes bash dans le répertoire de départ de l’utilisateur.  Similaire à l' `cd ~`exécution de.
+* **Aucune option donnée**
+  
+  Lance l’interpréteur de commandes bash dans le répertoire actif. Si l’interpréteur de commandes bash n’est pas installé automatiquement`lxrun /install`
 
-* bash-c "&lt;commande&gt;"
-    * Exécute la commande, imprime la sortie et quitte l’invite de commandes Windows. <br/> <br/> Tels`bash -c "ls"`
+* **~**
+  
+  `bash ~`lance l’interpréteur de commandes bash dans le répertoire de départ de l’utilisateur.  Similaire à l' `cd ~`exécution de.
+
+* **-c "\<> de commande"**
+  
+  Exécute la commande, imprime la sortie et quitte l’invite de commandes Windows.
+    
+  Exemple: `bash -c "ls"`.
 
 ## <a name="deprecated-commands"></a>Commandes déconseillées
 
