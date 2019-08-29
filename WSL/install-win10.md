@@ -8,12 +8,13 @@ ms.date: 07/23/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 82b5c0ccba7a444f13f186a2e33f210ac2cf48da
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.localizationpriority: high
+ms.openlocfilehash: 218e3e652d0849f944e8aaceef3fb954294222be
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499286"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122776"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Guide d’installation du sous-système Windows pour Linux pour Windows 10
 
@@ -76,4 +77,4 @@ Vous trouverez ci-dessous des erreurs connexes et des corrections suggérées. R
     
  * **Échec de WslRegisterDistribution avec l’erreur 0x8007019e**   
   * Le composant facultatif sous-système Windows pour Linux n’est pas activé: 
-   * Ouvrez**programmes et fonctionnalités** **du panneau de configuration** -> -> * * activer ou désactiver les fonctionnalités Windows * *-> Vérifiez le **sous-système Windows pour Linux** ou utilisez l’applet de commande PowerShell mentionnée au début de cet article.
+   * Ouvrez **le panneau de configuration** -> **programmes et fonctionnalités** -> **activer ou désactiver** les fonctionnalités Windows > Vérifiez le **sous-système Windows pour Linux** ou utilisez l’applet de commande PowerShell mentionnée au début de cet article.

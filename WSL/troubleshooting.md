@@ -8,12 +8,13 @@ ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
-ms.openlocfilehash: 0c84fb710eca1b0ffabe437f98d5c17edbd6ea39
-ms.sourcegitcommit: ead64b13501d6cb7170adafbb5624f4984a0af16
+ms.localizationpriority: high
+ms.openlocfilehash: 6a5fec8b8e054b4d3399ee9bcd903acebca7aace
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67307649"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122692"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes du sous-système Windows pour Linux
 
@@ -114,11 +115,11 @@ Certains utilisateurs ont signalé des problèmes avec des applications de pare-
 Dans certains cas, la désactivation du pare-feu autorise l’accès.  Dans certains cas, l’installation du pare-feu semble bloquer l’accès.
 
 ### <a name="permission-denied-error-when-using-ping"></a>Erreur de refus d’autorisation lors de l’utilisation de ping
-#### <a name="anniversary-updatehttpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14388-to-windows-10-anniversary-update"></a>[Mise à jour anniversaire](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
+#### <a name="anniversary-updatehttpsmsdnmicrosoftcomen-uscommandlinewslrelease_notesbuild-14388-to-windows-10-anniversary-update"></a>[Mise à jour anniversaire](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
 
 Les privilèges d’administrateur dans Windows sont requis pour exécuter la commande ping dans WSL.  Pour exécuter la commande ping, exécutez bash sur Ubuntu sur Windows en tant qu’administrateur, ou exécutez bash. exe à partir d’une invite de commandes CMD/PowerShell avec des privilèges d’administrateur.
 
-#### <a name="build-14926httpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14926"></a>[Build 14926 +](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
+#### <a name="build-14926httpsmsdnmicrosoftcomen-uscommandlinewslrelease_notesbuild-14926"></a>[Build 14926 +](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
   Les privilèges d’administrateur ne sont plus nécessaires.
 
 ### <a name="bash-is-hung"></a>Bash est bloqué

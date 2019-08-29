@@ -8,12 +8,13 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 30cb1de0a01fd46bc434061cd36794f4ece77e4b
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.localizationpriority: high
+ms.openlocfilehash: e544dc461913c6e044c70f39103cced62167c4b8
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499300"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122714"
 ---
 # <a name="initializing-a-newly-installed-distro"></a>Initialisation d’un distribution récemment installé
 Une fois que votre distribution a été téléchargé et installé, vous devez effectuer l’initialisation du nouveau distribution:
