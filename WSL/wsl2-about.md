@@ -2,18 +2,18 @@
 title: À propos de WSL 2
 description: À propos de WSL 2 la nouvelle architecture du sous-système Windows pour Linux
 keywords: BashOnWindows, bash, wsl, wsl2, windows, sous-système windows pour linux, sous-système windows, ubuntu, debian, suse, windows 10, installation
-author: mscraigloewen
-ms.author: mscraigloewen
+author: craigloewen-msft
+ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: e9c1f043207193a5c00ecf6176f54f240aa48680
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.openlocfilehash: 983699c26a21af7b81ba31067316ba3bbf1601af
+ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499252"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71020935"
 ---
 # <a name="about-wsl-2"></a>À propos de WSL 2
 
@@ -27,7 +27,7 @@ En outre, ce noyau sera Open source. Vous pouvez trouver le code source complet 
 
 ## <a name="brief-overview-of-the-wsl-2-architecture"></a>Brève présentation de l’architecture WSL 2
 
-WSL 2 utilise la technologie de virtualisation la plus récente et la plus grande pour exécuter son noyau Linux à l’intérieur d’une machine virtuelle utilitaire légère. Toutefois, WSL 2 n’est pas une expérience de machine virtuelle traditionnelle. Une expérience de machine virtuelle traditionnelle peut être lente à démarrer, est isolée, consomme beaucoup de ressources et nécessite votre temps pour la gérer. WSL 2 n’a pas ces attributs. Il offre toujours les avantages remarquables de WSL 1: Des niveaux élevés d’intégration entre Windows et Linux, des temps de démarrage extrêmement rapides, un faible encombrement des ressources et le meilleur de tous ne nécessitent aucune configuration ou gestion de machine virtuelle. Alors que WSL 2 utilise une machine virtuelle, elle est gérée et s’exécute en arrière-plan, ce qui vous laisse la même expérience utilisateur que WSL 1.
+WSL 2 utilise la technologie de virtualisation la plus récente et la plus grande pour exécuter son noyau Linux à l’intérieur d’une machine virtuelle utilitaire légère. Toutefois, WSL 2 n’est pas une expérience de machine virtuelle traditionnelle. Une expérience de machine virtuelle traditionnelle peut être lente à démarrer, est isolée, consomme beaucoup de ressources et nécessite votre temps pour la gérer. WSL 2 n’a pas ces attributs. Il offre toujours les avantages remarquables de WSL 1 : Des niveaux élevés d’intégration entre Windows et Linux, des temps de démarrage extrêmement rapides, un faible encombrement des ressources et le meilleur de tous ne nécessitent aucune configuration ou gestion de machine virtuelle. Alors que WSL 2 utilise une machine virtuelle, elle est gérée et s’exécute en arrière-plan, ce qui vous laisse la même expérience utilisateur que WSL 1.
 
 ## <a name="increased-file-io-performance"></a>Amélioration des performances d’e/s de fichier
 
