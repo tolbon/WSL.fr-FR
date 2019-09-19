@@ -8,12 +8,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 3addfd27d777731bf92efab42c6bcd4be415779b
-ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
+ms.openlocfilehash: 347c965dbbc2a328590d3a8149a8316979d6793d
+ms.sourcegitcommit: ebc6ae7e7546a6d33644e68788fa0215028859b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020962"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070315"
 ---
 # <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Modification de l’expérience utilisateur entre WSL 1 et WSL 2
 
@@ -32,18 +32,7 @@ Vous trouverez ci-dessous la liste complète des autres modifications que vous p
 Veillez à placer les fichiers auxquels vous accédez fréquemment avec les applications Linux à l’intérieur de votre système de fichiers racine Linux pour bénéficier des avantages en matière de performances des fichiers. Ces fichiers doivent se trouver dans le système de fichiers racine Linux pour bénéficier d’un accès plus rapide au système de fichiers. Nous avons également rendu possible les applications Windows à accéder au système de fichiers racine Linux (comme l’Explorateur de fichiers ! Essayez d’exécuter `explorer.exe .` : dans le répertoire de départ de votre distribution Linux et voyez ce qui se passe, ce qui rendra cette transition beaucoup plus facile. 
 
 ## <a name="accessing-network-applications"></a>Accès aux applications réseau
-Dans les versions initiales de la version préliminaire de WSL 2, vous devez accéder à n’importe quel serveur Linux à partir de Windows à l’aide de l’adresse IP de votre distribution Linux et de tout serveur Windows Server à partir de Linux à l’aide de l’adresse IP de votre ordinateur hôte. Il s’agit d’une valeur temporaire et très élevée de notre liste de priorités à corriger.
-
-### <a name="accessing-linux-applications-from-windows"></a>Accès aux applications Linux à partir de Windows
-Si vous avez un serveur dans un distribution WSL, vous devez trouver l’adresse IP de la machine virtuelle qui alimente votre distribution et s’y connecter avec cette adresse IP. Pour ce faire, procédez comme suit :
-
-- Obtenez l’adresse IP de votre distribution en exécutant la commande `ip addr` à l’intérieur de votre distribution WSL et en la `inet` recherchant sous la `eth0` valeur de l’interface.
-   - Vous pouvez le trouver plus facilement en filtrant la sortie de la commande à l’aide de grep `ip addr | grep eth0`comme suit :.
-- Connectez-vous à votre serveur Linux à l’aide de l’adresse IP que vous avez trouvée ci-dessus.
-
-L’image ci-dessous en présente un exemple en vous connectant à un serveur node. js à l’aide du navigateur Edge.
-
-![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-w2l.jpg)
+Dans les versions initiales de la version préliminaire de WSL 2, vous devrez accéder à n’importe quel serveur Windows à partir de Linux à l’aide de l’adresse IP de votre ordinateur hôte.
 
 ### <a name="accessing-windows-applications-from-linux"></a>Accès aux applications Windows à partir de Linux
 Pour accéder à une application réseau Windows, vous devez utiliser l’adresse IP de votre ordinateur hôte. Pour ce faire, procédez comme suit :
@@ -54,6 +43,19 @@ Pour accéder à une application réseau Windows, vous devez utiliser l’adress
 L’image ci-dessous en présente un exemple en se connectant à un serveur node. js s’exécutant sous Windows via la boucle. 
 
 ![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-l2w.png)
+
+### <a name="accessing-linux-applications-from-windows-only-in-builds-lower-than-18945"></a>Accès aux applications Linux à partir de Windows (uniquement dans les builds inférieures à 18945)
+Si vous avez un serveur dans un distribution WSL, vous devez trouver l’adresse IP de la machine virtuelle qui alimente votre distribution et s’y connecter avec cette adresse IP. Pour ce faire, procédez comme suit :
+
+- Obtenez l’adresse IP de votre distribution en exécutant la commande `ip addr` à l’intérieur de votre distribution WSL et en la `inet` recherchant sous la `eth0` valeur de l’interface.
+   - Vous pouvez le trouver plus facilement en filtrant la sortie de la commande à l’aide de grep `ip addr | grep eth0`comme suit :.
+- Connectez-vous à votre serveur Linux à l’aide de l’adresse IP que vous avez trouvée ci-dessus.
+
+L’image ci-dessous en présente un exemple en vous connectant à un serveur node. js à l’aide du navigateur Edge.
+
+![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-w2l.jpg)
+
+Si votre Build est 18945 ou une version ultérieure, vous pouvez utiliser localhost comme normal. 
 
 ### <a name="other-networking-considerations"></a>Autres considérations relatives à la mise en réseau
 
