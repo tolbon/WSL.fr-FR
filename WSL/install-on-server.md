@@ -2,18 +2,16 @@
 title: Installer le sous-système Linux sur Windows Server
 description: Instructions d’installation du sous-système Linux sur Windows Server.
 keywords: BashOnWindows, bash, WSL, Windows, sous-système Windows pour Linux, windowssubsystem, Ubuntu, Windows Server
-author: scooley
-ms.author: scooley
 ms.date: 05/22/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: d295cf3db99fb45b943369f532f7e807a603061c
-ms.sourcegitcommit: 8b5a8d49b63441478dd540887f534dcc6dd0ba41
+ms.openlocfilehash: 51a2e3f3443ed9b1ba3d8ab79977f22839ee0283
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67308791"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269782"
 ---
 # <a name="windows-server-installation-guide"></a>Guide d’installation de Windows Server
 
@@ -23,9 +21,9 @@ Chez//Build2017, Microsoft a annoncé que le sous-système Windows pour Linux se
 
 ## <a name="enable-the-windows-subsystem-for-linux-wsl"></a>Activer le sous-système Windows pour Linux (WSL)
 
-Avant de pouvoir exécuter Linux distributions sur Windows, vous devez activer la fonctionnalité facultative «sous-système Windows pour Linux» et redémarrer.
+Avant de pouvoir exécuter Linux distributions sur Windows, vous devez activer la fonctionnalité facultative « sous-système Windows pour Linux » et redémarrer.
 
-1. Ouvrez PowerShell en tant qu’administrateur et exécutez:
+1. Ouvrez PowerShell en tant qu’administrateur et exécutez :
     ```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     ```
@@ -37,25 +35,25 @@ Avant de pouvoir exécuter Linux distributions sur Windows, vous devez activer l
 Suivez [ces instructions](install-manual.md) pour télécharger votre distribution Linux préférée.
 
 ## <a name="extract-and-install-a-linux-distro"></a>Extraire et installer un distribution Linux
-Maintenant que vous avez téléchargé un distribution, extrayez son contenu et installez manuellement le distribution:
+Maintenant que vous avez téléchargé un distribution, extrayez son contenu et installez manuellement le distribution :
 
-1. Extrayez le `<distro>.appx` contenu du package, par exemple à l’aide de PowerShell:
+1. Extrayez le `<distro>.appx` contenu du package, par exemple à l’aide de PowerShell :
 
     ```powershell
     Rename-Item ./Ubuntu.appx ./Ubuntu.zip
     Expand-Archive ./Ubuntu.zip ./Ubuntu
     ```
 
-2. Exécutez le lanceur distribution pour terminer l’installation, exécutez l’application distribution Launcher dans le dossier cible `<distro>.exe`, nommé. Par exemple: `ubuntu.exe`, etc.
+2. Exécutez le lanceur distribution pour terminer l’installation, exécutez l’application distribution Launcher dans le dossier cible `<distro>.exe`, nommé. Par exemple : `ubuntu.exe`, etc.
 
     ![Ubuntu distribution développé sur Windows Server](media/server-appx-expand.png)
 
-    > **Dépannage**
+    > **Résolution des problèmes**
     > * **Échec de l’installation avec l’erreur 0x8007007e**: Cette erreur se produit lorsque votre système ne prend pas en charge WSL. Vérifiez que :
     >   * Vous exécutez Windows Build 16215 ou version ultérieure. [Vérifiez votre Build](troubleshooting.md#check-your-build-number).
     >   * Le composant facultatif sous-système Windows pour Linux est activé et l’ordinateur a redémarré.  Vérifiez [que WSL est activé](troubleshooting.md#confirm-wsl-is-enabled).
     
-3. Ajoutez votre chemin distribution au chemin d’accès de l'`C:\Users\Administrator\Ubuntu` environnement Windows (dans cet exemple), par exemple, à l’aide de PowerShell:
+3. Ajoutez votre chemin distribution au chemin d’accès de l'`C:\Users\Administrator\Ubuntu` environnement Windows (dans cet exemple), par exemple, à l’aide de PowerShell :
         
     ```powershell
     $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
