@@ -6,18 +6,20 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: af70bf567cd548d0ca84bbe535003052ec49256b
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: 386b6793f00300bc9dabd1613cfd69b19d222f0b
+ms.sourcegitcommit: eb7b572388c6bddbf6e8ad8d01927660fe66aecf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269582"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71692466"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
 Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes :
 
-- Vérifiez que vous avez installé WSL (vous trouverez des instructions pour le faire [ici](./install-win10.md)) et que vous exécutez Windows 10 Build 18917 ou une version ultérieure.
+> WSL 2 est disponible uniquement dans Windows 10 versions 18917 ou ultérieures
+
+- Vérifiez que vous avez installé WSL (vous trouverez des instructions pour le faire [ici](./install-win10.md)) et que vous exécutez Windows 10 **Build 18917** ou une version ultérieure.
    - Pour vous assurer que vous utilisez la version 18917 ou une version ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Fast ». 
    - Vous pouvez vérifier votre version de Windows en ouvrant l’invite de commandes `ver` et en exécutant la commande.
 - Activer le composant facultatif « Plateforme de machine virtuelle »
@@ -51,7 +53,7 @@ Ainsi, toutes les nouvelles distributions que vous installerez seront initialis�
 
 ## <a name="finish-with-verifying-what-versions-of-wsl-your-distro-are-using"></a>Pour terminer, vérifiez quelles versions de WSL utilisent vos distributions.
 
-Pour vérifier quelles versions de WSL utilise chaque distribution, utilisez la commande suivante :
+Pour vérifier les versions de WSL que chaque distribution utilise, utilisez la commande suivante (disponible uniquement dans Windows Build 18917 ou version ultérieure) :
 
 `wsl --list --verbose` ou `wsl -l -v`
 
