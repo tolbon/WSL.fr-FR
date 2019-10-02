@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 9dfd4704eee537c053d874d6fcee47b70efbc33c
-ms.sourcegitcommit: 212d3e0092dbc584a8422de47599a4ce46f0f016
+ms.openlocfilehash: 0dcf4519877fac5b838d4542dfd088cb6d233353
+ms.sourcegitcommit: 0fa3b02b36dc49779e165e689dfded4f3b727124
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70902424"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71249193"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-18990"></a>Build 18990
+Pour des informations Windows d’ordre général sur la build 18990, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).
+
+* Améliorer les performances des listes de répertoires dans \\wsl $
+* [WSL2] Injecter un entropie de démarrage supplémentaire [GH 4416]
+* [WSL2] Correctif pour Windows Interop lors de l’utilisation de su / sudo [GH 4465]
+
 
 ## <a name="build-18980"></a>Build 18980
 Pour obtenir des informations Windows d’ordre général sur la build 18980, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).

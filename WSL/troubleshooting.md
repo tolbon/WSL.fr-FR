@@ -2,19 +2,17 @@
 title: Résolution des problèmes du sous-système Windows pour Linux
 description: Cet article fournit des informations détaillées sur les erreurs et problèmes courants auxquels peuvent être confrontés les utilisateurs exécutant Linux sur le sous-système Windows pour Linux.
 keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, Ubuntu
-author: scooley
-ms.author: scooley
 ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: a73de13853c124de38cae1b9c6c51d0ee9978d44
-ms.sourcegitcommit: f1780bf174c67c531864497ae78cf3f26ef68503
+ms.openlocfilehash: 7b7938e7a6a636b012f4b84a8c93d5dfc0a4a4cf
+ms.sourcegitcommit: aef7bb1e851089b3311d497a3be0da79558feb4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71205975"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71279250"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes liés au sous-système Windows pour Linux
 
@@ -67,7 +65,7 @@ Pour résoudre les problèmes liés à `udev`, procédez comme suit :
    exit 101
    ```
   
-2. Ajoutez des autorisations d’exécution à `/usr/sbin/policy-rc.d`.
+2. Ajoutez des autorisations d’exécution à `/usr/sbin/policy-rc.d`
    ``` BASH
    chmod +x /usr/sbin/policy-rc.d
    ```
@@ -188,3 +186,10 @@ sudo apt-get purge openssh-server
 sudo apt-get install openssh-server
 ```
 
+### <a name="the-referenced-assembly-could-not-be-found-when-enabling-the-wsl-optional-feature"></a>« L’assembly référencé est introuvable. » lors de l’activation de la fonctionnalité facultative WSL
+
+Cette erreur est liée à un mauvais état d’installation. Effectuez les étapes suivantes pour essayer de résoudre ce problème :
+
+* Si vous exécutez la commande d’activation de la fonctionnalité WSL à partir de PowerShell, essayez d’utiliser l’interface GUI au lieu d’ouvrir le menu Démarrer, recherchez « Activer ou désactiver les fonctionnalités Windows », puis dans la liste, sélectionnez « Sous-système Windows pour Linux » qui installera le composant facultatif.
+* Mettez à jour votre version de Windows en accédant à Paramètres, Mises à jour, puis en cliquant sur « Rechercher les mises à jour ».
+* Si les deux échouent et que vous devez accéder à WSL, procédez à une mise à niveau sur place en réinstallant Windows 10 avec un support d’installation et en sélectionnant « Tout conserver » pour vous assurer que vos applications et vos fichiers sont conservés. Vous trouverez des instructions pour ce faire dans la [page Réinstaller Windows 10](https://support.microsoft.com/en-us/help/4000735/windows-10-reinstall).
