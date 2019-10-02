@@ -2,18 +2,16 @@
 title: Forum Aux Questions (FAQ)
 description: Forum aux questions sur le sous-système Windows pour Linux.
 keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, FAQ
-author: taraj
-ms.author: taraj
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: e3376f8dff83262577bc52fb3ac368b70b21d922
-ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
+ms.openlocfilehash: 78d0dc3db6f0c173cec64c9830df981568320717
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122762"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269742"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Forum aux questions sur le sous-système Windows pour Linux
 
@@ -131,7 +129,7 @@ Sur les builds antérieures à 1709 (16299), ouvrez une invite de commandes et e
   lxrun /uninstall /full
   ```
   
-Les distributions WSL installées à partir du Store peuvent être désinstallées comme n’importe quelle autre application Windows, en cliquant avec le bouton droit sur la vignette de l’application et en cliquant sur Désinstaller ou via PowerShell à l’aide de l’[applet de commande `Remove-AppxPackage`](https://technet.microsoft.com/en-us/library/hh856038.aspx).
+Les distributions WSL installées à partir du Store peuvent être désinstallées comme n’importe quelle autre application Windows, en cliquant avec le bouton droit sur la vignette de l’application et en cliquant sur Désinstaller ou via PowerShell à l’aide de l’[`Remove-AppxPackage`applet de commande ](https://technet.microsoft.com/en-us/library/hh856038.aspx).
 
 ## <a name="why-does-ping-generate-permission-denied-errors"></a>Pourquoi la commande ping génère des erreurs d’autorisation refusée ?
 Dans les builds WSL antérieures à 14926, l’exécution de la commande ping via une console avec élévation de privilèges nécessitait WSL. Ce problème a été résolu dans la build 14926 et ultérieur.
