@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 78d0dc3db6f0c173cec64c9830df981568320717
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: 911bde69540bb8bb7a5ee40d8a9f4d6995f4fdaa
+ms.sourcegitcommit: 3f35034581456a2008aa5ed1b623715dfef64608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269742"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71934902"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Forum aux questions sur le sous-système Windows pour Linux
 
@@ -145,7 +145,7 @@ WSL ne prend pas en charge l’exécution dans une console héritée. Pour désa
 1. Cliquez sur OK
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Pourquoi est-ce que je reçois « Erreur : 0x80040154 » quand j’exécute bash.exe après la mise à niveau de Windows ?
-La fonctionnalité Sous-système Windows pour Linux peut être désactivée au cours d’une mise à jour de Windows. Dans ce cas, la fonctionnalité Windows doit être réactivée. Pour obtenir des instructions sur l’activation de la fonctionnalité Sous-système Windows pour Linux, consultez le [guide d’installation](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+La fonctionnalité Sous-système Windows pour Linux peut être désactivée au cours d’une mise à jour de Windows. Dans ce cas, la fonctionnalité Windows doit être réactivée. Pour obtenir des instructions sur l’activation de la fonctionnalité Sous-système Windows pour Linux, consultez le [guide d’installation](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-the-windows-subsystem-for-linux).
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>Comment changer la langue d’affichage de WSL ?
 Le processus d’installation de WSL tente de changer automatiquement les paramètres régionaux d’Ubuntu de sorte qu’ils correspondent à ceux de votre installation Windows. Si vous souhaitez éviter ce comportement, vous pouvez exécuter cette commande pour changer les paramètres régionaux d’Ubuntu une fois l’installation terminée. Vous devrez relancer bash.exe pour que ce changement prenne effet.
