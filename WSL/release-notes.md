@@ -8,19 +8,36 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 0dcf4519877fac5b838d4542dfd088cb6d233353
-ms.sourcegitcommit: 0fa3b02b36dc49779e165e689dfded4f3b727124
+ms.openlocfilehash: b92c20bad50d0c58da05bb0c8f26a69d4c0b2970
+ms.sourcegitcommit: 050f6095e92469b903db8ddf9356df5b22b21804
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71249193"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71910301"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-18995"></a>Build 18995
+Pour des informations Windows d’ordre général sur la build 18995, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).
+
+* [WSL2] Correction d’un problème où les montages DrvFs cessaient de fonctionner après l’interruption d’une opération (par ex. ctrl-c) [GH 4377]
+* [WSL2] Correction de la gestion des très longs messages hvsocket [GH 4105]
+* [WSL2] Correction du problème avec l’interopérabilité quand stdin est un fichier [GH 4475]
+* [WSL2] Correction du plantage du service lors d’un état inattendu du réseau [GH 4474]
+* [WSL2] Interrogation du nom de distribution du serveur d’interopérabilité si le processus actuel n’a pas la variable d’environnement
+* [WSL2] Correction du problème avec l’interopérabilité quand stdin est un fichier
+* [WSL2] Mise à jour de la version du noyau Linux vers 4.19.72
+* [WSL2] Ajout de la possibilité de spécifier des paramètres de ligne de commande du noyau supplémentaires via .wslconfig
+```
+[wsl2]
+kernelCommandLine = <string> # Additional kernel command line arguments
+
+```
 
 ## <a name="build-18990"></a>Build 18990
 Pour des informations Windows d’ordre général sur la build 18990, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).
 
-* Améliorer les performances des listes de répertoires dans \\wsl $
+* Améliorer les performances des listes de répertoires dans \\\\wsl$
 * [WSL2] Injecter un entropie de démarrage supplémentaire [GH 4416]
 * [WSL2] Correctif pour Windows Interop lors de l’utilisation de su / sudo [GH 4465]
 
@@ -38,7 +55,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 18980, v
 * Ajout de la possibilité de définir un nom d’utilisateur par défaut dans /etc/wsl.conf :
 ```
 [user]
-default=root
+default=<string>
 ```
 
 ## <a name="build-18975"></a>Build 18975
@@ -120,7 +137,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 18890, v
 * Blocage dans le code de suppression epoll [GH 3922]
 * Gestion des espaces dans les arguments --import et –export [GH 3932]
 * L’extension des fichiers mmap ne fonctionne pas correctement [GH 3939]
-* Correction du problème lié à l’accès ARM64 \\wsl$ qui ne fonctionne pas correctement
+* Correction du problème où l’accès ARM64 \\\\wsl$ ne fonctionnait pas correctement
 * Ajout d’une meilleure icône par défaut pour wsl.exe
 
 ## <a name="build-18342"></a>Build 18342

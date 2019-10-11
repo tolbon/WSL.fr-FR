@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 51099f21fe44fd8c7e8682332c939fbe6d5e5827
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: e69810625d08baf734683ff06231f79132ce1519
+ms.sourcegitcommit: e1cc2fe4de0fa03d5aea14f6b328f1bb9d0c59be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269868"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999395"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Gérer et configurer le sous-système Windows pour Linux
 
@@ -277,6 +277,20 @@ Section : `[automount]`
 Par défaut, WSL définit les options uid et gid sur la valeur de l’utilisateur par défaut (dans une distribution Ubuntu, l’utilisateur par défaut est créé avec uid=1000,gid=1000). Si l’utilisateur spécifie une option gid ou uid explicitement par le biais de cette clé, la valeur associée est remplacée. Dans le cas contraire, la valeur par défaut est toujours ajoutée.
 
 **Remarque :** Ces options sont appliquées en tant qu’options de montage pour tous les lecteurs montés automatiquement. Pour changer les options d’un lecteur spécifique uniquement, utilisez /etc/fstab à la place.
+
+##### <a name="mount-options"></a>Options de montage
+
+La définition des différentes options de montage pour les lecteurs Windows (DrvFs) peut contrôler la façon dont les autorisations de fichier sont calculées pour les fichiers Windows. Les options suivantes sont disponibles :
+
+| Clé | Description | Default |
+|:----|:----|:----|
+|uid| identifiant utilisateur utilisé pour le propriétaire de tous les fichiers | identifiant utilisateur par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
+|gid| identifiant de groupe utilisé pour le propriétaire de tous les fichiers | identifiant de groupe par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
+|umask | masque octal des autorisations à exclure pour tous les fichiers et répertoires | 000
+|fmask | masque octal des autorisations à exclure pour tous les fichiers | 000
+|dmask | masque octal des autorisations à exclure pour tous les répertoires | 000
+
+**Remarque :** Les masques d’autorisation passent par une opération OR logique avant d’être appliqués aux fichiers et aux répertoires. 
 
 #### <a name="network"></a>réseau
 
