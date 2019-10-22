@@ -8,14 +8,21 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: b92c20bad50d0c58da05bb0c8f26a69d4c0b2970
-ms.sourcegitcommit: 050f6095e92469b903db8ddf9356df5b22b21804
+ms.openlocfilehash: dbc041c98081563d4f77b9fc186698fad8299c0d
+ms.sourcegitcommit: 4beb93f80749ab4c8c6f0e6920ab7f809567e243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71910301"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549572"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-19002"></a>Build 19002
+Pour des informations Windows d’ordre général sur la build 19002, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/).
+
+* [WSL] Correction du problème de gestion de certains caractères Unicode : https://github.com/microsoft/terminal/issues/2770
+* [WSL] Correction de cas rares où des distributions pouvaient être désinscrites si elles étaient lancées immédiatement après une mise à niveau build-à-build.
+* [WSL] Correction d’un problème mineur avec wsl. exe --shutdown où les minuteurs inactifs d’instance n’étaient pas annulés.
 
 ## <a name="build-18995"></a>Build 18995
 Pour des informations Windows d’ordre général sur la build 18995, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).
@@ -40,7 +47,6 @@ Pour des informations Windows d’ordre général sur la build 18990, visitez l
 * Améliorer les performances des listes de répertoires dans \\\\wsl$
 * [WSL2] Injecter un entropie de démarrage supplémentaire [GH 4416]
 * [WSL2] Correctif pour Windows Interop lors de l’utilisation de su / sudo [GH 4465]
-
 
 ## <a name="build-18980"></a>Build 18980
 Pour obtenir des informations Windows d’ordre général sur la build 18980, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).
