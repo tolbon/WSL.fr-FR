@@ -6,12 +6,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: df47e656cf83e0b13aa8eb3f210e010d6a85bfd8
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: 99215a3bccc3d0b07e8ed4b7629913af3765aec0
+ms.sourcegitcommit: d35870009477813aa4c8fe4e401af4bddef4a47c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269793"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778821"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Télécharger manuellement le sous-système Windows pour les packages distribution Linux
 
@@ -19,7 +19,7 @@ Il existe plusieurs scénarios dans lesquels il est possible que vous ne soyez p
 
 Dans ce cas, bien que WSL soit disponible, comment télécharger et installer Linux distributions dans WSL si vous ne pouvez pas accéder au Store ?
 
-> Remarque : **Les environnements d’interpréteur de ligne de commande, notamment cmd, PowerShell et Linux/WSL distributions, ne sont pas autorisés à s’exécuter sur le mode Windows 10 S**. Cette restriction existe afin de garantir l’intégrité et les objectifs de sécurité fournis par le mode S : Pour plus d’informations, lisez [ce billet](https://blogs.msdn.microsoft.com/commandline/2017/05/18/will-linux-distros-run-on-windows-10-s/) .
+> Remarque : **les environnements de l’interpréteur de ligne de commande, notamment cmd, PowerShell et Linux/WSL distributions, ne sont pas autorisés à s’exécuter sur le mode Windows 10 S**. Cette restriction existe afin de garantir l’intégrité et les objectifs de sécurité fournis par le mode : lisez [ce billet](https://blogs.msdn.microsoft.com/commandline/2017/05/18/will-linux-distros-run-on-windows-10-s/) pour plus d’informations.
 
 ## <a name="downloading-distros"></a>Téléchargement de distributions
 
@@ -29,11 +29,11 @@ Si l’application Microsoft Store n’est pas disponible, vous pouvez télécha
 * [Ubuntu 16,04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
 * [Kali Linux](https://aka.ms/wsl-kali-linux-new)
-* [OpenSUSE LEAP 42](https://aka.ms/wsl-opensuse-42)
-* [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
+* [OpenSUSE Leap 42](https://aka.ms/wsl-opensuse-42)
+* [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
 * [Fedora Remix pour WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
 
-Cela entraîne le `<distro>.appx` téléchargement des packages dans un dossier de votre choix. Suivez les [instructions d’installation](#installing-your-distro) pour installer vos distribution téléchargés.
+Cela entraîne le téléchargement des packages `<distro>.appx` dans un dossier de votre choix. Suivez les [instructions d’installation](#installing-your-distro) pour installer vos distribution téléchargés.
 
 ## <a name="downloading-distros-via-the-command-line"></a>Téléchargement de distributions via la ligne de commande
 Si vous préférez, vous pouvez également télécharger vos distribution préférés à l’aide de la ligne de commande :
@@ -46,7 +46,7 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseB
 ```
 
 > [!TIP]
-> Si le téléchargement prend beaucoup de temps, désactivez la barre de progression en définissant`$ProgressPreference = 'SilentlyContinue'`
+> Si le téléchargement prend beaucoup de temps, désactivez la barre de progression en définissant `$ProgressPreference = 'SilentlyContinue'`
 
 ### <a name="download-using-curl"></a>Télécharger à l’aide de la boucle
 La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend l' [utilitaire de ligne de commande de boucles](https://curl.haxx.se/) populaires avec lequel vous pouvez appeler des requêtes Web (par exemple, des commandes HTTP, http, put, etc.) à partir de la ligne de commande. Vous pouvez utiliser `curl.exe` pour télécharger les distributions ci-dessus :
@@ -55,16 +55,16 @@ La mise à jour Spring 2018 de Windows 10 (ou version ultérieure) comprend l' [
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 ```
 
-Dans l’exemple ci- `curl.exe` dessus, est exécuté ( `curl`pas seulement) pour garantir que, dans PowerShell, l’exécutable Real bouclé est appelé, et non l’alias PowerShell pour [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6)
+Dans l’exemple ci-dessus, `curl.exe` est exécuté (pas seulement `curl`) pour s’assurer que, dans PowerShell, l’exécutable Real bouclé est appelé, et non l’alias PowerShell pour [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6)
 
-> Remarque : L' `curl` utilisation de peut être préférable si vous devez appeler/écrire des étapes de téléchargement à l’aide de `.bat` CMD Shell et/ou  /  `.cmd` de scripts.
+> Remarque : l’utilisation de `curl` peut être préférable si vous devez appeler/écrire des étapes de téléchargement à l’aide de l’interpréteur de commandes et/ou des `.bat` / des scripts de`.cmd`.
 
 ## <a name="installing-your-distro"></a>Installation de votre distribution
-Si vous utilisez Windows 10, vous pouvez installer votre distribution avec PowerShell. Accédez simplement au dossier contenant le distribution téléchargé à partir de la version ci-dessus et, dans ce `app_name` répertoire, exécutez la commande suivante, où est le nom de votre fichier distribution. Appx.  
+Si vous utilisez Windows 10, vous pouvez installer votre distribution avec PowerShell. Accédez simplement au dossier contenant le distribution téléchargé à partir de la version ci-dessus et, dans ce répertoire, exécutez la commande suivante, où `app_name` est le nom de votre fichier distribution. Appx.  
 ```Powershell
 Add-AppxPackage .\app_name.appx
 ```
 
 Si vous utilisez Windows Server, vous trouverez les instructions d’installation sur la page de documentation de [Windows Server](install-on-server.md) .
 
-Une fois votre distribution installé, reportez-vous à la page [étapes Intilization](initialize-distro.md) pour initialiser votre nouveau distribution.
+Une fois votre distribution installé, reportez-vous à la page [étapes d’initialisation](initialize-distro.md) pour initialiser votre nouveau distribution.
