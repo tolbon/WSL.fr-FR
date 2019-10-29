@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 7b7938e7a6a636b012f4b84a8c93d5dfc0a4a4cf
-ms.sourcegitcommit: aef7bb1e851089b3311d497a3be0da79558feb4e
+ms.openlocfilehash: 24a899df78e705630c6cb95f8719594aec340c5c
+ms.sourcegitcommit: 600853005bd2b42d6e47bf36ebed4b868ff2af26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71279250"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72987526"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes liés au sous-système Windows pour Linux
 
@@ -124,7 +124,7 @@ L’exécution d’une commande ping dans WSL nécessite des privilèges d’adm
 Si, alors que vous utilisez Bash, celui-ci se bloque et ne répond pas aux entrées, aidez-nous à diagnostiquer le problème en collectant une image mémoire et en nous la communiquant. Notez que la procédure ci-après entraînera le plantage de votre système. Suivez-la uniquement si vous êtes à l’aise avec ce type d’opération, ou enregistrez votre travail au préalable.  <br/>
 Pour collecter une image mémoire :
 1. Changez le type d’image mémoire en choisissant « Image mémoire complète ». Lors de ce changement, prenez note du type d’image actuel.
-2. Suivez [cette procédure](https://blogs.technet.microsoft.com/askpfeplat/2015/04/05/how-to-force-a-diagnostic-memory-dump-when-a-computer-hangs/) pour configurer une commande de clavier produisant un plantage.
+2. Suivez [cette procédure](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) pour configurer une commande de clavier produisant un plantage.
 3. Reproduisez le blocage.
 4. Faites planter le système à l’aide de la séquence de touches définie à l’étape 2.
 5. Le système plante et collecte l’image mémoire.
