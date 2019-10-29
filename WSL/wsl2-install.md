@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 386b6793f00300bc9dabd1613cfd69b19d222f0b
-ms.sourcegitcommit: eb7b572388c6bddbf6e8ad8d01927660fe66aecf
+ms.openlocfilehash: d4ce22fda7baea77c0a8d3d7101d0ab09b78e8f8
+ms.sourcegitcommit: d110e2bbcd92438781453137ba0ab747cddb28e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71692466"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72998252"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
@@ -21,7 +21,7 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 
 - Vérifiez que vous avez installé WSL (vous trouverez des instructions pour le faire [ici](./install-win10.md)) et que vous exécutez Windows 10 **Build 18917** ou une version ultérieure.
    - Pour vous assurer que vous utilisez la version 18917 ou une version ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Fast ». 
-   - Vous pouvez vérifier votre version de Windows en ouvrant l’invite de commandes `ver` et en exécutant la commande.
+   - Vous pouvez vérifier votre version de Windows en ouvrant l’invite de commandes et en exécutant la commande `ver`.
 - Activer le composant facultatif « Plateforme de machine virtuelle »
 - Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
 - Vérifier les versions de WSL que vos distributions utilisent
@@ -68,3 +68,6 @@ Vous trouverez ci-dessous des erreurs associées et des suggestions de correctio
    
 * **Erreur lors d’une tentative de mise à niveau : `Invalid command line option: wsl --set-version Ubuntu 2`**
     * Vérifiez que le sous-système Windows pour Linux est activé et que vous utilisez Windows version de build 18917 ou ultérieure. Pour activer WSL, exécutez cette commande dans une invite PowerShell avec des privilèges d’administrateur : `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. Vous trouverez les instructions complètes de l’installation de WSL [ici](./install-win10.md).
+
+* **L’opération demandée n’a pas pu être effectuée en raison d’une limitation du système de disque virtuel. Les fichiers de disque dur virtuel doivent être décompressés et déchiffrés et ne doivent pas être éparpillés.**
+    * Vérifiez [WSL GitHub thread #4103](https://github.com/microsoft/WSL/issues/4103) où ce problème est suivi pour obtenir des informations mises à jour.

@@ -69,7 +69,7 @@ Vous trouverez ci-dessous des erreurs associées et des suggestions de correctio
 
 * **Échec de l’installation avec l’erreur 0x80070003**
     * Le sous-système Windows pour Linux s’exécute uniquement sur votre lecteur système (en général, il s’agit de votre lecteur `C:`). Vérifiez que les distributions sont stockées sur votre lecteur système :  
-    * Ouvrez **Paramètres ** -> **Stockage** -> **Autres paramètres de stockage : Modifier l’emplacement d’enregistrement du nouveau contenu **
+    * Ouvrez **Paramètres ** -> **Stockage** -> **Autres paramètres de stockage : Modifier l’emplacement d’enregistrement du nouveau contenu**
     ![Image des paramètres système pour installer les applications sur le lecteur C:](media/AppStorage.png)
     
     
