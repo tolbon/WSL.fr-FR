@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: d4ce22fda7baea77c0a8d3d7101d0ab09b78e8f8
-ms.sourcegitcommit: d110e2bbcd92438781453137ba0ab747cddb28e8
+ms.openlocfilehash: e3593aaf0e1c176cbeec2d3ba7d8eca1ede6b1ec
+ms.sourcegitcommit: d74fab7469f4e589ab0bf4418be575381a3f72a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72998252"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240362"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
@@ -31,8 +31,8 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 Ouvrez PowerShell en tant qu’administrateur et exécutez :
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
 Cela permet de s’assurer que les composants facultatifs plateforme de machine virtuelle et sous-système Windows pour Linux sont installés. Une fois que vous avez exécuté ces commandes, vous devez redémarrer votre ordinateur. 
