@@ -22,8 +22,8 @@ Cette page présente les différences d’expérience utilisateur entre WSL 1 et
 
 Vous trouverez ci-dessous la liste complète des autres modifications que vous pouvez remarquer :
 
-- WSL 2 utilise un [disque dur virtuel](https://en.wikipedia.org/wiki/VHD_(file_format)) (VHD) pour stocker vos fichiers et, si vous atteignez sa taille maximale, vous devrez peut-être le développer
-- Lors du démarrage de, WSL 2 utilise à présent une petite proportion de mémoire
+- WSL 2 utilise un [disque dur virtuel](https://en.wikipedia.org/wiki/VHD_(file_format)) (VHD) pour stocker vos fichiers et, si vous atteignez sa taille maximale, vous devrez peut-être l'étendre
+- WSL 2 utilise à présent une petite proportion de mémoire lors du démarrage
 - La vitesse d’accès aux fichiers entre systèmes d’exploitation sera plus lente dans les versions préliminaires initiales
 
 ## <a name="place-your-linux-files-in-your-linux-root-file-system"></a>Placez vos fichiers Linux dans votre système de fichiers racine Linux
@@ -33,19 +33,19 @@ Veillez à placer les fichiers auxquels vous accédez fréquemment avec les appl
 Dans les versions initiales de la version préliminaire de WSL 2, vous devrez accéder à n’importe quel serveur Windows à partir de Linux à l’aide de l’adresse IP de votre ordinateur hôte.
 
 ### <a name="accessing-windows-applications-from-linux"></a>Accès aux applications Windows à partir de Linux
-Pour accéder à une application réseau Windows, vous devez utiliser l’adresse IP de votre ordinateur hôte. Pour ce faire, procédez comme suit :
+Pour accéder à une application réseau Windows, vous devez utiliser l’adresse IP de votre ordinateur hôte. Pour ce faire, procédez comme suit :
 
-- Obtenez l’adresse IP de votre ordinateur hôte en exécutant la commande `cat /etc/resolv.conf` et en copiant l’adresse IP à la `nameserver`suite du terme. 
+- Obtenez l’adresse IP de votre ordinateur hôte en exécutant la commande `cat /etc/resolv.conf` et en copiant l’adresse IP à la suite du terme `nameserver`. 
 - Connectez-vous à n’importe quel serveur Windows à l’aide de l’adresse IP copiée.
 
-L’image ci-dessous en présente un exemple en se connectant à un serveur node. js s’exécutant sous Windows via la boucle. 
+L’image ci-dessous présente un exemple de connexion à un serveur Node.js s’exécutant sous Windows via curl. 
 
 ![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-l2w.png)
 
-### <a name="accessing-linux-applications-from-windows-only-in-builds-lower-than-18945"></a>Accès aux applications Linux à partir de Windows (uniquement dans les builds inférieures à 18945)
-Si vous avez un serveur dans un distribution WSL, vous devez trouver l’adresse IP de la machine virtuelle qui alimente votre distribution et s’y connecter avec cette adresse IP. Pour ce faire, procédez comme suit :
+### <a name="accessing-linux-applications-from-windows-only-in-builds-lower-than-18945"></a>Accès aux applications Linux à partir de Windows (uniquement dans les builds inférieurs à 18945)
+Si vous avez un serveur dans une distribution WSL, vous devez trouver l’adresse IP de la machine virtuelle qui alimente votre distribution et vous y connecter avec cette adresse IP. Pour ce faire, procédez comme suit :
 
-- Obtenez l’adresse IP de votre distribution en exécutant la commande `ip addr` à l’intérieur de votre distribution WSL et en la `inet` recherchant sous la `eth0` valeur de l’interface.
+- Obtenez l’adresse IP de votre distribution en exécutant la commande `ip addr` à l’intérieur de votre distribution WSL et en la recherchant sous la valeur `inet` de l’interface `eth0`.
    - Vous pouvez le trouver plus facilement en filtrant la sortie de la commande à l’aide de grep `ip addr | grep eth0`comme suit :.
 - Connectez-vous à votre serveur Linux à l’aide de l’adresse IP que vous avez trouvée ci-dessus.
 
@@ -62,7 +62,7 @@ Lorsque vous utilisez des adresses IP distantes pour vous connecter à vos appli
 ## <a name="understanding-wsl-2-uses-a-vhd-and-what-to-do-if-you-reach-its-max-size"></a>La compréhension de WSL 2 utilise un disque dur virtuel et explique ce qu’il faut faire si vous atteignez sa taille maximale
 WSL 2 stocke tous vos fichiers Linux à l’intérieur d’un VHD qui utilise le système de fichiers ext4. Ce disque dur virtuel est redimensionné automatiquement en fonction de vos besoins de stockage. Ce disque dur virtuel a également une taille maximale initiale de 256 Go. Si la taille de votre distribution est supérieure à 256 Go, vous verrez des erreurs indiquant que l’espace disque est insuffisant. Vous pouvez résoudre ces problème en développant la taille du disque dur virtuel. Vous trouverez ci-dessous des instructions sur la procédure à suivre :
 
-1. Arrêter toutes les instances WSL à `wsl --shutdown` l’aide de la commande
+1. Arrêter toutes les instances WSL à l’aide de la commande `wsl --shutdown`
 2. Recherchez le nom de votre package d’installation distribution « PackageFamilyName »
    - Dans une invite PowerShell (où « distribution » est le nom de votre distribution), tapez :
       - `Get-AppxPackage -Name "*<distro>*" | Select PackageFamilyName`
