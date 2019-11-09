@@ -57,7 +57,7 @@ Si votre Build est 18945 ou une version ultérieure, vous pouvez utiliser localh
 
 ### <a name="other-networking-considerations"></a>Autres considérations relatives à la mise en réseau
 
-Lorsque vous utilisez des adresses IP distantes pour vous connecter à vos applications, celles-ci sont traitées comme des connexions à partir du réseau local (LAN). Cela signifie que vous devez vous assurer que votre application peut accepter des connexions LAN, par exemple : Vous devrez peut-être lier votre application `0.0.0.0` à au `127.0.0.1`lieu de. Par exemple, dans Python à l’aide de la fiole, vous pouvez `app.run(host='0.0.0.0')`le faire avec la commande suivante :. Gardez à l’esprit la sécurité lorsque vous apportez ces modifications, car cela permettra d’établir des connexions à partir de votre réseau local. 
+Lorsque vous utilisez des adresses IP distantes pour vous connecter à vos applications, celles-ci sont traitées comme des connexions à partir du réseau local (LAN). Cela signifie que vous devez vous assurer que votre application peut accepter des connexions LAN, par exemple : vous devrez peut-être lier votre application à « 0.0.0.0 » au lieu de « 127.0.0.1 ». Par exemple, en utilisant Flask sous Python, vous pouvez le faire avec la commande « app.run(host='0.0.0.0') ». Gardez à l’esprit la sécurité lorsque vous apportez ces modifications, car cela permettra d'autoriser des connexions à partir de votre réseau local. 
 
 ## <a name="understanding-wsl-2-uses-a-vhd-and-what-to-do-if-you-reach-its-max-size"></a>La compréhension de WSL 2 utilise un disque dur virtuel et explique ce qu’il faut faire si vous atteignez sa taille maximale
 WSL 2 stocke tous vos fichiers Linux à l’intérieur d’un VHD qui utilise le système de fichiers ext4. Ce disque dur virtuel est redimensionné automatiquement en fonction de vos besoins de stockage. Ce disque dur virtuel a également une taille maximale initiale de 256 Go. Si la taille de votre distribution est supérieure à 256 Go, vous verrez des erreurs indiquant que l’espace disque est insuffisant. Vous pouvez résoudre ces problème en développant la taille du disque dur virtuel. Vous trouverez ci-dessous des instructions sur la procédure à suivre :
@@ -82,7 +82,7 @@ WSL 2 stocke tous vos fichiers Linux à l’intérieur d’un VHD qui utilise le
       - `sudo resize2fs /dev/sdXX`
          - Veillez à utiliser la valeur que vous avez copiée précédemment et vous devrez peut- `apt install resize2fs`être utiliser :.
 
-Attention : En général, vous ne devez pas modifier, déplacer ou accéder aux fichiers associés à WSL situés à l’intérieur de votre dossier AppData à l’aide des outils ou des éditeurs Windows. Cela peut entraîner la corruption de vos distribution Linux.
+Attention : De manière générale, évitez de modifier, de déplacer ou d'accéder aux fichiers associés à WSL situés dans votre dossier AppData à l’aide des outils ou des éditeurs Windows. Cela peut corrompre votre distribution Linux.
 
 ## <a name="wsl-2-will-use-some-memory-on-startup"></a>WSL 2 va utiliser de la mémoire au démarrage
 WSL 2 utilise une machine virtuelle utilitaire légère sur un véritable noyau Linux pour offrir des performances optimales pour le système de fichiers et une compatibilité complète des appels système tout en étant aussi clair, rapide, intégré et réactif que WSL 1. Cette machine virtuelle de l’utilitaire présente un faible encombrement mémoire et alloue de la mémoire à l’adresse virtuelle au démarrage. Il est configuré pour démarrer avec une petite partie de la mémoire totale.
