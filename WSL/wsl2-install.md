@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: e3593aaf0e1c176cbeec2d3ba7d8eca1ede6b1ec
-ms.sourcegitcommit: d74fab7469f4e589ab0bf4418be575381a3f72a0
+ms.openlocfilehash: 91994f3a075436c022acb9dadeea072142687b72
+ms.sourcegitcommit: cf6d8e277ed3102f8f879b9f39ba0966d4ea6135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240362"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164344"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
@@ -28,16 +28,24 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Activez le composant facultatif « plateforme de machine virtuelle » et assurez-vous que WSL est activé
 
-Ouvrez PowerShell en tant qu’administrateur et exécutez :
+Pour activer le composant « plateforme d’ordinateur virtuel », ouvrez PowerShell en tant qu’administrateur et exécutez la commande ci-dessous. Si vous installez WSL pour la première fois, sélectionnez « non » quand vous êtes invité à redémarrer, car vous devrez redémarrer votre ordinateur quand même après avoir installé le composant facultatif « sous-système Windows pour Linux ».
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-Cela permet de s’assurer que les composants facultatifs plateforme de machine virtuelle et sous-système Windows pour Linux sont installés. Une fois que vous avez exécuté ces commandes, vous devez redémarrer votre ordinateur. 
+Vous devez également vous assurer que le composant facultatif sous-système Windows pour Linux est activé. Pour ce faire, vous pouvez exécuter la commande suivante à partir d’une fenêtre PowerShell avec des privilèges d’administrateur : 
+
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
+Redémarrez votre ordinateur pour terminer l’installation des deux composants.
+
 
 ## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
+
+Si vous n’avez pas de distribution Linux installé, reportez-vous à la page relative à l' [installation sur Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) docs pour obtenir des instructions sur l’installation d’un. 
 
 Dans PowerShell, exécutez :
 
