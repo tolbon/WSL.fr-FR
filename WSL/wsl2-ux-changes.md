@@ -27,7 +27,7 @@ Vous trouverez ci-dessous la liste complète des autres modifications que vous p
 - La vitesse d’accès aux fichiers entre systèmes d’exploitation sera plus lente dans les versions préliminaires initiales
 
 ## <a name="place-your-linux-files-in-your-linux-root-file-system"></a>Placez vos fichiers Linux dans votre système de fichiers racine Linux
-Veillez à placer les fichiers auxquels vous accédez fréquemment avec les applications Linux à l’intérieur de votre système de fichiers racine Linux pour bénéficier des avantages en matière de performances des fichiers. Ces fichiers doivent se trouver dans le système de fichiers racine Linux pour bénéficier d’un accès plus rapide au système de fichiers. Nous avons également rendu possible les applications Windows à accéder au système de fichiers racine Linux (comme l’Explorateur de fichiers ! Essayez d’exécuter `explorer.exe .` : dans le répertoire de départ de votre distribution Linux et voyez ce qui se passe, ce qui rendra cette transition beaucoup plus facile. 
+Veillez à placer les fichiers que vous utiliserez fréquemment avec les applications Linux à l'intérieur du système de fichiers racines Linux pour profiter des avantages en matière de performances des fichiers. Pour accéder plus rapidement au système de fichiers, il faut que les fichiers se trouvent dans le système de fichiers racines. Nous avons également permis aux applications Windows d'accéder au système de fichiers racines Linux (notamment l’Explorateur de fichiers ! Essayez d’exécuter `explorer.exe .` dans le répertoire de base de votre distribution Linux et voyez ce qui se passe), ce qui rendra la transition beaucoup plus facile. 
 
 ## <a name="accessing-network-applications"></a>Accès aux applications réseau
 Dans les versions initiales de la version préliminaire de WSL 2, vous devrez accéder à n’importe quel serveur Windows à partir de Linux à l’aide de l’adresse IP de votre ordinateur hôte.
@@ -49,7 +49,7 @@ Si vous avez un serveur dans une distribution WSL, vous devez trouver l’adress
    - Vous pouvez la trouver plus facilement en filtrant le résultat de la commande avec grep comme suit : `ip addr | grep eth0`.
 - Connectez-vous à votre serveur Linux à l’aide de l’adresse IP que vous avez trouvée ci-dessus.
 
-L’image ci-dessous en présente un exemple en vous connectant à un serveur node. js à l’aide du navigateur Edge.
+L’image ci-dessous présente un exemple de connexion à un serveur Node.js à l’aide du navigateur Microsoft Edge.
 
 ![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-w2l.jpg)
 
@@ -88,4 +88,4 @@ Attention : En général, vous ne devez pas modifier, déplacer ou accéder aux 
 WSL 2 utilise une machine virtuelle utilitaire légère sur un véritable noyau Linux pour offrir des performances optimales du système de fichiers et une compatibilité complète des appels système tout en étant aussi léger, rapide, intégré et réactif que WSL 1. Cette machine virtuelle a une petite empreinte mémoire et alloue de la mémoire à l’adresse virtuelle au démarrage. Il est configuré pour démarrer avec une petite proportion de la mémoire totale.
 
 ## <a name="cross-os-file-speed-will-be-slower-in-initial-preview-builds"></a>La vitesse des fichiers de système d’exploitation sera plus lente dans les versions d'évaluation initiales
-Vous remarquerez des vitesses de fichiers plus lentes par rapport à WSL 1 lorsque vous accédez à des fichiers Windows à partir d’une application Linux, ou lorsque vous accédez à des fichiers Linux à partir d’une application Windows. Il s’agit d’un résultat des modifications architecturales dans WSL 2. il s’agit d’une étude active de l’équipe WSL sur la façon dont nous pouvons améliorer cette expérience.
+Vous remarquerez des vitesses de fichiers plus lentes par rapport à WSL 1 lorsque vous accéderez à des fichiers Windows à partir d’une application Linux, ou lorsque vous accéderez à des fichiers Linux à partir d’une application Windows. Cela est dû aux modifications architecturales de WSL 2, mais notre équipe WSL travaille activement à l'amélioration de votre expérience.
