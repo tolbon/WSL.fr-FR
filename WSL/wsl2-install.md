@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 91994f3a075436c022acb9dadeea072142687b72
-ms.sourcegitcommit: cf6d8e277ed3102f8f879b9f39ba0966d4ea6135
+ms.openlocfilehash: 8af5ffeffdeedc5298af8125cea5c7428c8f29f8
+ms.sourcegitcommit: 3c9ebe5f9ef5fb64070e21b479c2f2d31243f310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164344"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74248763"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
@@ -28,16 +28,11 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 
 ## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Activez le composant facultatif « plateforme de machine virtuelle » et assurez-vous que WSL est activé
 
-Pour activer le composant « plateforme d’ordinateur virtuel », ouvrez PowerShell en tant qu’administrateur et exécutez la commande ci-dessous. Si vous installez WSL pour la première fois, sélectionnez « non » quand vous êtes invité à redémarrer, car vous devrez redémarrer votre ordinateur quand même après avoir installé le composant facultatif « sous-système Windows pour Linux ».
+Vous devez vous assurer que le sous-système Windows pour Linux et les composants facultatifs de la plateforme d’ordinateur virtuel sont installés. Pour ce faire, exécutez la commande suivante dans PowerShell : 
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
-```
-
-Vous devez également vous assurer que le composant facultatif sous-système Windows pour Linux est activé. Pour ce faire, vous pouvez exécuter la commande suivante à partir d’une fenêtre PowerShell avec des privilèges d’administrateur : 
-
-```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
 Redémarrez votre ordinateur pour terminer l’installation des deux composants.
@@ -47,15 +42,19 @@ Redémarrez votre ordinateur pour terminer l’installation des deux composants.
 
 Si vous n’avez pas de distribution Linux installé, reportez-vous à la page relative à l' [installation sur Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) docs pour obtenir des instructions sur l’installation d’un. 
 
-Dans PowerShell, exécutez :
+Pour définir un distribution, exécutez : 
 
-`wsl --set-version <Distro> 2`
+```
+wsl --set-version <Distro> 2
+```
 
 et veillez à remplacer `<Distro>` par le vrai nom de votre distribution. (Vous pouvez le trouver avec la commande : `wsl -l`). Vous pouvez revenir à WSL 1 quand vous voulez en exécutant la même commande que ci-dessus, mais en remplaçant le « 2 » par un « 1 ».
 
 Par ailleurs, si vous souhaitez faire de WSL 2 votre architecture par défaut, utilisez cette commande :
 
-`wsl --set-default-version 2`
+```
+wsl --set-default-version 2`
+```
 
 Ainsi, toutes les nouvelles distributions que vous installerez seront initialisées en tant que distributions WSL 2.
 
@@ -79,3 +78,6 @@ Vous trouverez ci-dessous des erreurs associées et des suggestions de correctio
 
 * **L’opération demandée n’a pas pu être effectuée en raison d’une limitation du système de disque virtuel. Les fichiers de disque dur virtuel doivent être décompressés et déchiffrés et ne doivent pas être éparpillés.**
     * Vérifiez [WSL GitHub thread #4103](https://github.com/microsoft/WSL/issues/4103) où ce problème est suivi pour obtenir des informations mises à jour.
+
+* **Le terme « WSL » n’est pas reconnu comme le nom d’une applet de commande, d’une fonction, d’un fichier de script ou d’un programme exécutable.** 
+    * Assurez-vous que le [composant facultatif sous-système Windows pour Linux est installé](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> En outre, si vous utilisez un appareil Arm64 et exécutez cette commande à partir de PowerShell, vous recevrez cette erreur. Exécutez plutôt `wsl.exe` à partir de [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)ou de l’invite de commandes. 
