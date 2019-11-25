@@ -19,9 +19,9 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 
 > WSL 2 is only available in Windows 10 builds 18917 or higher
 
-- Ensure that you have WSL installed (you can find instructions to do so [here](./install-win10.md)) and that you are running Windows 10 **build 18917** or higher
-   - To make sure you are using build 18917 or higher please join [the Windows Insider Program](https://insider.windows.com/en-us/) and select the 'Fast' ring. 
-   - You can check your Windows version by opening Command Prompt and running the `ver` command.
+- Assurez-vous que WSL est installé (vous pouvez trouver les instructions d'installation [ici](./install-win10.md)) et que vous utilisez Windows 10 **build 18917** ou une version ultérieure
+   - Pour vérifier que vous utilisez la version 18917 ou une version ultérieure, veuillez rejoindre [le programme Windows Insider] (https://insider.windows.com/fr-fr/) et sélectionnez l'anneau Rapide 
+   - Vous pouvez vérifier votre version de Windows en ouvrant l'invite de commande et en exécutant la commande `ver`.
 - Activer le composant facultatif « Plateforme de machine virtuelle »
 - Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
 - Vérifier les versions de WSL que vos distributions utilisent
