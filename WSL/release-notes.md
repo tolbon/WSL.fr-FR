@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 299b939383a98752cb54cafa23bb8b7662d53e0a
-ms.sourcegitcommit: ac6029d7d7440b8ed0e866fcea5b693edfdc163e
+ms.openlocfilehash: 2e1b8a2ae37568af273ac311572881daa8b55d4b
+ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73633855"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74200229"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-19028"></a>Build 19028
+Pour des informations Windows d’ordre général sur la build 19028, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).
+
+* [WSL2] Mise à jour du noyau Linux vers 4.19.81
+* [WSL2] Remplacer l’autorisation par défaut de /dev/net/Tun par 0666 [GH 4629]
+* [WSL2] Ajuster la quantité de mémoire par défaut affectée à la machine virtuelle Linux pour qu’elle soit à 80 % de mémoire hôte
+* [WSL2] Correction du serveur Interop pour gérer les demandes avec un délai d’attente de sorte à empêcher les appelants incorrects de bloquer le serveur
 
 ## <a name="build-19018"></a>Build 19018
 Pour des informations Windows d’ordre général sur la build 19018, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).
