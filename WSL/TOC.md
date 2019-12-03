@@ -11,7 +11,7 @@
 # [WSL 2](./wsl2-index.md)
 ## [À propos de WSL 2](./wsl2-about.md)
 ## [Installer WSL 2](./wsl2-install.md)
-## [Passage de l’expérience utilisateur de WSL 1 à WSL 2](./wsl2-ux-changes.md)
+## [L’expérience utilisateur passe de WSL 1 à WSL 2](./wsl2-ux-changes.md)
 ## [Forum Aux Questions](./wsl2-faq.md)
 
 # [Résolution des problèmes](./troubleshooting.md)
