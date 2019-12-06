@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: a53e6a986813809d0c355b80b3fe3028adb21375
-ms.sourcegitcommit: 73f4cc6ac9482ea9727f3cda0ec5c3572e164256
+ms.openlocfilehash: 65c0440a95637708881c00558cba6c7985f89ec0
+ms.sourcegitcommit: 522af20edfba4d4a9e429327389967a83e6d1156
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309046"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74881380"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
@@ -20,7 +20,7 @@ Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes�
 > WSL 2 est disponible uniquement dans Windows 10 versions 18917 ou ultérieures
 
 - Vérifiez que vous avez installé WSL (vous trouverez des instructions pour le faire [ici](./install-win10.md)) et que vous exécutez Windows 10 **Build 18917** ou une version ultérieure.
-   - Pour vous assurer que vous utilisez la version 18917 ou une version ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Fast ». 
+   - Pour vous assurer que vous utilisez la version 18917 ou une version ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Fast » ou l’anneau « lent ». 
    - Vous pouvez vérifier votre version de Windows en ouvrant l’invite de commandes et en exécutant la commande `ver`.
 - Activer le composant facultatif « Plateforme de machine virtuelle »
 - Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
