@@ -1,6 +1,6 @@
 ---
 title: Modifications de l’expérience utilisateur entre WSL 1 et WSL 2
-description: Modification de l’expérience utilisateur entre WSL 1 et WSL 2
+description: L’expérience utilisateur passe de WSL 1 à WSL 2
 keywords: BashOnWindows, bash, WSL, wsl2, Windows, sous-système Windows pour Linux, windowssubsystem, Ubuntu, Debian, SUSE, Windows 10
 ms.date: 05/30/2019
 ms.topic: article
@@ -13,7 +13,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74681643"
 ---
-# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Modification de l’expérience utilisateur entre WSL 1 et WSL 2
+# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>L’expérience utilisateur passe de WSL 1 à WSL 2
 
 Cette page présente les différences d’expérience utilisateur entre WSL 1 et WSL 2 Preview. Les modifications clés à prendre en compte sont les suivantes :
 
