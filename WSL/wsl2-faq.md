@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: c4a8c02db6563d7ad572917578c1a49d419f1756
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: c694b3476976241422d079eb65e72beca415ff62
+ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269569"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520568"
 ---
 # <a name="wsl-2-faq"></a>FAQ WSL 2
 
@@ -35,7 +35,7 @@ Nous étudions des moyens d’aider à résoudre ce problème. Par exemple, nous
 
 ## <a name="can-i-access-the-gpu-in-wsl-2-are-there-plans-to-increase-hardware-support"></a>Puis-je accéder au GPU dans WSL 2 ? Existe-t-il des plans pour augmenter la prise en charge du matériel ?
 
-Dans les versions initiales de WSL 2, la prise en charge de l’accès matériel sera limitée, par exemple : vous ne pourrez pas accéder au GPU, série ou USBs. Toutefois, l’ajout d’une meilleure prise en charge des appareils est élevé dans notre backlog, car cela ouvre beaucoup plus de cas d’utilisation pour les développeurs qui souhaitent interagir avec ces appareils. En attendant, vous pouvez toujours utiliser WSL 1, qui a un port série et un accès USB. Restez informé sur ce blog et les membres de l’équipe WSL sur Twitter pour rester informé sur les fonctionnalités les plus récentes des builds Insider et vous contacter pour nous faire part de vos commentaires sur les appareils avec lesquels vous aimeriez interagir.
+Dans les versions initiales de WSL 2, la prise en charge de l’accès matériel sera limitée, par exemple : vous ne pourrez pas accéder aux périphériques GPU, Serial ou USB. Toutefois, l’ajout d’une meilleure prise en charge des appareils est élevé dans notre backlog, car cela ouvre beaucoup plus de cas d’utilisation pour les développeurs qui souhaitent interagir avec ces appareils. En attendant, vous pouvez toujours utiliser WSL 1 qui a accès au port série. Restez informé sur ce blog et les membres de l’équipe WSL sur Twitter pour rester informé sur les fonctionnalités les plus récentes des builds Insider et vous contacter pour nous faire part de vos commentaires sur les appareils avec lesquels vous aimeriez interagir.
 
 ## <a name="will-wsl-2-be-able-to-use-networking-applications"></a>WSL 2 pourra-t-il utiliser des applications de mise en réseau ?
 
@@ -47,7 +47,7 @@ Oui. Vous devez vous assurer que la virtualisation imbriquée est activée sur l
 
 `Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true`
 
-Veillez à remplacer «&lt;vmname&gt;» par le nom de votre machine virtuelle.
+Veillez à remplacer «&lt;VMName&gt;» par le nom de votre machine virtuelle.
 
 ## <a name="can-i-use-wslconf-in-wsl-2"></a>Puis-je utiliser WSL. conf dans WSL 2 ?
 

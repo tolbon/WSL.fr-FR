@@ -1,19 +1,19 @@
 ---
 title: Modifications de l’expérience utilisateur entre WSL 1 et WSL 2
-description: L’expérience utilisateur passe de WSL 1 à WSL 2
+description: Modification de l’expérience utilisateur entre WSL 1 et WSL 2
 keywords: BashOnWindows, bash, WSL, wsl2, Windows, sous-système Windows pour Linux, windowssubsystem, Ubuntu, Debian, SUSE, Windows 10
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 635e4335bd3fe5dd1629faba0168ec4fa331e190
-ms.sourcegitcommit: 6f6b7b67dd35b5fc7b582bb7ac27b9936dedb23d
+ms.openlocfilehash: a8f298a69acf44f152da626a0ba571f6bba1970c
+ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681643"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520558"
 ---
-# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>L’expérience utilisateur passe de WSL 1 à WSL 2
+# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Modification de l’expérience utilisateur entre WSL 1 et WSL 2
 
 Cette page présente les différences d’expérience utilisateur entre WSL 1 et WSL 2 Preview. Les modifications clés à prendre en compte sont les suivantes :
 
@@ -27,7 +27,7 @@ Vous trouverez ci-dessous la liste complète des autres modifications que vous p
 - La vitesse d’accès aux fichiers entre systèmes d’exploitation sera plus lente dans les versions préliminaires initiales
 
 ## <a name="place-your-linux-files-in-your-linux-root-file-system"></a>Placez vos fichiers Linux dans votre système de fichiers racine Linux
-Veillez à placer les fichiers auxquels vous accédez fréquemment avec les applications Linux à l’intérieur de votre système de fichiers racine Linux pour bénéficier des avantages en matière de performances des fichiers. Ces fichiers doivent se trouver dans le système de fichiers racine Linux pour bénéficier d’un accès plus rapide au système de fichiers. Nous avons également rendu possible les applications Windows à accéder au système de fichiers racine Linux (comme l’Explorateur de fichiers ! Essayez d’exécuter : `explorer.exe .` dans le répertoire de démarrage de votre distribution Linux et voyez ce qui se passe), ce qui rend cette transition beaucoup plus facile. 
+Veillez à placer les fichiers que vous utiliserez fréquemment avec les applications Linux à l'intérieur du système de fichiers racines Linux pour profiter des avantages en matière de performances des fichiers. Pour accéder plus rapidement au système de fichiers, il faut que les fichiers se trouvent dans le système de fichiers racines. Nous avons également permis aux applications Windows d'accéder au système de fichiers racines Linux (notamment l’Explorateur de fichiers ! Essayez d’exécuter `explorer.exe .` dans le répertoire de base de votre distribution Linux et voyez ce qui se passe), ce qui rendra la transition beaucoup plus facile. 
 
 ## <a name="accessing-network-applications"></a>Accès aux applications réseau
 Dans les versions initiales de la version préliminaire de WSL 2, vous devrez accéder à n’importe quel serveur Windows à partir de Linux à l’aide de l’adresse IP de votre ordinateur hôte.
@@ -38,22 +38,25 @@ Pour accéder à une application réseau Windows, vous devez utiliser l’adress
 - Obtenez l’adresse IP de votre ordinateur hôte en exécutant la commande `cat /etc/resolv.conf` et en copiant l’adresse IP à la suite du terme `nameserver`. 
 - Connectez-vous à n’importe quel serveur Windows à l’aide de l’adresse IP copiée.
 
-L’image ci-dessous en présente un exemple en se connectant à un serveur node. js s’exécutant sous Windows via la boucle. 
+L’image ci-dessous présente un exemple de connexion à un serveur Node.js s’exécutant sous Windows via curl. 
 
 ![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-l2w.png)
 
-### <a name="accessing-linux-applications-from-windows-only-in-builds-lower-than-18945"></a>Accès aux applications Linux à partir de Windows (uniquement dans les builds inférieures à 18945)
+### <a name="accessing-linux-applications-from-windows"></a>Accès aux applications Linux à partir de Windows
+
+Selon la version de Windows que vous utilisez, vous devrez peut-être récupérer l’adresse IP de la machine virtuelle. Si votre Build est 18945 ou une version ultérieure, vous pouvez utiliser `localhost` comme normal. 
+
+#### <a name="accessing-linux-on-builds-lower-than-18945httpsblogswindowscomwindowsexperience20190726announcing-windows-10-insider-preview-build-18945"></a>Accès à Linux sur les builds inférieures à [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
+
 Si vous avez un serveur dans un distribution WSL, vous devez trouver l’adresse IP de la machine virtuelle qui alimente votre distribution et s’y connecter avec cette adresse IP. Pour ce faire, procédez comme suit :
 
 - Obtenez l’adresse IP de votre distribution en exécutant la commande `ip addr` à l’intérieur de votre distribution WSL et en la recherchant sous la valeur `inet` de l’interface `eth0`.
    - Vous pouvez le trouver plus facilement en filtrant la sortie de la commande à l’aide de grep comme suit : `ip addr | grep eth0`.
 - Connectez-vous à votre serveur Linux à l’aide de l’adresse IP que vous avez trouvée ci-dessus.
 
-L’image ci-dessous en présente un exemple en vous connectant à un serveur node. js à l’aide du navigateur Edge.
+L’image ci-dessous présente un exemple de connexion à un serveur Node.js à l’aide du navigateur Microsoft Edge.
 
 ![Accès aux applications réseau Linux à partir de Windows](media/wsl2-network-w2l.jpg)
-
-Si votre Build est 18945 ou une version ultérieure, vous pouvez utiliser localhost comme normal. 
 
 ### <a name="other-networking-considerations"></a>Autres considérations relatives à la mise en réseau
 
@@ -98,4 +101,4 @@ Remarque : en général, vous ne devez pas modifier, déplacer ou accéder aux 
 WSL 2 utilise une machine virtuelle utilitaire légère sur un véritable noyau Linux pour offrir des performances optimales pour le système de fichiers et une compatibilité complète des appels système tout en étant aussi clair, rapide, intégré et réactif que WSL 1. Cette machine virtuelle de l’utilitaire présente un faible encombrement mémoire et alloue de la mémoire à l’adresse virtuelle au démarrage. Il est configuré pour démarrer avec une petite partie de la mémoire totale.
 
 ## <a name="cross-os-file-speed-will-be-slower-in-initial-preview-builds"></a>La vitesse des fichiers de système d’exploitation est plus lente dans les versions préliminaires initiales
-Vous remarquerez des vitesses de fichiers plus lentes par rapport à WSL 1 lorsque vous accédez à des fichiers Windows à partir d’une application Linux, ou lorsque vous accédez à des fichiers Linux à partir d’une application Windows. Il s’agit d’un résultat des modifications architecturales dans WSL 2. il s’agit d’une étude active de l’équipe WSL sur la façon dont nous pouvons améliorer cette expérience.
+Vous remarquerez des vitesses de fichiers plus lentes par rapport à WSL 1 lorsque vous accéderez à des fichiers Windows à partir d’une application Linux, ou lorsque vous accéderez à des fichiers Linux à partir d’une application Windows. Cela est dû aux modifications architecturales de WSL 2, mais notre équipe WSL travaille activement à l'amélioration de votre expérience.
