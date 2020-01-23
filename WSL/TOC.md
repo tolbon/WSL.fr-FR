@@ -4,6 +4,7 @@
 # [Initialiser une distribution](./initialize-distro.md)
 # [Comptes d’utilisateur et autorisations](./user-support.md)
 # [Gestion des distributions](./wsl-config.md)
+# [Autorisations du système de fichiers](./file-permissions.md)
 # [Sous-système Windows pour Linux Enterprise](./enterprise.md)
 # [Interopérabilité](./interop.md)
 # [Créer une distribution personnalisée](./build-custom-distro.md)
