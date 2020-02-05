@@ -8,14 +8,32 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 2e1b8a2ae37568af273ac311572881daa8b55d4b
-ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
+ms.openlocfilehash: 31bf975afb202a6cfd9a2879cff29a77b2969fce
+ms.sourcegitcommit: 7069b8d452308c32cc7fa31d1158fcb130d42e06
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74200229"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76911703"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-19555"></a>Build 19555
+Pour des informations Windows d’ordre général sur la build 19555, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).
+
+* [WSL2] Utilisation d’un cgroup de mémoire pour limiter la quantité de mémoire utilisée par les opérations d’installation et de conversion [GH 4669]
+* Ajout de la présence de wsl.exe quand le composant facultatif Sous-système Windows pour Linux n’est pas activé pour améliorer la découvertabilité des fonctionnalités.
+* Changement de wsl.exe pour afficher le texte d’aide si le composant facultatif WSL n’est pas installé
+* Correction de la condition de concurrence lors de la création d’instances
+* Création de wslclient.dll qui contient toutes les fonctionnalités de ligne de commande
+* Plus de plantage pendant l’arrêt du service LxssManagerUser
+* Correction de l’échec rapide de wslapi.dll quand le paramètre distroName est NULL
+
+## <a name="build-19041"></a>Build 19041
+Pour des informations Windows d’ordre général sur la build 19041, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/).
+
+* [WSL2] Effacement du masque de signal avant de lancer les processus
+* [WSL2] Mise à jour du noyau Linux vers 4.19.84
+* Gestion de la création d’un lien symbolique /etc/resolv.conf quand le lien symbolique n’est pas relatif
 
 ## <a name="build-19028"></a>Build 19028
 Pour des informations Windows d’ordre général sur la build 19028, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).
@@ -350,7 +368,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 17763, v
     * Remarque : dmesg est actuellement pris en charge par le biais de l’interface d’appareil `/dev/kmsg`. L’interface syscall `syslog` n’est pas encore prise en charge. Et donc, certaines des options de ligne de commande `dmesg` comme `-S`, `-C`, ne fonctionnent pas.
 * Changement du gid et du mode par défaut des appareils en série pour qu’ils correspondent aux natifs [GH 3042]
 * DrvFs prend désormais en charge les attributs étendus.
-    * Remarque: DrvFs présente certaines limitations quant au nom des attributs étendus. Certains caractères (comme « / », « : » et « \* ») ne sont pas autorisés et les noms d’attributs étendus ne sont pas sensibles à la casse sur DrvFs
+    * Remarque : DrvFs présente certaines limitations quant au nom des attributs étendus. Certains caractères (comme « / », « : » et « \* ») ne sont pas autorisés et les noms d’attributs étendus ne sont pas sensibles à la casse sur DrvFs
 
 ## <a name="build-18252-skip-ahead"></a>Build 18252 (Skip Ahead)
 Pour obtenir des informations Windows d’ordre général sur la build 18252, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2018/10/03/announcing-windows-10-insider-preview-build-18252/).
@@ -486,7 +504,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 17639, v
 ### <a name="wsl"></a>WSL
 * Changement du gid et du mode par défaut des appareils en série pour qu’ils correspondent aux natifs [GH 3042]
 * DrvFs prend désormais en charge les attributs étendus.
-    * Remarque: DrvFs présente certaines limitations quant au nom des attributs étendus. En particulier, certains caractères (comme « / », « : » et « \* ») ne sont pas autorisés et les noms d’attributs étendus ne sont pas sensibles à la casse sur DrvFs.
+    * Remarque : DrvFs présente certaines limitations quant au nom des attributs étendus. En particulier, certains caractères (comme « / », « : » et « \* ») ne sont pas autorisés et les noms d’attributs étendus ne sont pas sensibles à la casse sur DrvFs.
 
 ## <a name="build-17133-fast"></a>Build 17133 (Fast)
 Pour obtenir des informations Windows d’ordre général sur la build 17133, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2018/03/27/announcing-windows-10-insider-preview-build-17133-for-fast/).
@@ -657,7 +675,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 17063, v
 
 ### <a name="wsl"></a>WSL
 * DrvFs prend en charge des métadonnées Linux supplémentaires. Cette prise en charge permet de définir le propriétaire et le mode des fichiers à l’aide de chmod/chown, ainsi que de créer des fichiers spéciaux, comme les FIFO, les sockets Unix et les fichiers d’appareil. Cette fonctionnalité est désactivée par défaut pour le moment, car elle est toujours expérimentale.
-**Remarque :**  Nous avons corrigé un bogue dans le format des métadonnées utilisé par DrvFs. Bien que les métadonnées fonctionnent sur cette build à des fins d’expérimentation, les futures builds ne liront pas correctement les métadonnées créées par cette Build.  Vous devrez peut-être mettre à jour manuellement le propriétaire des fichiers modifiés et vous devrez recréer les appareils dont l’ID est personnalisé.
+**Remarque :**  Nous avons corrigé un bogue dans le format des métadonnées utilisé par DrvFs. Bien que les métadonnées fonctionnent sur cette build à des fins d’expérimentation, les futures builds ne liront pas correctement les métadonnées créées par cette Build.  Vous devrez peut-être mettre à jour manuellement le propriétaire des fichiers modifiés et vous devrez recréer les appareils dont l’ID est personnalisé.
 
   Pour activer cette fonctionnalité, montez DrvFs avec l’option métadonnées (pour l’activer sur un montage existant, vous devez d’abord le démonter) :
 
@@ -1600,7 +1618,7 @@ Voici la liste des syscalls nouveaux ou améliorés qui ont une implémentation 
 Pour obtenir des informations Windows d’ordre général sur la build 14936, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2016/09/28/announcing-windows-10-insider-preview-build-14936-for-pc/).<br/>
 
 
-Remarque: WSL va installer Ubuntu version 16.04 (Xenial) au lieu d’Ubuntu 14.04 (Trusty) dans une prochaine version.  Cette modification s’appliquera aux versions Insiders qui installent de nouvelles instances (lxrun.exe /install ou première exécution de bash.exe).  Les instances existantes avec Trusty ne sont pas mises à niveau automatiquement. Les utilisateurs peuvent mettre à niveau leur image Trusty vers Xenial à l’aide de la commande do-release-upgrade.
+Remarque : WSL va installer Ubuntu version 16.04 (Xenial) au lieu d’Ubuntu 14.04 (Trusty) dans une prochaine version.  Cette modification s’appliquera aux versions Insiders qui installent de nouvelles instances (lxrun.exe /install ou première exécution de bash.exe).  Les instances existantes avec Trusty ne sont pas mises à niveau automatiquement. Les utilisateurs peuvent mettre à niveau leur image Trusty vers Xenial à l’aide de la commande do-release-upgrade.
 
 ### <a name="known-issue"></a>Problème connu
 WSL rencontre un problème avec certaines implémentations de sockets.  La vérification de bogue se manifeste comme un incident avec l’erreur « ATTEMPTED EXECUTE OF NOEXECUTE MEMORY ».  La manifestation la plus courante de ce problème est un incident lors de l’utilisation de ssh.  La cause racine est résolue sur les builds internes et envoyée (push) aux versions Insiders dès que possible.
@@ -1821,7 +1839,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14361, v
 - Mise à jour de la taille de la pile des threads initiale pour qu’elle corresponde au paramètre Ubuntu par défaut et signale la taille correctement au syscall get_rlimit (GH #172, #258)
 - Amélioration du signalement des noms d’image de processus pico (par exemple, pour l’audit)
 - Implémentation de /proc/mountinfo pour la commande df
-- Correction du code d’erreur de lien symbolique pour le nom d’enfant . et ..
+- Correction du code d’erreur de lien symbolique pour le nom d’enfant . et .
 - Améliorations et corrections de bogues supplémentaires
 
 ### <a name="syscall-support"></a>Prise en charge de syscall
