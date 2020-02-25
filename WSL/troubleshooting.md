@@ -5,12 +5,12 @@ keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, Ubuntu
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ec456c314ac4a1588ccb5c1aa35e22a2d33a39b0
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.openlocfilehash: b66392f6ad37af9d61e8b4fb6bb477d0d774ccb6
+ms.sourcegitcommit: f1e471bca7a65073135365e49c0d4e59227bdf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520528"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575288"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes liés au sous-système Windows pour Linux
 
@@ -247,3 +247,24 @@ Cette erreur est liée à un mauvais état d’installation. Effectuez les étap
 - Mettez à jour votre version de Windows en accédant à Paramètres, Mises à jour, puis en cliquant sur « Rechercher les mises à jour ».
 
 - Si les deux échouent et que vous devez accéder à WSL, procédez à une mise à niveau sur place en réinstallant Windows 10 avec un support d’installation et en sélectionnant « Tout conserver » pour vous assurer que vos applications et vos fichiers sont conservés. Vous trouverez des instructions pour ce faire dans la [page Réinstaller Windows 10](https://support.microsoft.com/help/4000735/windows-10-reinstall).
+
+### <a name="correct-ssh-related-permission-errors"></a>Erreurs d’autorisations correctes (liées à SSH)
+
+Si vous voyez cette erreur :
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '/home/artur/.ssh/private-key.pem' are too open.
+```
+
+Pour la corriger, ajoutez ce qui suit au fichier ```/etc/wsl.conf``` :
+
+```
+[automount]
+enabled = true
+options = metadata,uid=1000,gid=1000,umask=0022
+```
+
+Veuillez noter que l’ajout de cette commande inclura les métadonnées et modifiera les autorisations sur les fichiers Windows vus depuis WSL. Pour plus d’informations, consultez [Autorisations de système de fichier](./file-permissions.md).
