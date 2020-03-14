@@ -5,12 +5,12 @@ keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, Ubuntu
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: b66392f6ad37af9d61e8b4fb6bb477d0d774ccb6
-ms.sourcegitcommit: f1e471bca7a65073135365e49c0d4e59227bdf25
+ms.openlocfilehash: 9028f1e89e92da94d82b16603b3af60876a4cb86
+ms.sourcegitcommit: 8795e1c4c5d2efdc8a9c78af05fb7be3ac1eef3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575288"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79318143"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Résolution des problèmes liés au sous-système Windows pour Linux
 
@@ -86,20 +86,20 @@ Pour résoudre les problèmes liés à `udev`, procédez comme suit :
 
 1. Écrivez le code suivant dans `/usr/sbin/policy-rc.d` et enregistrez vos modifications.
   
-   ``` BASH
+   ```bash
    #!/bin/sh
    exit 101
    ```
   
 2. Ajoutez des autorisations d’exécution à `/usr/sbin/policy-rc.d` :
 
-   ``` BASH
+   ```bash
    chmod +x /usr/sbin/policy-rc.d
    ```
   
 3. Exécutez les commandes suivantes :
 
-   ``` BASH
+   ```bash
    dpkg-divert --local --rename --add /sbin/initctl
    ln -s /bin/true /sbin/initctl
    ```
@@ -123,7 +123,7 @@ Le processus d’installation de WSL tente de changer automatiquement les param�
 
 L’exemple ci-dessous applique les paramètres régionaux en-US :
 
-``` BASH
+```bash
 sudo update-locale LANG=en_US.UTF8
 ```
 
@@ -200,7 +200,7 @@ L’erreur suivante se produit lors d’une tentative de connexion du serveur SS
 
 1. Vérifiez que votre serveur OpenSSH est en cours d’exécution :
 
-   ``` BASH
+   ```bash
    sudo service ssh status
    ```
 
@@ -208,7 +208,7 @@ L’erreur suivante se produit lors d’une tentative de connexion du serveur SS
 
 2. Arrêtez le service SSHD et démarrez SSHD en mode débogage :
 
-   ``` BASH
+   ```bash
    sudo service ssh stop
    sudo /usr/sbin/sshd -d
    ```
