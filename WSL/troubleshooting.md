@@ -5,215 +5,215 @@ keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, Ubuntu
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: b66392f6ad37af9d61e8b4fb6bb477d0d774ccb6
-ms.sourcegitcommit: f1e471bca7a65073135365e49c0d4e59227bdf25
+ms.openlocfilehash: 9028f1e89e92da94d82b16603b3af60876a4cb86
+ms.sourcegitcommit: 8795e1c4c5d2efdc8a9c78af05fb7be3ac1eef3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575288"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79318143"
 ---
-# <a name="troubleshooting-windows-subsystem-for-linux"></a><span data-ttu-id="04440-104">Résolution des problèmes liés au sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="04440-104">Troubleshooting Windows Subsystem for Linux</span></span>
+# <a name="troubleshooting-windows-subsystem-for-linux"></a><span data-ttu-id="8cf5a-104">Résolution des problèmes liés au sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="8cf5a-104">Troubleshooting Windows Subsystem for Linux</span></span>
 
-<span data-ttu-id="04440-105">Pour obtenir un support sur les problèmes liés à WSL, consultez notre dépôt GitHub :</span><span class="sxs-lookup"><span data-stu-id="04440-105">For support with issues related to WSL, please see our GitHub repo:</span></span>
+<span data-ttu-id="8cf5a-105">Pour obtenir un support sur les problèmes liés à WSL, consultez notre dépôt GitHub :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-105">For support with issues related to WSL, please see our GitHub repo:</span></span>
 
-## <a name="search-for-any-existing-issues-related-to-your-problem"></a><span data-ttu-id="04440-106">Rechercher les problèmes existants en rapport avec votre problème</span><span class="sxs-lookup"><span data-stu-id="04440-106">Search for any existing issues related to your problem</span></span>
+## <a name="search-for-any-existing-issues-related-to-your-problem"></a><span data-ttu-id="8cf5a-106">Rechercher les problèmes existants en rapport avec votre problème</span><span class="sxs-lookup"><span data-stu-id="8cf5a-106">Search for any existing issues related to your problem</span></span>
 
-<span data-ttu-id="04440-107">Pour les problèmes techniques, utilisez le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="04440-107">For technical issues, use the product repo: https://github.com/Microsoft/wsl/issues</span></span>
+<span data-ttu-id="8cf5a-107">Pour les problèmes techniques, utilisez le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-107">For technical issues, use the product repo: https://github.com/Microsoft/wsl/issues</span></span>
 
-<span data-ttu-id="04440-108">Pour les problèmes liés au contenu de cette documentation, utilisez le dépôt de la documentation : https://github.com/MicrosoftDocs/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="04440-108">For issues related to the contents of this documentation, use the docs repo: https://github.com/MicrosoftDocs/wsl/issues</span></span>
+<span data-ttu-id="8cf5a-108">Pour les problèmes liés au contenu de cette documentation, utilisez le dépôt de la documentation : https://github.com/MicrosoftDocs/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-108">For issues related to the contents of this documentation, use the docs repo: https://github.com/MicrosoftDocs/wsl/issues</span></span>
 
-## <a name="submit-a-bug-report"></a><span data-ttu-id="04440-109">Envoyer un rapport de bogues</span><span class="sxs-lookup"><span data-stu-id="04440-109">Submit a bug report</span></span>
+## <a name="submit-a-bug-report"></a><span data-ttu-id="8cf5a-109">Envoyer un rapport de bogues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-109">Submit a bug report</span></span>
 
-<span data-ttu-id="04440-110">Pour les bogues liés aux fonctions ou fonctionnalités WSL, signalez un problème dans le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="04440-110">For bugs related to WSL functions or features, file an issue in the product repo: https://github.com/Microsoft/wsl/issues</span></span>
+<span data-ttu-id="8cf5a-110">Pour les bogues liés aux fonctions ou fonctionnalités WSL, signalez un problème dans le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-110">For bugs related to WSL functions or features, file an issue in the product repo: https://github.com/Microsoft/wsl/issues</span></span>
 
-## <a name="submit-a-feature-request"></a><span data-ttu-id="04440-111">Envoyer une demande de fonctionnalité</span><span class="sxs-lookup"><span data-stu-id="04440-111">Submit a feature request</span></span>
+## <a name="submit-a-feature-request"></a><span data-ttu-id="8cf5a-111">Envoyer une demande de fonctionnalité</span><span class="sxs-lookup"><span data-stu-id="8cf5a-111">Submit a feature request</span></span>
 
-<span data-ttu-id="04440-112">Pour demander une nouvelle fonctionnalité liée au fonctionnement ou à la compatibilité de WSL, signalez un problème dans le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="04440-112">To request a new feature related to WSL functionality or compatibility, file an issue in the product repo: https://github.com/Microsoft/wsl/issues</span></span>
+<span data-ttu-id="8cf5a-112">Pour demander une nouvelle fonctionnalité liée au fonctionnement ou à la compatibilité de WSL, signalez un problème dans le dépôt du produit : https://github.com/Microsoft/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-112">To request a new feature related to WSL functionality or compatibility, file an issue in the product repo: https://github.com/Microsoft/wsl/issues</span></span>
 
-## <a name="contribute-to-the-docs"></a><span data-ttu-id="04440-113">Contribution à la documentation</span><span class="sxs-lookup"><span data-stu-id="04440-113">Contribute to the docs</span></span>
+## <a name="contribute-to-the-docs"></a><span data-ttu-id="8cf5a-113">Contribution à la documentation</span><span class="sxs-lookup"><span data-stu-id="8cf5a-113">Contribute to the docs</span></span>
 
-<span data-ttu-id="04440-114">Pour contribuer à la documentation WSL, envoyez une demande de tirage (pull request) dans le dépôt de la documentation : https://github.com/MicrosoftDocs/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="04440-114">To contribute to the WSL documentation, submit a pull request in the docs repo: https://github.com/MicrosoftDocs/wsl/issues</span></span>
+<span data-ttu-id="8cf5a-114">Pour contribuer à la documentation WSL, envoyez une demande de tirage (pull request) dans le dépôt de la documentation : https://github.com/MicrosoftDocs/wsl/issues</span><span class="sxs-lookup"><span data-stu-id="8cf5a-114">To contribute to the WSL documentation, submit a pull request in the docs repo: https://github.com/MicrosoftDocs/wsl/issues</span></span>
 
-## <a name="terminal-or-command-line"></a><span data-ttu-id="04440-115">Terminal ou ligne de commande</span><span class="sxs-lookup"><span data-stu-id="04440-115">Terminal or Command Line</span></span>
+## <a name="terminal-or-command-line"></a><span data-ttu-id="8cf5a-115">Terminal ou ligne de commande</span><span class="sxs-lookup"><span data-stu-id="8cf5a-115">Terminal or Command Line</span></span>
 
-<span data-ttu-id="04440-116">Enfin, si votre problème est lié au terminal Windows, à la console Windows ou à l’interface utilisateur de ligne de commande, utilisez le dépôt du terminal Windows : https://github.com/microsoft/terminal</span><span class="sxs-lookup"><span data-stu-id="04440-116">Lastly, if your issue is related to the Windows Terminal, Windows Console, or the command-line UI, use the Windows terminal repo: https://github.com/microsoft/terminal</span></span>
+<span data-ttu-id="8cf5a-116">Enfin, si votre problème est lié au terminal Windows, à la console Windows ou à l’interface utilisateur de ligne de commande, utilisez le dépôt du terminal Windows : https://github.com/microsoft/terminal</span><span class="sxs-lookup"><span data-stu-id="8cf5a-116">Lastly, if your issue is related to the Windows Terminal, Windows Console, or the command-line UI, use the Windows terminal repo: https://github.com/microsoft/terminal</span></span>
 
-## <a name="common-issues"></a><span data-ttu-id="04440-117">Problèmes courants</span><span class="sxs-lookup"><span data-stu-id="04440-117">Common issues</span></span>
+## <a name="common-issues"></a><span data-ttu-id="8cf5a-117">Problèmes courants</span><span class="sxs-lookup"><span data-stu-id="8cf5a-117">Common issues</span></span>
 
-### <a name="bash-loses-network-connectivity-once-connected-to-a-vpn"></a><span data-ttu-id="04440-118">Bash perd la connectivité réseau une fois connecté à un VPN</span><span class="sxs-lookup"><span data-stu-id="04440-118">Bash loses network connectivity once connected to a VPN</span></span>
+### <a name="bash-loses-network-connectivity-once-connected-to-a-vpn"></a><span data-ttu-id="8cf5a-118">Bash perd la connectivité réseau une fois connecté à un VPN</span><span class="sxs-lookup"><span data-stu-id="8cf5a-118">Bash loses network connectivity once connected to a VPN</span></span>
 
-<span data-ttu-id="04440-119">Si, après une connexion à un VPN sur Windows, Bash perd la connectivité réseau, essayez cette solution de contournement à partir de Bash.</span><span class="sxs-lookup"><span data-stu-id="04440-119">If after connecting to a VPN on Windows, bash loses network connectivity, try this workaround from within bash.</span></span> <span data-ttu-id="04440-120">Elle vous permet de remplacer la résolution DNS manuellement avec `/etc/resolv.conf`.</span><span class="sxs-lookup"><span data-stu-id="04440-120">This workaround will allow you to manually override the DNS resolution through `/etc/resolv.conf`.</span></span>
+<span data-ttu-id="8cf5a-119">Si, après une connexion à un VPN sur Windows, Bash perd la connectivité réseau, essayez cette solution de contournement à partir de Bash.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-119">If after connecting to a VPN on Windows, bash loses network connectivity, try this workaround from within bash.</span></span> <span data-ttu-id="8cf5a-120">Elle vous permet de remplacer la résolution DNS manuellement avec `/etc/resolv.conf`.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-120">This workaround will allow you to manually override the DNS resolution through `/etc/resolv.conf`.</span></span>
 
-1. <span data-ttu-id="04440-121">Exécutez la commande `ipconfig.exe /all` et notez le serveur DNS du VPN.</span><span class="sxs-lookup"><span data-stu-id="04440-121">Take a note of the DNS server of the VPN from doing `ipconfig.exe /all`</span></span>
-2. <span data-ttu-id="04440-122">Copiez le fichier resolv.conf existant avec `sudo cp /etc/resolv.conf /etc/resolv.conf.new`.</span><span class="sxs-lookup"><span data-stu-id="04440-122">Make a copy of the existing resolv.conf `sudo cp /etc/resolv.conf /etc/resolv.conf.new`</span></span>
-3. <span data-ttu-id="04440-123">Dissociez le fichier resolv.conf actuel avec `sudo unlink /etc/resolv.conf`.</span><span class="sxs-lookup"><span data-stu-id="04440-123">Unlink the current resolv.conf `sudo unlink /etc/resolv.conf`</span></span>
+1. <span data-ttu-id="8cf5a-121">Exécutez la commande `ipconfig.exe /all` et notez le serveur DNS du VPN.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-121">Take a note of the DNS server of the VPN from doing `ipconfig.exe /all`</span></span>
+2. <span data-ttu-id="8cf5a-122">Copiez le fichier resolv.conf existant avec `sudo cp /etc/resolv.conf /etc/resolv.conf.new`.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-122">Make a copy of the existing resolv.conf `sudo cp /etc/resolv.conf /etc/resolv.conf.new`</span></span>
+3. <span data-ttu-id="8cf5a-123">Dissociez le fichier resolv.conf actuel avec `sudo unlink /etc/resolv.conf`.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-123">Unlink the current resolv.conf `sudo unlink /etc/resolv.conf`</span></span>
 4. `sudo mv /etc/resolv.conf.new /etc/resolv.conf`
-5. <span data-ttu-id="04440-124">Ouvrez `/etc/resolv.conf` et</span><span class="sxs-lookup"><span data-stu-id="04440-124">Open `/etc/resolv.conf` and</span></span> <br/>
-   <span data-ttu-id="04440-125">a.</span><span class="sxs-lookup"><span data-stu-id="04440-125">a.</span></span> <span data-ttu-id="04440-126">Supprimez la première ligne du fichier, comportant le message « \# This file was automatically generated by WSL.</span><span class="sxs-lookup"><span data-stu-id="04440-126">Delete the first line from the file, which says "\# This file was automatically generated by WSL.</span></span> <span data-ttu-id="04440-127">To stop automatic generation of this file, remove this line. » (Ce fichier a été généré automatiquement par WSL. Pour arrêter la génération automatique de ce fichier, supprimez cette ligne. »).</span><span class="sxs-lookup"><span data-stu-id="04440-127">To stop automatic generation of this file, remove this line.".</span></span> <br/>
-   <span data-ttu-id="04440-128">b.</span><span class="sxs-lookup"><span data-stu-id="04440-128">b.</span></span> <span data-ttu-id="04440-129">Ajoutez l’entrée DNS notée à l’étape 1 précédente comme première entrée de la liste des serveurs DNS.</span><span class="sxs-lookup"><span data-stu-id="04440-129">Add the DNS entry from (1) above as the very first entry in the list of DNS servers.</span></span> <br/>
-   <span data-ttu-id="04440-130">c.</span><span class="sxs-lookup"><span data-stu-id="04440-130">c.</span></span> <span data-ttu-id="04440-131">Fermez le fichier.</span><span class="sxs-lookup"><span data-stu-id="04440-131">Close the file.</span></span> <br/>
+5. <span data-ttu-id="8cf5a-124">Ouvrez `/etc/resolv.conf` et</span><span class="sxs-lookup"><span data-stu-id="8cf5a-124">Open `/etc/resolv.conf` and</span></span> <br/>
+   <span data-ttu-id="8cf5a-125">a.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-125">a.</span></span> <span data-ttu-id="8cf5a-126">Supprimez la première ligne du fichier, comportant le message « \# This file was automatically generated by WSL.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-126">Delete the first line from the file, which says "\# This file was automatically generated by WSL.</span></span> <span data-ttu-id="8cf5a-127">To stop automatic generation of this file, remove this line. » (Ce fichier a été généré automatiquement par WSL. Pour arrêter la génération automatique de ce fichier, supprimez cette ligne. »).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-127">To stop automatic generation of this file, remove this line.".</span></span> <br/>
+   <span data-ttu-id="8cf5a-128">b.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-128">b.</span></span> <span data-ttu-id="8cf5a-129">Ajoutez l’entrée DNS notée à l’étape 1 précédente comme première entrée de la liste des serveurs DNS.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-129">Add the DNS entry from (1) above as the very first entry in the list of DNS servers.</span></span> <br/>
+   <span data-ttu-id="8cf5a-130">c.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-130">c.</span></span> <span data-ttu-id="8cf5a-131">Fermez le fichier.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-131">Close the file.</span></span> <br/>
 
-<span data-ttu-id="04440-132">Une fois que vous avez déconnecté le VPN, vous devez revenir au fichier `/etc/resolv.conf` non modifié.</span><span class="sxs-lookup"><span data-stu-id="04440-132">Once you have disconnected the VPN, you will have to revert the changes to `/etc/resolv.conf`.</span></span> <span data-ttu-id="04440-133">Pour ce faire, exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="04440-133">To do this, do:</span></span>
+<span data-ttu-id="8cf5a-132">Une fois que vous avez déconnecté le VPN, vous devez revenir au fichier `/etc/resolv.conf` non modifié.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-132">Once you have disconnected the VPN, you will have to revert the changes to `/etc/resolv.conf`.</span></span> <span data-ttu-id="8cf5a-133">Pour ce faire, exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-133">To do this, do:</span></span>
 
 1. `cd /etc`
 2. `sudo mv resolv.conf resolv.conf.new`
 3. `sudo ln -s ../run/resolvconf/resolv.conf resolv.conf`
 
-### <a name="starting-wsl-or-installing-a-distribution-returns-an-error-code"></a><span data-ttu-id="04440-134">Le démarrage de WSL ou l’installation d’une distribution retourne un code d’erreur.</span><span class="sxs-lookup"><span data-stu-id="04440-134">Starting WSL or installing a distribution returns an error code</span></span>
+### <a name="starting-wsl-or-installing-a-distribution-returns-an-error-code"></a><span data-ttu-id="8cf5a-134">Le démarrage de WSL ou l’installation d’une distribution retourne un code d’erreur.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-134">Starting WSL or installing a distribution returns an error code</span></span>
 
-<span data-ttu-id="04440-135">Suivez [ces instructions](https://github.com/Microsoft/WSL/blob/master/CONTRIBUTING.md#8-detailed-logs) pour récupérer des journaux détaillés et signaler un problème sur notre plateforme GitHub.</span><span class="sxs-lookup"><span data-stu-id="04440-135">Follow [these instructions](https://github.com/Microsoft/WSL/blob/master/CONTRIBUTING.md#8-detailed-logs) to collect detailed logs and file an issue on our GitHub.</span></span>
+<span data-ttu-id="8cf5a-135">Suivez [ces instructions](https://github.com/Microsoft/WSL/blob/master/CONTRIBUTING.md#8-detailed-logs) pour récupérer des journaux détaillés et signaler un problème sur notre plateforme GitHub.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-135">Follow [these instructions](https://github.com/Microsoft/WSL/blob/master/CONTRIBUTING.md#8-detailed-logs) to collect detailed logs and file an issue on our GitHub.</span></span>
 
-### <a name="updating-bash-on-ubuntu-on-windows"></a><span data-ttu-id="04440-136">Mise à jour de Bash sur Ubuntu sur Windows</span><span class="sxs-lookup"><span data-stu-id="04440-136">Updating Bash on Ubuntu on Windows</span></span>
+### <a name="updating-bash-on-ubuntu-on-windows"></a><span data-ttu-id="8cf5a-136">Mise à jour de Bash sur Ubuntu sur Windows</span><span class="sxs-lookup"><span data-stu-id="8cf5a-136">Updating Bash on Ubuntu on Windows</span></span>
 
-<span data-ttu-id="04440-137">Deux composants de Bash sur Ubuntu sur Windows peuvent nécessiter une mise à jour.</span><span class="sxs-lookup"><span data-stu-id="04440-137">There are two components of Bash on Ubuntu on Windows that can require updating.</span></span>
+<span data-ttu-id="8cf5a-137">Deux composants de Bash sur Ubuntu sur Windows peuvent nécessiter une mise à jour.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-137">There are two components of Bash on Ubuntu on Windows that can require updating.</span></span>
 
-1. <span data-ttu-id="04440-138">Sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="04440-138">The Windows Subsystem for Linux</span></span>
+1. <span data-ttu-id="8cf5a-138">Sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="8cf5a-138">The Windows Subsystem for Linux</span></span>
   
-   <span data-ttu-id="04440-139">La mise à niveau de cette partie de Bash sur Ubuntu sur Windows active tous les nouveaux correctifs mentionnés dans les [notes de publication](./release-notes.md).</span><span class="sxs-lookup"><span data-stu-id="04440-139">Upgrading this portion of Bash on Ubuntu on Windows will enable any new fixes outlines in the [release notes](./release-notes.md).</span></span> <span data-ttu-id="04440-140">Vérifiez que vous êtes abonné au programme Windows Insider et que votre build est à jour.</span><span class="sxs-lookup"><span data-stu-id="04440-140">Ensure that you are subscribed to the Windows Insider Program and that your build is up to date.</span></span> <span data-ttu-id="04440-141">Pour un contrôle plus précis et, notamment, pour réinitialiser votre instance Ubuntu, consultez les [informations de référence sur les commandes](./reference.md).</span><span class="sxs-lookup"><span data-stu-id="04440-141">For finer grain control including resetting your Ubuntu instance check out the [command reference page](./reference.md).</span></span>
+   <span data-ttu-id="8cf5a-139">La mise à niveau de cette partie de Bash sur Ubuntu sur Windows active tous les nouveaux correctifs mentionnés dans les [notes de publication](./release-notes.md).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-139">Upgrading this portion of Bash on Ubuntu on Windows will enable any new fixes outlines in the [release notes](./release-notes.md).</span></span> <span data-ttu-id="8cf5a-140">Vérifiez que vous êtes abonné au programme Windows Insider et que votre build est à jour.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-140">Ensure that you are subscribed to the Windows Insider Program and that your build is up to date.</span></span> <span data-ttu-id="8cf5a-141">Pour un contrôle plus précis et, notamment, pour réinitialiser votre instance Ubuntu, consultez les [informations de référence sur les commandes](./reference.md).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-141">For finer grain control including resetting your Ubuntu instance check out the [command reference page](./reference.md).</span></span>
 
-2. <span data-ttu-id="04440-142">Fichiers binaires utilisateur Ubuntu</span><span class="sxs-lookup"><span data-stu-id="04440-142">The Ubuntu user binaries</span></span>
+2. <span data-ttu-id="8cf5a-142">Fichiers binaires utilisateur Ubuntu</span><span class="sxs-lookup"><span data-stu-id="8cf5a-142">The Ubuntu user binaries</span></span>
 
-   <span data-ttu-id="04440-143">La mise à niveau de cette partie de Bash sur Ubuntu sur Windows installe toutes les mises à jour des fichiers binaires utilisateur Ubuntu, y compris les applications que vous avez installées avec apt-get.</span><span class="sxs-lookup"><span data-stu-id="04440-143">Upgrading this portion of Bash on Ubuntu on Windows will install any updates to the Ubuntu user binaries including applications that you have installed via apt-get.</span></span> <span data-ttu-id="04440-144">Pour procéder à la mise à jour, exécutez les commandes suivantes dans Bash :</span><span class="sxs-lookup"><span data-stu-id="04440-144">To update run the following commands in Bash:</span></span>
+   <span data-ttu-id="8cf5a-143">La mise à niveau de cette partie de Bash sur Ubuntu sur Windows installe toutes les mises à jour des fichiers binaires utilisateur Ubuntu, y compris les applications que vous avez installées avec apt-get.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-143">Upgrading this portion of Bash on Ubuntu on Windows will install any updates to the Ubuntu user binaries including applications that you have installed via apt-get.</span></span> <span data-ttu-id="8cf5a-144">Pour procéder à la mise à jour, exécutez les commandes suivantes dans Bash :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-144">To update run the following commands in Bash:</span></span>
   
    1. `apt-get update`
    2. `apt-get upgrade`
   
-### <a name="apt-get-upgrade-errors"></a><span data-ttu-id="04440-145">Erreurs avec apt-get upgrade</span><span class="sxs-lookup"><span data-stu-id="04440-145">Apt-get upgrade errors</span></span>
+### <a name="apt-get-upgrade-errors"></a><span data-ttu-id="8cf5a-145">Erreurs avec apt-get upgrade</span><span class="sxs-lookup"><span data-stu-id="8cf5a-145">Apt-get upgrade errors</span></span>
 
-<span data-ttu-id="04440-146">Certains packages utilisent des fonctionnalités que nous n’avons pas encore implémentées.</span><span class="sxs-lookup"><span data-stu-id="04440-146">Some packages use features that we haven't implemented yet.</span></span> <span data-ttu-id="04440-147">`udev`, par exemple, n’est pas encore pris en charge et provoque plusieurs erreurs avec `apt-get upgrade`.</span><span class="sxs-lookup"><span data-stu-id="04440-147">`udev`, for example, isn't supported yet and causes several `apt-get upgrade` errors.</span></span>
+<span data-ttu-id="8cf5a-146">Certains packages utilisent des fonctionnalités que nous n’avons pas encore implémentées.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-146">Some packages use features that we haven't implemented yet.</span></span> <span data-ttu-id="8cf5a-147">`udev`, par exemple, n’est pas encore pris en charge et provoque plusieurs erreurs avec `apt-get upgrade`.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-147">`udev`, for example, isn't supported yet and causes several `apt-get upgrade` errors.</span></span>
 
-<span data-ttu-id="04440-148">Pour résoudre les problèmes liés à `udev`, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="04440-148">To fix issues related to `udev`, follow the following steps:</span></span>
+<span data-ttu-id="8cf5a-148">Pour résoudre les problèmes liés à `udev`, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-148">To fix issues related to `udev`, follow the following steps:</span></span>
 
-1. <span data-ttu-id="04440-149">Écrivez le code suivant dans `/usr/sbin/policy-rc.d` et enregistrez vos modifications.</span><span class="sxs-lookup"><span data-stu-id="04440-149">Write the following to `/usr/sbin/policy-rc.d` and save your changes.</span></span>
+1. <span data-ttu-id="8cf5a-149">Écrivez le code suivant dans `/usr/sbin/policy-rc.d` et enregistrez vos modifications.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-149">Write the following to `/usr/sbin/policy-rc.d` and save your changes.</span></span>
   
-   ``` BASH
+   ```bash
    #!/bin/sh
    exit 101
    ```
   
-2. <span data-ttu-id="04440-150">Ajoutez des autorisations d’exécution à `/usr/sbin/policy-rc.d` :</span><span class="sxs-lookup"><span data-stu-id="04440-150">Add execute permissions to `/usr/sbin/policy-rc.d`:</span></span>
+2. <span data-ttu-id="8cf5a-150">Ajoutez des autorisations d’exécution à `/usr/sbin/policy-rc.d` :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-150">Add execute permissions to `/usr/sbin/policy-rc.d`:</span></span>
 
-   ``` BASH
+   ```bash
    chmod +x /usr/sbin/policy-rc.d
    ```
   
-3. <span data-ttu-id="04440-151">Exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="04440-151">Run the following commands:</span></span>
+3. <span data-ttu-id="8cf5a-151">Exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-151">Run the following commands:</span></span>
 
-   ``` BASH
+   ```bash
    dpkg-divert --local --rename --add /sbin/initctl
    ln -s /bin/true /sbin/initctl
    ```
   
-### <a name="error-0x80040306-on-installation"></a><span data-ttu-id="04440-152">« Error : 0x80040306 » lors de l’installation</span><span class="sxs-lookup"><span data-stu-id="04440-152">"Error: 0x80040306" on installation</span></span>
+### <a name="error-0x80040306-on-installation"></a><span data-ttu-id="8cf5a-152">« Error : 0x80040306 » lors de l’installation</span><span class="sxs-lookup"><span data-stu-id="8cf5a-152">"Error: 0x80040306" on installation</span></span>
 
-<span data-ttu-id="04440-153">Cette erreur est due au fait que nous ne prenons pas en charge la console héritée.</span><span class="sxs-lookup"><span data-stu-id="04440-153">This has to do with the fact that we do not support legacy console.</span></span>
-<span data-ttu-id="04440-154">Pour désactiver la console héritée :</span><span class="sxs-lookup"><span data-stu-id="04440-154">To turn off legacy console:</span></span>
+<span data-ttu-id="8cf5a-153">Cette erreur est due au fait que nous ne prenons pas en charge la console héritée.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-153">This has to do with the fact that we do not support legacy console.</span></span>
+<span data-ttu-id="8cf5a-154">Pour désactiver la console héritée :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-154">To turn off legacy console:</span></span>
 
-1. <span data-ttu-id="04440-155">Ouvrez cmd.exe.</span><span class="sxs-lookup"><span data-stu-id="04440-155">Open cmd.exe</span></span>
-1. <span data-ttu-id="04440-156">Cliquez avec le bouton droit sur la barre de titre, sélectionnez Propriétés, puis désactivez la case Utiliser la console héritée.</span><span class="sxs-lookup"><span data-stu-id="04440-156">Right click title bar -> Properties -> Uncheck Use legacy console</span></span>
-1. <span data-ttu-id="04440-157">Cliquez sur OK</span><span class="sxs-lookup"><span data-stu-id="04440-157">Click OK</span></span>
+1. <span data-ttu-id="8cf5a-155">Ouvrez cmd.exe.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-155">Open cmd.exe</span></span>
+1. <span data-ttu-id="8cf5a-156">Cliquez avec le bouton droit sur la barre de titre, sélectionnez Propriétés, puis désactivez la case Utiliser la console héritée.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-156">Right click title bar -> Properties -> Uncheck Use legacy console</span></span>
+1. <span data-ttu-id="8cf5a-157">Cliquez sur OK</span><span class="sxs-lookup"><span data-stu-id="8cf5a-157">Click OK</span></span>
 
-### <a name="error-0x80040154-after-windows-update"></a><span data-ttu-id="04440-158">« Error : 0x80040154 » après une mise à jour de Windows</span><span class="sxs-lookup"><span data-stu-id="04440-158">"Error: 0x80040154" after Windows update</span></span>
+### <a name="error-0x80040154-after-windows-update"></a><span data-ttu-id="8cf5a-158">« Error : 0x80040154 » après une mise à jour de Windows</span><span class="sxs-lookup"><span data-stu-id="8cf5a-158">"Error: 0x80040154" after Windows update</span></span>
 
-<span data-ttu-id="04440-159">La fonctionnalité de sous-système Windows pour Linux peut être désactivée au cours d’une mise à jour de Windows.</span><span class="sxs-lookup"><span data-stu-id="04440-159">The Windows Subsystem for Linux feature may be disabled during a Windows update.</span></span> <span data-ttu-id="04440-160">Dans ce cas, la fonctionnalité Windows doit être réactivée.</span><span class="sxs-lookup"><span data-stu-id="04440-160">If this happens the Windows feature must be re-enabled.</span></span> <span data-ttu-id="04440-161">Pour obtenir des instructions sur l’activation du sous-système Windows pour Linux, consultez le [guide d’installation](./install-win10.md).</span><span class="sxs-lookup"><span data-stu-id="04440-161">Instructions for enabling the Windows Subsystem for Linux can be found in the [Installation Guide](./install-win10.md).</span></span>
+<span data-ttu-id="8cf5a-159">La fonctionnalité de sous-système Windows pour Linux peut être désactivée au cours d’une mise à jour de Windows.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-159">The Windows Subsystem for Linux feature may be disabled during a Windows update.</span></span> <span data-ttu-id="8cf5a-160">Dans ce cas, la fonctionnalité Windows doit être réactivée.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-160">If this happens the Windows feature must be re-enabled.</span></span> <span data-ttu-id="8cf5a-161">Pour obtenir des instructions sur l’activation du sous-système Windows pour Linux, consultez le [guide d’installation](./install-win10.md).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-161">Instructions for enabling the Windows Subsystem for Linux can be found in the [Installation Guide](./install-win10.md).</span></span>
 
-### <a name="changing-the-display-language"></a><span data-ttu-id="04440-162">Changement de la langue d’affichage</span><span class="sxs-lookup"><span data-stu-id="04440-162">Changing the display language</span></span>
+### <a name="changing-the-display-language"></a><span data-ttu-id="8cf5a-162">Changement de la langue d’affichage</span><span class="sxs-lookup"><span data-stu-id="8cf5a-162">Changing the display language</span></span>
 
-<span data-ttu-id="04440-163">Le processus d’installation de WSL tente de changer automatiquement les paramètres régionaux d’Ubuntu de sorte qu’ils correspondent à ceux de votre installation Windows.</span><span class="sxs-lookup"><span data-stu-id="04440-163">WSL install will try to automatically change the Ubuntu locale to match the locale of your Windows install.</span></span>  <span data-ttu-id="04440-164">Si vous souhaitez éviter ce comportement, vous pouvez exécuter cette commande pour changer les paramètres régionaux d’Ubuntu une fois l’installation terminée.</span><span class="sxs-lookup"><span data-stu-id="04440-164">If you do not want this behavior you can run this command to change the Ubuntu locale after install completes.</span></span>  <span data-ttu-id="04440-165">Vous devrez relancer bash.exe pour que ce changement prenne effet.</span><span class="sxs-lookup"><span data-stu-id="04440-165">You will have to relaunch bash.exe for this change to take effect.</span></span>
+<span data-ttu-id="8cf5a-163">Le processus d’installation de WSL tente de changer automatiquement les paramètres régionaux d’Ubuntu de sorte qu’ils correspondent à ceux de votre installation Windows.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-163">WSL install will try to automatically change the Ubuntu locale to match the locale of your Windows install.</span></span>  <span data-ttu-id="8cf5a-164">Si vous souhaitez éviter ce comportement, vous pouvez exécuter cette commande pour changer les paramètres régionaux d’Ubuntu une fois l’installation terminée.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-164">If you do not want this behavior you can run this command to change the Ubuntu locale after install completes.</span></span>  <span data-ttu-id="8cf5a-165">Vous devrez relancer bash.exe pour que ce changement prenne effet.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-165">You will have to relaunch bash.exe for this change to take effect.</span></span>
 
-<span data-ttu-id="04440-166">L’exemple ci-dessous applique les paramètres régionaux en-US :</span><span class="sxs-lookup"><span data-stu-id="04440-166">The below example changes to locale to en-US:</span></span>
+<span data-ttu-id="8cf5a-166">L’exemple ci-dessous applique les paramètres régionaux en-US :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-166">The below example changes to locale to en-US:</span></span>
 
-``` BASH
+```bash
 sudo update-locale LANG=en_US.UTF8
 ```
 
-### <a name="installation-issues-after-windows-system-restore"></a><span data-ttu-id="04440-167">Problèmes d’installation après une restauration du système Windows</span><span class="sxs-lookup"><span data-stu-id="04440-167">Installation issues after Windows system restore</span></span>
+### <a name="installation-issues-after-windows-system-restore"></a><span data-ttu-id="8cf5a-167">Problèmes d’installation après une restauration du système Windows</span><span class="sxs-lookup"><span data-stu-id="8cf5a-167">Installation issues after Windows system restore</span></span>
 
-1. <span data-ttu-id="04440-168">Supprimez le dossier `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux`.</span><span class="sxs-lookup"><span data-stu-id="04440-168">Delete the `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux` folder.</span></span> <br/>
-  <span data-ttu-id="04440-169">**Remarque : N’effectuez pas cette opération si votre fonctionnalité facultative est entièrement installée et opérationnelle.**</span><span class="sxs-lookup"><span data-stu-id="04440-169">**Note: Do not do this if your optional feature is fully installed and working.**</span></span>
-2. <span data-ttu-id="04440-170">Si ce n’est déjà fait, activez la fonctionnalité facultative WSL.</span><span class="sxs-lookup"><span data-stu-id="04440-170">Enable the WSL optional feature (if not already)</span></span>
-3. <span data-ttu-id="04440-171">Redémarrer</span><span class="sxs-lookup"><span data-stu-id="04440-171">Reboot</span></span>
-4. <span data-ttu-id="04440-172">lxrun /uninstall /full</span><span class="sxs-lookup"><span data-stu-id="04440-172">lxrun /uninstall /full</span></span>
-5. <span data-ttu-id="04440-173">Installez Bash.</span><span class="sxs-lookup"><span data-stu-id="04440-173">Install bash</span></span>
+1. <span data-ttu-id="8cf5a-168">Supprimez le dossier `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux`.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-168">Delete the `%windir%\System32\Tasks\Microsoft\Windows\Windows Subsystem for Linux` folder.</span></span> <br/>
+  <span data-ttu-id="8cf5a-169">**Remarque : N’effectuez pas cette opération si votre fonctionnalité facultative est entièrement installée et opérationnelle.**</span><span class="sxs-lookup"><span data-stu-id="8cf5a-169">**Note: Do not do this if your optional feature is fully installed and working.**</span></span>
+2. <span data-ttu-id="8cf5a-170">Si ce n’est déjà fait, activez la fonctionnalité facultative WSL.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-170">Enable the WSL optional feature (if not already)</span></span>
+3. <span data-ttu-id="8cf5a-171">Redémarrer</span><span class="sxs-lookup"><span data-stu-id="8cf5a-171">Reboot</span></span>
+4. <span data-ttu-id="8cf5a-172">lxrun /uninstall /full</span><span class="sxs-lookup"><span data-stu-id="8cf5a-172">lxrun /uninstall /full</span></span>
+5. <span data-ttu-id="8cf5a-173">Installez Bash.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-173">Install bash</span></span>
 
-### <a name="no-internet-access-in-wsl"></a><span data-ttu-id="04440-174">Aucun accès Internet dans WSL</span><span class="sxs-lookup"><span data-stu-id="04440-174">No internet access in WSL</span></span>
+### <a name="no-internet-access-in-wsl"></a><span data-ttu-id="8cf5a-174">Aucun accès Internet dans WSL</span><span class="sxs-lookup"><span data-stu-id="8cf5a-174">No internet access in WSL</span></span>
 
-<span data-ttu-id="04440-175">Certains utilisateurs ont signalé des problèmes posés par certaines applications de pare-feu, qui bloquent l’accès Internet dans WSL.</span><span class="sxs-lookup"><span data-stu-id="04440-175">Some users have reported issues with specific firewall applications blocking internet access in WSL.</span></span>  <span data-ttu-id="04440-176">Les pare-feux signalés sont :</span><span class="sxs-lookup"><span data-stu-id="04440-176">The firewalls reported are:</span></span>
+<span data-ttu-id="8cf5a-175">Certains utilisateurs ont signalé des problèmes posés par certaines applications de pare-feu, qui bloquent l’accès Internet dans WSL.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-175">Some users have reported issues with specific firewall applications blocking internet access in WSL.</span></span>  <span data-ttu-id="8cf5a-176">Les pare-feux signalés sont :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-176">The firewalls reported are:</span></span>
 
-1. <span data-ttu-id="04440-177">Kaspersky</span><span class="sxs-lookup"><span data-stu-id="04440-177">Kaspersky</span></span>
-2. <span data-ttu-id="04440-178">AVG</span><span class="sxs-lookup"><span data-stu-id="04440-178">AVG</span></span>
-3. <span data-ttu-id="04440-179">Avast</span><span class="sxs-lookup"><span data-stu-id="04440-179">Avast</span></span>
+1. <span data-ttu-id="8cf5a-177">Kaspersky</span><span class="sxs-lookup"><span data-stu-id="8cf5a-177">Kaspersky</span></span>
+2. <span data-ttu-id="8cf5a-178">AVG</span><span class="sxs-lookup"><span data-stu-id="8cf5a-178">AVG</span></span>
+3. <span data-ttu-id="8cf5a-179">Avast</span><span class="sxs-lookup"><span data-stu-id="8cf5a-179">Avast</span></span>
 
-<span data-ttu-id="04440-180">Dans certains cas, la désactivation du pare-feu permet d’obtenir l’accès.</span><span class="sxs-lookup"><span data-stu-id="04440-180">In some cases turning off the firewall allows for access.</span></span>  <span data-ttu-id="04440-181">Parfois, il semble que la simple installation du pare-feu bloque l’accès.</span><span class="sxs-lookup"><span data-stu-id="04440-181">In some cases simply having the firewall installed looks to block access.</span></span>
+<span data-ttu-id="8cf5a-180">Dans certains cas, la désactivation du pare-feu permet d’obtenir l’accès.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-180">In some cases turning off the firewall allows for access.</span></span>  <span data-ttu-id="8cf5a-181">Parfois, il semble que la simple installation du pare-feu bloque l’accès.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-181">In some cases simply having the firewall installed looks to block access.</span></span>
 
-### <a name="permission-denied-error-when-using-ping"></a><span data-ttu-id="04440-182">Autorisation refusée lors de l’utilisation d’une commande ping</span><span class="sxs-lookup"><span data-stu-id="04440-182">Permission Denied error when using ping</span></span>
+### <a name="permission-denied-error-when-using-ping"></a><span data-ttu-id="8cf5a-182">Autorisation refusée lors de l’utilisation d’une commande ping</span><span class="sxs-lookup"><span data-stu-id="8cf5a-182">Permission Denied error when using ping</span></span>
 
-<span data-ttu-id="04440-183">Pour la [Mise à jour anniversaire Windows, version 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update), les **privilèges administrateur** dans Windows doivent exécuter la commande ping dans WSL.</span><span class="sxs-lookup"><span data-stu-id="04440-183">For [Windows Anniversary Update, version 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update), **administrator privileges** in Windows are required to run ping in WSL.</span></span>  <span data-ttu-id="04440-184">Pour exécuter une commande ping, exécutez Bash sur Ubuntu sur Windows en tant qu’administrateur, ou exécutez bash.exe à partir d’une invite de commandes/PowerShell avec des privilèges d’administrateur.</span><span class="sxs-lookup"><span data-stu-id="04440-184">To run ping, run Bash on Ubuntu on Windows as an administrator, or run bash.exe from a CMD/PowerShell prompt with administrator privileges.</span></span>
+<span data-ttu-id="8cf5a-183">Pour la [Mise à jour anniversaire Windows, version 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update), les **privilèges administrateur** dans Windows doivent exécuter la commande ping dans WSL.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-183">For [Windows Anniversary Update, version 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update), **administrator privileges** in Windows are required to run ping in WSL.</span></span>  <span data-ttu-id="8cf5a-184">Pour exécuter une commande ping, exécutez Bash sur Ubuntu sur Windows en tant qu’administrateur, ou exécutez bash.exe à partir d’une invite de commandes/PowerShell avec des privilèges d’administrateur.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-184">To run ping, run Bash on Ubuntu on Windows as an administrator, or run bash.exe from a CMD/PowerShell prompt with administrator privileges.</span></span>
 
-<span data-ttu-id="04440-185">Pour les versions ultérieures de Windows, [Build 14926+](./release-notes.md#build-14926), les privilèges administrateur ne sont plus nécessaires.</span><span class="sxs-lookup"><span data-stu-id="04440-185">For later versions of Windows, [Build 14926+](./release-notes.md#build-14926), administrator privileges are no longer required.</span></span>
+<span data-ttu-id="8cf5a-185">Pour les versions ultérieures de Windows, [Build 14926+](./release-notes.md#build-14926), les privilèges administrateur ne sont plus nécessaires.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-185">For later versions of Windows, [Build 14926+](./release-notes.md#build-14926), administrator privileges are no longer required.</span></span>
 
-### <a name="bash-is-hung"></a><span data-ttu-id="04440-186">Bash est bloqué.</span><span class="sxs-lookup"><span data-stu-id="04440-186">Bash is hung</span></span>
+### <a name="bash-is-hung"></a><span data-ttu-id="8cf5a-186">Bash est bloqué.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-186">Bash is hung</span></span>
 
-<span data-ttu-id="04440-187">Si, alors que vous utilisez Bash, celui-ci se bloque et ne répond pas aux entrées, aidez-nous à diagnostiquer le problème en collectant une image mémoire et en nous la communiquant.</span><span class="sxs-lookup"><span data-stu-id="04440-187">If while working with bash, you find that bash is hung (or deadlocked) and not responding to inputs, help us diagnose the issue by collecting and reporting a memory dump.</span></span> <span data-ttu-id="04440-188">Notez que la procédure ci-après entraînera le plantage de votre système.</span><span class="sxs-lookup"><span data-stu-id="04440-188">Note that these steps will crash your system.</span></span> <span data-ttu-id="04440-189">Suivez-la uniquement si vous êtes à l’aise avec ce type d’opération, ou enregistrez votre travail au préalable.</span><span class="sxs-lookup"><span data-stu-id="04440-189">Do not do this if you are not comfortable with that or save your work prior to doing this.</span></span>
+<span data-ttu-id="8cf5a-187">Si, alors que vous utilisez Bash, celui-ci se bloque et ne répond pas aux entrées, aidez-nous à diagnostiquer le problème en collectant une image mémoire et en nous la communiquant.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-187">If while working with bash, you find that bash is hung (or deadlocked) and not responding to inputs, help us diagnose the issue by collecting and reporting a memory dump.</span></span> <span data-ttu-id="8cf5a-188">Notez que la procédure ci-après entraînera le plantage de votre système.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-188">Note that these steps will crash your system.</span></span> <span data-ttu-id="8cf5a-189">Suivez-la uniquement si vous êtes à l’aise avec ce type d’opération, ou enregistrez votre travail au préalable.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-189">Do not do this if you are not comfortable with that or save your work prior to doing this.</span></span>
 
-<span data-ttu-id="04440-190">Pour collecter une image mémoire</span><span class="sxs-lookup"><span data-stu-id="04440-190">To collect a memory dump</span></span>
+<span data-ttu-id="8cf5a-190">Pour collecter une image mémoire</span><span class="sxs-lookup"><span data-stu-id="8cf5a-190">To collect a memory dump</span></span>
 
-1. <span data-ttu-id="04440-191">Changez le type d’image mémoire en choisissant « Image mémoire complète ».</span><span class="sxs-lookup"><span data-stu-id="04440-191">Change the memory dump type to "complete memory dump".</span></span> <span data-ttu-id="04440-192">Lors de ce changement, prenez note du type d’image actuel.</span><span class="sxs-lookup"><span data-stu-id="04440-192">While changing the dump type, take a note of your current type.</span></span>
+1. <span data-ttu-id="8cf5a-191">Changez le type d’image mémoire en choisissant « Image mémoire complète ».</span><span class="sxs-lookup"><span data-stu-id="8cf5a-191">Change the memory dump type to "complete memory dump".</span></span> <span data-ttu-id="8cf5a-192">Lors de ce changement, prenez note du type d’image actuel.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-192">While changing the dump type, take a note of your current type.</span></span>
 
-2. <span data-ttu-id="04440-193">Suivez [cette procédure](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) pour configurer une commande de clavier produisant un plantage.</span><span class="sxs-lookup"><span data-stu-id="04440-193">Use the [steps](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) to configure crash using keyboard control.</span></span>
+2. <span data-ttu-id="8cf5a-193">Suivez [cette procédure](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) pour configurer une commande de clavier produisant un plantage.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-193">Use the [steps](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) to configure crash using keyboard control.</span></span>
 
-3. <span data-ttu-id="04440-194">Reproduisez le blocage.</span><span class="sxs-lookup"><span data-stu-id="04440-194">Repro the hang or deadlock.</span></span>
+3. <span data-ttu-id="8cf5a-194">Reproduisez le blocage.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-194">Repro the hang or deadlock.</span></span>
 
-4. <span data-ttu-id="04440-195">Faites planter le système à l’aide de la séquence de touches définie à l’étape 2.</span><span class="sxs-lookup"><span data-stu-id="04440-195">Crash the system using the key sequence from (2).</span></span>
+4. <span data-ttu-id="8cf5a-195">Faites planter le système à l’aide de la séquence de touches définie à l’étape 2.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-195">Crash the system using the key sequence from (2).</span></span>
 
-5. <span data-ttu-id="04440-196">Le système plante et collecte l’image mémoire.</span><span class="sxs-lookup"><span data-stu-id="04440-196">The system will crash and collect the memory dump.</span></span>
+5. <span data-ttu-id="8cf5a-196">Le système plante et collecte l’image mémoire.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-196">The system will crash and collect the memory dump.</span></span>
 
-6. <span data-ttu-id="04440-197">Une fois le système redémarré, envoyez l’image memory.dmp sur secure@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="04440-197">Once the system reboots, report the memory.dmp to secure@microsoft.com.</span></span> <span data-ttu-id="04440-198">L’emplacement par défaut du fichier d’image mémoire est %SystemRoot%\memory.dmp ou C:\Windows\memory.dmp si C: est le lecteur système.</span><span class="sxs-lookup"><span data-stu-id="04440-198">The default location of the dump file is %SystemRoot%\memory.dmp or C:\Windows\memory.dmp if C: is the system drive.</span></span> <span data-ttu-id="04440-199">Dans l’e-mail, indiquez que le fichier d’image mémoire est destiné à l’équipe WSL ou Bash sur Windows.</span><span class="sxs-lookup"><span data-stu-id="04440-199">In the email, note that the dump is for the WSL or Bash on Windows team.</span></span>
+6. <span data-ttu-id="8cf5a-197">Une fois le système redémarré, envoyez l’image memory.dmp sur secure@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-197">Once the system reboots, report the memory.dmp to secure@microsoft.com.</span></span> <span data-ttu-id="8cf5a-198">L’emplacement par défaut du fichier d’image mémoire est %SystemRoot%\memory.dmp ou C:\Windows\memory.dmp si C: est le lecteur système.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-198">The default location of the dump file is %SystemRoot%\memory.dmp or C:\Windows\memory.dmp if C: is the system drive.</span></span> <span data-ttu-id="8cf5a-199">Dans l’e-mail, indiquez que le fichier d’image mémoire est destiné à l’équipe WSL ou Bash sur Windows.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-199">In the email, note that the dump is for the WSL or Bash on Windows team.</span></span>
 
-7. <span data-ttu-id="04440-200">Rétablissez le type d’image mémoire d’origine.</span><span class="sxs-lookup"><span data-stu-id="04440-200">Restore the memory dump type to the original setting.</span></span>
+7. <span data-ttu-id="8cf5a-200">Rétablissez le type d’image mémoire d’origine.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-200">Restore the memory dump type to the original setting.</span></span>
 
-### <a name="check-your-build-number"></a><span data-ttu-id="04440-201">Vérifier votre numéro de build</span><span class="sxs-lookup"><span data-stu-id="04440-201">Check your build number</span></span>
+### <a name="check-your-build-number"></a><span data-ttu-id="8cf5a-201">Vérifier votre numéro de build</span><span class="sxs-lookup"><span data-stu-id="8cf5a-201">Check your build number</span></span>
 
-<span data-ttu-id="04440-202">Pour trouver le numéro de build de Windows et de l’architecture de votre PC, sélectionnez :</span><span class="sxs-lookup"><span data-stu-id="04440-202">To find your PC's architecture and Windows build number, open</span></span>  
-<span data-ttu-id="04440-203">**Paramètres** > **Système** > **À propos**</span><span class="sxs-lookup"><span data-stu-id="04440-203">**Settings** > **System** > **About**</span></span>
+<span data-ttu-id="8cf5a-202">Pour trouver le numéro de build de Windows et de l’architecture de votre PC, sélectionnez :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-202">To find your PC's architecture and Windows build number, open</span></span>  
+<span data-ttu-id="8cf5a-203">**Paramètres** > **Système** > **À propos**</span><span class="sxs-lookup"><span data-stu-id="8cf5a-203">**Settings** > **System** > **About**</span></span>
 
-<span data-ttu-id="04440-204">Recherchez les champs **Build du système d’exploitation** et **Type de système**.</span><span class="sxs-lookup"><span data-stu-id="04440-204">Look for the **OS Build** and **System Type** fields.</span></span>  
-    <span data-ttu-id="04440-205">Capture d’écran montrant les champs ![Build du système d’exploitation](media/system.png) et Type de système</span><span class="sxs-lookup"><span data-stu-id="04440-205">![Screenshot of Build and System Type fields](media/system.png)</span></span>
+<span data-ttu-id="8cf5a-204">Recherchez les champs **Build du système d’exploitation** et **Type de système**.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-204">Look for the **OS Build** and **System Type** fields.</span></span>  
+    <span data-ttu-id="8cf5a-205">Capture d’écran montrant les champs ![Build du système d’exploitation](media/system.png) et Type de système</span><span class="sxs-lookup"><span data-stu-id="8cf5a-205">![Screenshot of Build and System Type fields](media/system.png)</span></span>
 
-<span data-ttu-id="04440-206">Pour trouver le numéro de build de Windows Server, exécutez la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="04440-206">To find your Windows Server build number, run the following in PowerShell:</span></span>  
+<span data-ttu-id="8cf5a-206">Pour trouver le numéro de build de Windows Server, exécutez la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-206">To find your Windows Server build number, run the following in PowerShell:</span></span>  
 
 ``` PowerShell
 systeminfo | Select-String "^OS Name","^OS Version"
 ```
 
-### <a name="confirm-wsl-is-enabled"></a><span data-ttu-id="04440-207">Vérifier que WSL est activé</span><span class="sxs-lookup"><span data-stu-id="04440-207">Confirm WSL is enabled</span></span>
+### <a name="confirm-wsl-is-enabled"></a><span data-ttu-id="8cf5a-207">Vérifier que WSL est activé</span><span class="sxs-lookup"><span data-stu-id="8cf5a-207">Confirm WSL is enabled</span></span>
 
-<span data-ttu-id="04440-208">Vous pouvez vérifier que le sous-système Windows pour Linux est activé en exécutant la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="04440-208">You can confirm that the Windows Subsystem for Linux is enabled by running the following in PowerShell:</span></span>  
+<span data-ttu-id="8cf5a-208">Vous pouvez vérifier que le sous-système Windows pour Linux est activé en exécutant la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-208">You can confirm that the Windows Subsystem for Linux is enabled by running the following in PowerShell:</span></span>  
 
 ``` PowerShell
 Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-### <a name="openssh-server-connection-issues"></a><span data-ttu-id="04440-209">Problèmes de connexion du serveur OpenSSH</span><span class="sxs-lookup"><span data-stu-id="04440-209">OpenSSH-Server connection issues</span></span>
+### <a name="openssh-server-connection-issues"></a><span data-ttu-id="8cf5a-209">Problèmes de connexion du serveur OpenSSH</span><span class="sxs-lookup"><span data-stu-id="8cf5a-209">OpenSSH-Server connection issues</span></span>
 
-<span data-ttu-id="04440-210">L’erreur suivante se produit lors d’une tentative de connexion du serveur SSH : « Connection closed by 127.0.0.1 port 22 » (Connexion fermée par 127.0.0.1 port 22).</span><span class="sxs-lookup"><span data-stu-id="04440-210">Trying to connect your SSH server is failed with the following error: "Connection closed by 127.0.0.1 port 22".</span></span>
+<span data-ttu-id="8cf5a-210">L’erreur suivante se produit lors d’une tentative de connexion du serveur SSH : « Connection closed by 127.0.0.1 port 22 » (Connexion fermée par 127.0.0.1 port 22).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-210">Trying to connect your SSH server is failed with the following error: "Connection closed by 127.0.0.1 port 22".</span></span>
 
-1. <span data-ttu-id="04440-211">Vérifiez que votre serveur OpenSSH est en cours d’exécution :</span><span class="sxs-lookup"><span data-stu-id="04440-211">Make sure your OpenSSH Server is running:</span></span>
+1. <span data-ttu-id="8cf5a-211">Vérifiez que votre serveur OpenSSH est en cours d’exécution :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-211">Make sure your OpenSSH Server is running:</span></span>
 
-   ``` BASH
+   ```bash
    sudo service ssh status
    ```
 
-   <span data-ttu-id="04440-212">et veillez à suivre ce tutoriel : https://help.ubuntu.com/lts/serverguide/openssh-server.html.en</span><span class="sxs-lookup"><span data-stu-id="04440-212">and you've followed this tutorial: https://help.ubuntu.com/lts/serverguide/openssh-server.html.en</span></span>
+   <span data-ttu-id="8cf5a-212">et veillez à suivre ce tutoriel : https://help.ubuntu.com/lts/serverguide/openssh-server.html.en</span><span class="sxs-lookup"><span data-stu-id="8cf5a-212">and you've followed this tutorial: https://help.ubuntu.com/lts/serverguide/openssh-server.html.en</span></span>
 
-2. <span data-ttu-id="04440-213">Arrêtez le service SSHD et démarrez SSHD en mode débogage :</span><span class="sxs-lookup"><span data-stu-id="04440-213">Stop the sshd service and start sshd in debug mode:</span></span>
+2. <span data-ttu-id="8cf5a-213">Arrêtez le service SSHD et démarrez SSHD en mode débogage :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-213">Stop the sshd service and start sshd in debug mode:</span></span>
 
-   ``` BASH
+   ```bash
    sudo service ssh stop
    sudo /usr/sbin/sshd -d
    ```
 
-3. <span data-ttu-id="04440-214">Consultez les journaux de démarrage et vérifiez que les clés d’hôte sont disponibles et que les journaux ne contiennent pas de message de ce type :</span><span class="sxs-lookup"><span data-stu-id="04440-214">Check the startup logs and make sure HostKeys are available and you don't see log messages such as:</span></span>
+3. <span data-ttu-id="8cf5a-214">Consultez les journaux de démarrage et vérifiez que les clés d’hôte sont disponibles et que les journaux ne contiennent pas de message de ce type :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-214">Check the startup logs and make sure HostKeys are available and you don't see log messages such as:</span></span>
 
    ```BASH
    debug1: sshd version OpenSSH_7.2, OpenSSL 1.0.2g  1 Mar 2016
@@ -231,26 +231,26 @@ Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linu
    Could not load host key: /etc/ssh/ssh_host_ed25519_key
    ```
 
-<span data-ttu-id="04440-215">Si vous voyez des messages de ce type et que les clés ne sont pas disponibles sous `/etc/ssh/`, vous devrez régénérer les clés ou simplement purger et installer le serveur OpenSSH :</span><span class="sxs-lookup"><span data-stu-id="04440-215">If you do see such messages and the keys are missing under `/etc/ssh/`, you will have to regenerate the keys or just purge&install openssh-server:</span></span>
+<span data-ttu-id="8cf5a-215">Si vous voyez des messages de ce type et que les clés ne sont pas disponibles sous `/etc/ssh/`, vous devrez régénérer les clés ou simplement purger et installer le serveur OpenSSH :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-215">If you do see such messages and the keys are missing under `/etc/ssh/`, you will have to regenerate the keys or just purge&install openssh-server:</span></span>
 
 ```BASH
 sudo apt-get purge openssh-server
 sudo apt-get install openssh-server
 ```
 
-### <a name="the-referenced-assembly-could-not-be-found-when-enabling-the-wsl-optional-feature"></a><span data-ttu-id="04440-216">« L’assembly référencé est introuvable. »</span><span class="sxs-lookup"><span data-stu-id="04440-216">"The referenced assembly could not be found."</span></span> <span data-ttu-id="04440-217">lors de l’activation de la fonctionnalité facultative WSL</span><span class="sxs-lookup"><span data-stu-id="04440-217">when enabling the WSL optional feature</span></span>
+### <a name="the-referenced-assembly-could-not-be-found-when-enabling-the-wsl-optional-feature"></a><span data-ttu-id="8cf5a-216">« L’assembly référencé est introuvable. »</span><span class="sxs-lookup"><span data-stu-id="8cf5a-216">"The referenced assembly could not be found."</span></span> <span data-ttu-id="8cf5a-217">lors de l’activation de la fonctionnalité facultative WSL</span><span class="sxs-lookup"><span data-stu-id="8cf5a-217">when enabling the WSL optional feature</span></span>
 
-<span data-ttu-id="04440-218">Cette erreur est liée à un mauvais état d’installation.</span><span class="sxs-lookup"><span data-stu-id="04440-218">This error is related to being in a bad install state.</span></span> <span data-ttu-id="04440-219">Effectuez les étapes suivantes pour essayer de résoudre ce problème :</span><span class="sxs-lookup"><span data-stu-id="04440-219">Please complete the following steps to try and fix this issue:</span></span>
+<span data-ttu-id="8cf5a-218">Cette erreur est liée à un mauvais état d’installation.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-218">This error is related to being in a bad install state.</span></span> <span data-ttu-id="8cf5a-219">Effectuez les étapes suivantes pour essayer de résoudre ce problème :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-219">Please complete the following steps to try and fix this issue:</span></span>
 
-- <span data-ttu-id="04440-220">Si vous exécutez la commande d’activation de la fonctionnalité WSL à partir de PowerShell, essayez d’utiliser l’interface GUI au lieu d’ouvrir le menu Démarrer, recherchez « Activer ou désactiver les fonctionnalités Windows », puis dans la liste, sélectionnez « Sous-système Windows pour Linux » qui installera le composant facultatif.</span><span class="sxs-lookup"><span data-stu-id="04440-220">If you are running the enable WSL feature command from PowerShell, try using the GUI instead by opening the start menu, searching for 'Turn Windows features on or off' and then in the list select 'Windows Subsystem for Linux' which will install the optional component.</span></span>
+- <span data-ttu-id="8cf5a-220">Si vous exécutez la commande d’activation de la fonctionnalité WSL à partir de PowerShell, essayez d’utiliser l’interface GUI au lieu d’ouvrir le menu Démarrer, recherchez « Activer ou désactiver les fonctionnalités Windows », puis dans la liste, sélectionnez « Sous-système Windows pour Linux » qui installera le composant facultatif.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-220">If you are running the enable WSL feature command from PowerShell, try using the GUI instead by opening the start menu, searching for 'Turn Windows features on or off' and then in the list select 'Windows Subsystem for Linux' which will install the optional component.</span></span>
 
-- <span data-ttu-id="04440-221">Mettez à jour votre version de Windows en accédant à Paramètres, Mises à jour, puis en cliquant sur « Rechercher les mises à jour ».</span><span class="sxs-lookup"><span data-stu-id="04440-221">Update your version of Windows by going to Settings, Updates, and clicking 'Check for Updates'</span></span>
+- <span data-ttu-id="8cf5a-221">Mettez à jour votre version de Windows en accédant à Paramètres, Mises à jour, puis en cliquant sur « Rechercher les mises à jour ».</span><span class="sxs-lookup"><span data-stu-id="8cf5a-221">Update your version of Windows by going to Settings, Updates, and clicking 'Check for Updates'</span></span>
 
-- <span data-ttu-id="04440-222">Si les deux échouent et que vous devez accéder à WSL, procédez à une mise à niveau sur place en réinstallant Windows 10 avec un support d’installation et en sélectionnant « Tout conserver » pour vous assurer que vos applications et vos fichiers sont conservés.</span><span class="sxs-lookup"><span data-stu-id="04440-222">If both of those fail and you need to access WSL please consider upgrading in place by reinstalling Windows 10 using installation media and selecting 'Keep Everything' to ensure your apps and files are preserved.</span></span> <span data-ttu-id="04440-223">Vous trouverez des instructions pour ce faire dans la [page Réinstaller Windows 10](https://support.microsoft.com/help/4000735/windows-10-reinstall).</span><span class="sxs-lookup"><span data-stu-id="04440-223">You can find instructions on how to do so at the [Reinstall Windows 10 page](https://support.microsoft.com/help/4000735/windows-10-reinstall).</span></span>
+- <span data-ttu-id="8cf5a-222">Si les deux échouent et que vous devez accéder à WSL, procédez à une mise à niveau sur place en réinstallant Windows 10 avec un support d’installation et en sélectionnant « Tout conserver » pour vous assurer que vos applications et vos fichiers sont conservés.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-222">If both of those fail and you need to access WSL please consider upgrading in place by reinstalling Windows 10 using installation media and selecting 'Keep Everything' to ensure your apps and files are preserved.</span></span> <span data-ttu-id="8cf5a-223">Vous trouverez des instructions pour ce faire dans la [page Réinstaller Windows 10](https://support.microsoft.com/help/4000735/windows-10-reinstall).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-223">You can find instructions on how to do so at the [Reinstall Windows 10 page](https://support.microsoft.com/help/4000735/windows-10-reinstall).</span></span>
 
-### <a name="correct-ssh-related-permission-errors"></a><span data-ttu-id="04440-224">Erreurs d’autorisations correctes (liées à SSH)</span><span class="sxs-lookup"><span data-stu-id="04440-224">Correct (SSH related) permission errors</span></span>
+### <a name="correct-ssh-related-permission-errors"></a><span data-ttu-id="8cf5a-224">Erreurs d’autorisations correctes (liées à SSH)</span><span class="sxs-lookup"><span data-stu-id="8cf5a-224">Correct (SSH related) permission errors</span></span>
 
-<span data-ttu-id="04440-225">Si vous voyez cette erreur :</span><span class="sxs-lookup"><span data-stu-id="04440-225">If you're seeing this error:</span></span>
+<span data-ttu-id="8cf5a-225">Si vous voyez cette erreur :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-225">If you're seeing this error:</span></span>
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -259,7 +259,7 @@ sudo apt-get install openssh-server
 Permissions 0777 for '/home/artur/.ssh/private-key.pem' are too open.
 ```
 
-<span data-ttu-id="04440-226">Pour la corriger, ajoutez ce qui suit au fichier ```/etc/wsl.conf``` :</span><span class="sxs-lookup"><span data-stu-id="04440-226">To fix this, append the following to the the ```/etc/wsl.conf``` file:</span></span>
+<span data-ttu-id="8cf5a-226">Pour la corriger, ajoutez ce qui suit au fichier ```/etc/wsl.conf``` :</span><span class="sxs-lookup"><span data-stu-id="8cf5a-226">To fix this, append the following to the the ```/etc/wsl.conf``` file:</span></span>
 
 ```
 [automount]
@@ -267,4 +267,4 @@ enabled = true
 options = metadata,uid=1000,gid=1000,umask=0022
 ```
 
-<span data-ttu-id="04440-227">Veuillez noter que l’ajout de cette commande inclura les métadonnées et modifiera les autorisations sur les fichiers Windows vus depuis WSL.</span><span class="sxs-lookup"><span data-stu-id="04440-227">Please note that adding this command will include metadata and modify the file permissions on the Windows files seen from WSL.</span></span> <span data-ttu-id="04440-228">Pour plus d’informations, consultez [Autorisations de système de fichier](./file-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="04440-228">Please see the [File System Permissions](./file-permissions.md) for more information.</span></span>
+<span data-ttu-id="8cf5a-227">Veuillez noter que l’ajout de cette commande inclura les métadonnées et modifiera les autorisations sur les fichiers Windows vus depuis WSL.</span><span class="sxs-lookup"><span data-stu-id="8cf5a-227">Please note that adding this command will include metadata and modify the file permissions on the Windows files seen from WSL.</span></span> <span data-ttu-id="8cf5a-228">Pour plus d’informations, consultez [Autorisations de système de fichier](./file-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="8cf5a-228">Please see the [File System Permissions](./file-permissions.md) for more information.</span></span>
