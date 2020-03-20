@@ -267,22 +267,22 @@ WSL prend en charge deux sections : `automount` et `network`.
 Section : `[automount]`
 
 
-| key        | value                          | par défaut      | Remarques                                                                                                                                                                                                                                                                                                                          |
+| key        | value                          | default      | Remarques                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | enabled    | booléen                        | true         | `true` : les lecteurs fixes (c.-à-d. `C:/` ou `D:/`) sont automatiquement montés avec DrvFs sous `/mnt`.  `false` : les disques ne sont pas montés automatiquement, mais vous pouvez les monter manuellement ou par le biais de `fstab`.                                                                                                             |
 | mountFsTab | booléen                        | true         | `true` : `/etc/fstab` est traité au démarrage de WSL. /etc/fstab est un fichier dans lequel vous pouvez déclarer d’autres systèmes de fichiers, comme un partage SMB. Ainsi, vous pouvez monter ces systèmes de fichiers automatiquement dans WSL au démarrage.                                                                                                                |
-| root       | Chaîne                         | `/mnt/`      | Définit le répertoire dans lequel les lecteurs fixes sont montés automatiquement. Par exemple, si vous avez un répertoire dans WSL à l’emplacement `/windir/` et que vous le spécifiez en tant que racine, vos lecteurs fixes sont censés être montés à l’emplacement `/windir/c`.                                                                                              |
+| root       | String                         | `/mnt/`      | Définit le répertoire dans lequel les lecteurs fixes sont montés automatiquement. Par exemple, si vous avez un répertoire dans WSL à l’emplacement `/windir/` et que vous le spécifiez en tant que racine, vos lecteurs fixes sont censés être montés à l’emplacement `/windir/c`.                                                                                              |
 | options    | Liste de valeurs séparées par des virgules | Chaîne vide | Cette valeur est ajoutée à la chaîne des options de montage DrvFs par défaut. **Seules les options propres à DrvFs peuvent être spécifiées.** Les options que le fichier binaire de montage analyse normalement dans un indicateur ne sont pas prises en charge. Si vous souhaitez spécifier explicitement ces options, vous devez inclure chaque lecteur pour lequel vous souhaitez le faire dans /etc/fstab. |
 
 Par défaut, WSL définit les options uid et gid sur la valeur de l’utilisateur par défaut (dans une distribution Ubuntu, l’utilisateur par défaut est créé avec uid=1000,gid=1000). Si l’utilisateur spécifie une option gid ou uid explicitement par le biais de cette clé, la valeur associée est remplacée. Dans le cas contraire, la valeur par défaut est toujours ajoutée.
 
-**Remarque :** Ces options sont appliquées en tant qu’options de montage pour tous les lecteurs montés automatiquement. Pour changer les options d’un lecteur spécifique uniquement, utilisez /etc/fstab à la place.
+**Remarque :** Ces options sont appliquées en tant qu’options de montage pour tous les lecteurs montés automatiquement. Pour changer les options d’un lecteur spécifique uniquement, utilisez /etc/fstab à la place.
 
 ##### <a name="mount-options"></a>Options de montage
 
 La définition des différentes options de montage pour les lecteurs Windows (DrvFs) peut contrôler la façon dont les autorisations de fichier sont calculées pour les fichiers Windows. Les options suivantes sont disponibles :
 
-| Clé | Description | Default |
+| Clé | Description | Par défaut |
 |:----|:----|:----|
 |uid| identifiant utilisateur utilisé pour le propriétaire de tous les fichiers | identifiant utilisateur par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
 |gid| identifiant de groupe utilisé pour le propriétaire de tous les fichiers | identifiant de groupe par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
@@ -290,13 +290,13 @@ La définition des différentes options de montage pour les lecteurs Windows (Dr
 |fmask | masque octal des autorisations à exclure pour tous les fichiers | 000
 |dmask | masque octal des autorisations à exclure pour tous les répertoires | 000
 
-**Remarque :** Les masques d’autorisation passent par une opération OR logique avant d’être appliqués aux fichiers et aux répertoires. 
+**Remarque :** Les masques d’autorisation passent par une opération OR logique avant d’être appliqués aux fichiers et aux répertoires. 
 
 #### <a name="network"></a>réseau
 
 Étiquette de section : `[network]`
 
-| key | value | par défaut | Remarques|
+| key | value | default | Remarques|
 |:----|:----|:----|:----|
 | generateHosts | booléen | `true` | `true` : WSL génère `/etc/hosts`. Le fichier `hosts` contient une carte statique de noms d’hôtes correspondant à l’adresse IP. |
 | generateResolvConf | booléen | `true` | `true` : WSL génère `/etc/resolv.conf`. `resolv.conf` contient une liste de noms DNS capables de résoudre un nom d’hôte donné en son adresse IP. | 
@@ -307,7 +307,7 @@ La définition des différentes options de montage pour les lecteurs Windows (Dr
 
 Ces options sont disponibles dans Insider build 17713 et ultérieures.
 
-| key | value | par défaut | Remarques|
+| key | value | default | Remarques|
 |:----|:----|:----|:----|
 | enabled | booléen | `true` | La définition de cette clé permet de déterminer si WSL prend en charge le lancement des processus Windows. |
 | appendWindowsPath | booléen | `true` | La définition de cette clé détermine si WSL ajoute des éléments de chemin Windows à la variable d’environnement $PATH. | 

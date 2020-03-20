@@ -80,7 +80,7 @@ C:\temp> wsl ls -la "/mnt/c/Program Files"
 
 ## <a name="run-windows-tools-from-wsl"></a>Exécuter des outils Windows à partir de WSL
 
-WSL peut appeler des fichiers binaires Windows directement à partir de la ligne de commande WSL à l’aide de `[binary name].exe`.  Exemple : `notepad.exe`.  Pour faciliter l’exécution des exécutables Windows, le chemin Windows est inclus dans la variable Linux `$PATH` dans Fall Creators Update.
+WSL peut appeler des fichiers binaires Windows directement à partir de la ligne de commande WSL à l’aide de `[binary name].exe`.  Par exemple, `notepad.exe`.  Pour faciliter l’exécution des exécutables Windows, le chemin Windows est inclus dans la variable Linux `$PATH` dans Fall Creators Update.
 
 Les applications exécutées de cette manière ont les propriétés suivantes :
 
@@ -89,7 +89,7 @@ Les applications exécutées de cette manière ont les propriétés suivantes :
 1. Sont exécutées en tant qu’utilisateur Windows actif.
 1. Apparaissent dans le Gestionnaire des tâches de Windows comme si elles étaient directement exécutées à partir de l’invite CMD.
 
-Exemple :
+Exemple :
 
 ``` BASH
 $ notepad.exe
@@ -116,7 +116,7 @@ $ cmd.exe /c dir
 
 Les fichiers binaires Windows doivent inclure l’extension de fichier, correspondre à la casse de fichier et être exécutables.  Les fichiers non exécutables, dont les scripts de commandes et  les commandes natives CMD comme `dir`, peuvent être exécutés avec la commande `cmd.exe /C`.
 
-Exemples :
+Exemples :
 
 ``` BASH
 $ cmd.exe /C dir
@@ -215,7 +215,7 @@ Les fichiers binaires Linux peuvent être appelés à partir de l’invite de co
 1. Sont exécutés en tant qu’utilisateur par défaut WSL.
 1. Ont les mêmes droits d’administration Windows que le terminal et le processus appelant.
 
-Exemple :
+Exemple :
 
 ```console
 C:\temp> bash -c "ls -la"
@@ -223,7 +223,7 @@ C:\temp> bash -c "ls -la"
 
 Les commandes Linux appelées de cette façon sont gérées comme n’importe quelle autre application Windows.  Des actions comme les entrées, la création de canaux et la redirection de fichiers fonctionnent comme prévu.
 
-Exemples :
+Exemples :
 
 ```console
 C:\temp>bash -c "sudo apt-get update"
@@ -238,7 +238,7 @@ C:\temp> dir | bash -c "grep foo"
 C:\temp> bash -c "ls -la" > out.txt
 ```
 
-Les commandes WSL passées à `bash -c` sont transmises au processus WSL sans modification.  Les chemins de fichiers doivent être spécifiés au format WSL et des précautions doivent être prises pour placer les caractères appropriés dans une séquence d’échappement. Exemple :
+Les commandes WSL passées à `bash -c` sont transmises au processus WSL sans modification.  Les chemins de fichiers doivent être spécifiés au format WSL et des précautions doivent être prises pour placer les caractères appropriés dans une séquence d’échappement. Exemple :
 
 ```console
 C:\temp> bash -c "ls -la /proc/cpuinfo"
@@ -257,13 +257,13 @@ Le sous-système Windows pour Linux peut appeler des fichiers binaires Windows d
 1. Sont exécutées en tant qu’utilisateur Windows actif.
 1. Apparaissent dans le Gestionnaire des tâches de Windows comme si elles étaient directement exécutées à partir de l’invite CMD.
 
-Exemple :
+Exemple :
 
 ``` BASH
 $ /mnt/c/Windows/System32/notepad.exe
 ```
 
-Dans WSL, ces exécutables sont gérés de la même façon que les exécutables Linux natifs.  Cela signifie que l’ajout de répertoires au chemin Linux et la création de canaux entre les commandes fonctionnent comme prévu.  Exemples :
+Dans WSL, ces exécutables sont gérés de la même façon que les exécutables Linux natifs.  Cela signifie que l’ajout de répertoires au chemin Linux et la création de canaux entre les commandes fonctionnent comme prévu.  Exemples :
 
 ``` BASH
 $ export PATH=$PATH:/mnt/c/Windows/System32
@@ -275,7 +275,7 @@ $ cmd.exe /c dir
 
 Le fichier binaire Windows doit inclure l’extension de fichier, correspondre à la casse de fichier et être exécutable.  Les fichiers non exécutables, dont les scripts de commandes et une commande comme `dir`, peuvent être exécutés avec la commande `/mnt/c/Windows/System32/cmd.exe /C`.
 
-Exemples :
+Exemples :
 
 ``` BASH
 $ /mnt/c/Windows/System32/cmd.exe /C dir

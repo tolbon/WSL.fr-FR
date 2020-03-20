@@ -968,7 +968,7 @@ Voici la liste des syscalls nouveaux ou améliorés qui ont une implémentation 
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Problèmes connus
-#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[Problème GitHub 2392 : Dossiers Windows non reconnus par WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>[Problème GitHub 2392 : Dossiers Windows non reconnus par WSL...](https://github.com/Microsoft/BashOnWindows/issues/2392)
 Dans la build 16257, WSL rencontre des problèmes lors de l’énumération des fichiers/dossiers Windows par le biais de `/mnt/c/...`.
 Ce problème a été résolu et publié dans la build Insiders la semaine démarrant le 14/08/2017.
 
