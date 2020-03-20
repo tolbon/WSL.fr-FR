@@ -21,7 +21,7 @@ Ce projet active les éléments suivants :
 * Maintenance de la distribution Linux pour empaqueter et soumettre une distribution Linux sous la forme d’un fichier AppX qui s’exécute sur WSL
 * Développeurs pour créer des distributions Linux personnalisées qui peuvent être faisant sur leur ordinateur de développement
 
-## <a name="background"></a>Présentation
+## <a name="background"></a>Arrière-plan
 Nous distribuons Linux distributions pour WSL en tant qu’applications UWP par le biais du Microsoft Store. Vous pouvez installer ces applications qui s’exécuteront ensuite sur WSL-le sous-système qui se trouve dans le noyau Windows. Ce mécanisme de remise présente de nombreux avantages, comme indiqué dans un [billet de blog précédent](https://blogs.msdn.microsoft.com/commandline/2017/07/10/ubuntu-now-available-from-the-windows-store/).
 
 ## <a name="sideloading-a-custom-linux-distro-package"></a>Chargement un package distribution Linux personnalisé
@@ -29,17 +29,17 @@ Vous pouvez créer un package distribution Linux personnalisé en tant qu’appl
 Pour configurer votre ordinateur pour chargement des applications, vous devez l’activer dans les paramètres système sous « pour les développeurs ».  Assurez-vous que vous avez sélectionné le mode développeur ou les applications chargement
 
 ## <a name="for-linux-distro-maintainers"></a>Pour les Maintenateurs Linux distribution
-Pour envoyer un message au magasin, vous devez nous contacter pour recevoir l’approbation de la publication. Si vous êtes un propriétaire de distribution Linux désireux d’ajouter votre distribution à la Microsoft Store, contactez wslpartners@microsoft.com.
+Pour envoyer un message au magasin, vous devez nous contacter pour recevoir l’approbation de la publication. Si vous êtes un propriétaire de distribution Linux qui souhaite ajouter votre distribution au Microsoft Store, contactez wslpartners@microsoft.com.
 
-## <a name="getting-started"></a>Prise en main
+## <a name="getting-started"></a>Mise en route
 Suivez les instructions du [distribution Launcher GitHub référentiel](https://github.com/Microsoft/WSL-DistroLauncher) pour créer un package distribution Linux personnalisé.
 
  
-## <a name="team-blogs"></a>Blogs de l’équipe
+## <a name="team-blogs"></a>Blogs de l'équipe
 *  [Open source-exemple WSL pour les préserveurs de distribution Linux et les distributions Linux personnalisées chargement](https://blogs.msdn.microsoft.com/commandline/2018/03/26/wsl-distro-launcher/)
 * [Blog de ligne de commande](https://blogs.msdn.microsoft.com/commandline/)
 
-## <a name="provide-feedback"></a>Commentaires
+## <a name="provide-feedback"></a>Fournir des commentaires
 * [Distribution Launcher GitHub référentiel](https://github.com/Microsoft/WSL-DistroLauncher)
 * [GitHub Issue Tracker pour WSL](https://github.com/Microsoft/BashOnWindows/issues)
-* [Portail UserVoice de la ligne de commande](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)
+* [Portail UserVoice sur les lignes de commande](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)

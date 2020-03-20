@@ -25,7 +25,7 @@ Lorsque les métadonnées sont activées en tant qu’option de montage dans WSL
 
 WSL peut ajouter quatre attributs étendus NTFS :
 
-| Nom d'attribut | Description |
+| Nom de l’attribut | Description |
 | --- | --- |
 | $LXUID | ID du propriétaire de l’utilisateur |
 | $LXGID | ID du propriétaire du groupe |

@@ -27,14 +27,14 @@ Si vous ne pouvez pas effectuer une mise à niveau vers automne Creators Update 
 
 1. Activer le mode développeur pour exécuter WSL sur la mise à jour anniversaire de Windows 10 ou sur Creators Update, vous devez activer le mode développeur :
 
-    Ouvrir la**mise à jour et la sécurité** -> des **paramètres** -> **pour les développeurs**
+    Ouvrir des **paramètres** -> des -> de **sécurité et de mise à jour** **pour les développeurs**
 
     Sélectionnez la case d’option mode développeur  
     ![Activer le mode développeur](media/updateAndSecurity.png)
 
     > La nécessité d’activer le mode développeur a été [supprimée dans Windows 10 automne Creators Update](https://blogs.msdn.microsoft.com/commandline/2017/06/08/developer-mode-no-longer-required-for-windows-subsystem-for-linux/)
 
-1. Ouvrez une invite de commandes.  Tapez `bash` et appuyez sur entrée
+1. Ouvrez une invite de commandes.  Tapez `bash` et appuyez sur entrée.
 
     La première fois que vous exécutez bash sur Ubuntu sur Windows, vous êtes invité à accepter la licence de Canonical. Une fois accepté, WSL télécharge et installe l’instance Ubuntu sur votre ordinateur, et un raccourci « Bash sur Ubuntu sur Windows » est ajouté à votre menu Démarrer.
 
@@ -43,7 +43,7 @@ Si vous ne pouvez pas effectuer une mise à niveau vers automne Creators Update 
     La première fois que vous exécutez bash sur Ubuntu sur Windows, vous êtes invité à créer un nom d’utilisateur et un mot de passe UNIX. Suivez les [nouvelles instructions de l’instance distribution](initialize-distro.md) pour terminer l’installation
 
 1. Lancez un nouveau shell Ubuntu en procédant de l’une des deux :
-    * Exécution `bash` à partir d’une invite de commandes
+    * Exécution de `bash` à partir d’une invite de commandes
     * Cliquer sur le menu Démarrer « bash sur Ubuntu sur Windows »
 
     
@@ -56,14 +56,14 @@ Pour supprimer les distribution hérités de votre ordinateur, exécutez la comm
 wsl --unregister Legacy
 ```
 
-Si vous n’utilisez pas Windows version 1903 ou ultérieure, vous devrez peut-être `wslconfig /u Legacy` exécuter `lxrun /uninstall /full` ou à la place. 
+Si vous n’utilisez pas la version 1903 ou une version ultérieure de Windows, vous devrez peut-être exécuter `wslconfig /u Legacy` ou `lxrun /uninstall /full` à la place. 
 
 ### <a name="manually-deleting-the-legacy-distro"></a>Suppression manuelle de la distribution héritée
-Si vous le souhaitez, vous pouvez supprimer manuellement votre instance héritée. Cela peut être nécessaire si vous rencontrez des problèmes lors de la désinstallation de `lxrun.exe`la distribution héritée à l’aide de, ou si vous exécutez Windows 10 Spring 2018 Update `lxrun.exe`(ou version ultérieure) qui n’est pas livré avec.
+Si vous le souhaitez, vous pouvez supprimer manuellement votre instance héritée. Cela peut être nécessaire si vous rencontrez des problèmes lors de la désinstallation de la distribution héritée à l’aide de `lxrun.exe`ou si vous exécutez Windows 10 Spring 2018 Update (ou version ultérieure) qui n’est pas livré avec `lxrun.exe`.
 
-Pour forcer la suppression de votre distribution WSL héritée, `%localappdata%\lxss\` supprimez le dossier (et tous ses sous-contenus) à l’aide de l’Explorateur de fichiers Windows, ou de la ligne de commande :
+Pour forcer la suppression de votre distribution WSL héritée, supprimez le dossier `%localappdata%\lxss\` (et tous ses sous-contenus) à l’aide de l’Explorateur de fichiers Windows, ou de la ligne de commande :
 
-À l'aide de PowerShell
+À l’aide de PowerShell
 ```powershell
 rm -Recurse $env:localappdata/lxss/
 ```
