@@ -8,45 +8,45 @@ ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: 91bd479e922fc29bf11b89dcfe06fa381632c4fa
 ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76520548"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Instructions d’installation pour WSL 2
 
-Vous pouvez regarder la vidéo ci-dessous ou lire les informations de cet article pour savoir comment installer WSL2. 
+Vous pouvez regarder la vidéo ci-dessous ou lire cet article pour découvrir comment installer WSL2. 
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Learn-how-to-install-WSL-2/player]
 
 Pour installer et commencer à utiliser WSL 2, effectuez les étapes suivantes :
 
-> WSL 2 est disponible uniquement dans Windows 10 versions 18917 ou ultérieures
+> WSL 2 est disponible uniquement dans les builds 18917 et ultérieures de Windows 10
 
-- Vérifiez que vous avez installé WSL (vous trouverez des instructions pour le faire [ici](./install-win10.md)) et que vous exécutez Windows 10 **Build 18917** ou une version ultérieure.
-   - Pour vous assurer que vous utilisez la version 18917 ou une version ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Fast » ou l’anneau « lent ». 
+- Vérifiez que vous avez installé WSL (vous trouverez des instructions pour cela [ici](./install-win10.md)) et que vous exécutez la **build 18917** ou ultérieure de Windows 10
+   - Pour veiller à utiliser la build 18917 ou ultérieure, rejoignez [le programme Windows Insider](https://insider.windows.com/en-us/) et sélectionnez l’anneau « Rapide » ou l’anneau « Lent ». 
    - Vous pouvez vérifier votre version de Windows en ouvrant l’invite de commandes et en exécutant la commande `ver`.
 - Activer le composant facultatif « Plateforme de machine virtuelle »
 - Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
 - Vérifier les versions de WSL que vos distributions utilisent
 
-## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Activez le composant facultatif « plateforme de machine virtuelle » et assurez-vous que WSL est activé
+## <a name="enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled"></a>Activer le composant facultatif « Plateforme de machine virtuelle » et s’assurer que WSL est activé
 
-Vous devez vous assurer que le sous-système Windows pour Linux et les composants facultatifs de la plateforme d’ordinateur virtuel sont installés. Pour ce faire, exécutez la commande suivante dans PowerShell : 
+Vous devez vous assurer que le sous-système Windows pour Linux et les composants facultatifs de la plateforme de machine virtuelle sont installés. Pour ce faire, exécutez la commande suivante dans PowerShell : 
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-Redémarrez votre ordinateur pour terminer l’installation des deux composants.
+Redémarrez votre machine pour terminer l’installation des deux composants.
 
 
 ## <a name="set-a-distro-to-be-backed-by-wsl-2-using-the-command-line"></a>Définir une distribution basée sur WSL 2 en utilisant la ligne de commande
 
-Si vous n’avez pas de distribution Linux installé, reportez-vous à la page relative à l' [installation sur Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) docs pour obtenir des instructions sur l’installation d’un. 
+Si vous n’avez pas de distribution Linux installée, reportez-vous à la page [Installer sur Windows 10](./install-win10.md#install-your-linux-distribution-of-choice) pour obtenir des instructions sur son installation. 
 
-Pour définir un distribution, exécutez : 
+Pour définir une distribution, exécutez : 
 
 ```
 wsl --set-version <Distro> 2
@@ -64,7 +64,7 @@ Ainsi, toutes les nouvelles distributions que vous installerez seront initialis�
 
 ## <a name="finish-with-verifying-what-versions-of-wsl-your-distro-are-using"></a>Pour terminer, vérifiez quelles versions de WSL utilisent vos distributions.
 
-Pour vérifier les versions de WSL que chaque distribution utilise, utilisez la commande suivante (disponible uniquement dans Windows Build 18917 ou version ultérieure) :
+Pour vérifier les versions de WSL qu’utilise chaque distribution, utilisez la commande suivante (disponible uniquement dans la build 18917 ou ultérieure de Windows) :
 
 `wsl --list --verbose` ou `wsl -l -v`
 
@@ -80,8 +80,8 @@ Vous trouverez ci-dessous des erreurs associées et des suggestions de correctio
 * **Erreur lors d’une tentative de mise à niveau : `Invalid command line option: wsl --set-version Ubuntu 2`**
     * Vérifiez que le sous-système Windows pour Linux est activé et que vous utilisez Windows version de build 18917 ou ultérieure. Pour activer WSL, exécutez cette commande dans une invite PowerShell avec des privilèges d’administrateur : `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. Vous trouverez les instructions complètes de l’installation de WSL [ici](./install-win10.md).
 
-* **L’opération demandée n’a pas pu être effectuée en raison d’une limitation du système de disque virtuel. Les fichiers de disque dur virtuel doivent être décompressés et déchiffrés et ne doivent pas être éparpillés.**
-    * Vérifiez [WSL GitHub thread #4103](https://github.com/microsoft/WSL/issues/4103) où ce problème est suivi pour obtenir des informations mises à jour.
+* **Impossible de terminer l’opération demandée du fait d’une limitation du système de disque virtuel. Les fichiers de disque dur virtuel doivent être décompressés et déchiffrés, mais ne doivent pas être partiellement alloués.**
+    * Vérifiez le [thread GitHub WSL n° 4103](https://github.com/microsoft/WSL/issues/4103) où ce problème est suivi pour obtenir des informations mises à jour.
 
-* **Le terme « WSL » n’est pas reconnu comme le nom d’une applet de commande, d’une fonction, d’un fichier de script ou d’un programme exécutable.** 
-    * Assurez-vous que le [composant facultatif sous-système Windows pour Linux est installé](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> En outre, si vous utilisez un appareil Arm64 et exécutez cette commande à partir de PowerShell, vous recevrez cette erreur. Exécutez plutôt `wsl.exe` à partir de [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)ou de l’invite de commandes. 
+* **Le terme « wsl » n’est pas reconnu comme nom d’applet de commande, fonction, fichier de script ou programme exécutable.** 
+    * Assurez-vous que le [composant facultatif Sous-système Windows pour Linux est installé](./wsl2-install.md#enable-the-virtual-machine-platform-optional-component-and-make-sure-wsl-is-enabled).<br> De plus, si vous utilisez un appareil Arm64 et exécutez cette commande à partir de PowerShell, vous recevrez cette erreur. Au lieu de cela, exécutez `wsl.exe` à partir de [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6) ou d’une invite de commandes. 
