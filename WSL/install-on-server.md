@@ -6,12 +6,13 @@ ms.date: 05/22/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 51a2e3f3443ed9b1ba3d8ab79977f22839ee0283
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.localizationpriority: high
+ms.openlocfilehash: 8859929fe45c9989d367af5f82191162963e6b4f
+ms.sourcegitcommit: 0a001ada2131f80dd77b114fc14f2fde43c947ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269782"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256392"
 ---
 # <a name="windows-server-installation-guide"></a>Guide d’installation sur Windows Server
 
@@ -40,8 +41,8 @@ Maintenant que vous avez téléchargé une distribution, extrayez son contenu et
 1. Extrayez le contenu du package `<distro>.appx`, par exemple à l’aide de PowerShell :
 
     ```powershell
-    Rename-Item ./Ubuntu.appx ./Ubuntu.zip
-    Expand-Archive ./Ubuntu.zip ./Ubuntu
+    Rename-Item .\Ubuntu.appx .\Ubuntu.zip
+    Expand-Archive .\Ubuntu.zip .\Ubuntu
     ```
 
 2. Exécutez le lanceur de distribution. Pour réaliser l’installation, exécutez l’application de lancement de distribution dans le dossier cible, nommé `<distro>.exe`. Par exemple : `ubuntu.exe`, etc.
