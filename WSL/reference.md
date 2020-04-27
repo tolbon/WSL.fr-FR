@@ -1,17 +1,17 @@
 ---
 title: Informations de référence sur les commandes du sous-système Windows pour Linux
 description: Liste des commandes de gestion du sous-système Windows pour Linux
-keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows pour Linux, sous-système Windows, Ubuntu
+keywords: BashOnWindows, bash, wsl, Windows, sous-système Windows pour Linux, sous-système windows, ubuntu
 ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 82908295-a6bd-483c-a995-613674c2677e
 ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: d74a6926fd797f2e1ede0fd5d8d080d0f1ce3f6b
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "71269841"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>Informations de référence sur les commandes pour le sous-système Windows pour Linux
