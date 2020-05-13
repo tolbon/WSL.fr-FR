@@ -4,12 +4,12 @@ description: Lister les références et configurer plusieurs distributions Linux
 keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 59419919be138a20ab57e1a6d26a411e1531bf9f
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: e72822bdec0ef5788bd384a5795a91d746428800
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235901"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343892"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>Commandes WSL et configurations de lancement
 
@@ -161,6 +161,17 @@ Pour réinstaller la distribution, recherchez-la dans le Microsoft Store et sél
 
 Exécutez WSL en tant qu’utilisateur spécifié. Notez que l’utilisateur doit exister dans la distribution WSL.
 
+## <a name="change-the-default-user-for-a-distribution"></a>Modifier l’utilisateur par défaut pour une distribution
+
+`<DistributionName> config --default-user <Username>`
+
+Modifiez l’utilisateur par défaut de votre journal de distribution. L’utilisateur doit déjà exister à l’intérieur de la distribution afin de devenir l’utilisateur par défaut. 
+
+Par exemple : `ubuntu config --default-user johndoe` modifier l’utilisateur par défaut de la distribution Ubuntu pour l’utilisateur « JohnDoe ».
+
+> [!NOTE]
+> Si vous avez des difficultés à déterminer le nom de votre distribution, consultez la section [répertorier les distributions](https://docs.microsoft.com/windows/wsl/wsl-config#list-distributions) de la commande pour répertorier le nom officiel des distributions installées. 
+
 ## <a name="run-a-specific-distribution"></a>Exécuter une distribution spécifique
 
 `wsl -d <DistributionName>`, `wsl --distribution <DistributionName>`
@@ -247,22 +258,22 @@ WSL prend en charge deux sections : `automount` et `network`.
 
 Section : `[automount]`
 
-| key        | value                          | default      | HDInsight                                                                                                                                                                                                                                                                                                                          |
+| key        | value                          | default      | Remarques                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| enabled    | boolean                        | true         | `true` : les lecteurs fixes (c.-à-d. `C:/` ou `D:/`) sont automatiquement montés avec DrvFs sous `/mnt`.  `false`signifie que les disques ne seront pas montés automatiquement, mais vous pouvez les monter manuellement ou via `fstab` .                                                                                                             |
-| mountFsTab | boolean                        | true         | `true` : `/etc/fstab` est traité au démarrage de WSL. /etc/fstab est un fichier dans lequel vous pouvez déclarer d’autres systèmes de fichiers, comme un partage SMB. Ainsi, vous pouvez monter ces systèmes de fichiers automatiquement dans WSL au démarrage.                                                                                                                |
+| enabled    | booléen                        | true         | `true` : les lecteurs fixes (c.-à-d. `C:/` ou `D:/`) sont automatiquement montés avec DrvFs sous `/mnt`.  `false`signifie que les disques ne seront pas montés automatiquement, mais vous pouvez les monter manuellement ou via `fstab` .                                                                                                             |
+| mountFsTab | booléen                        | true         | `true` : `/etc/fstab` est traité au démarrage de WSL. /etc/fstab est un fichier dans lequel vous pouvez déclarer d’autres systèmes de fichiers, comme un partage SMB. Ainsi, vous pouvez monter ces systèmes de fichiers automatiquement dans WSL au démarrage.                                                                                                                |
 | root       | String                         | `/mnt/`      | Définit le répertoire dans lequel les lecteurs fixes sont montés automatiquement. Par exemple, si vous avez un répertoire dans WSL à l’emplacement `/windir/` et que vous le spécifiez en tant que racine, vos lecteurs fixes sont censés être montés à l’emplacement `/windir/c`.                                                                                              |
 | options    | Liste de valeurs séparées par des virgules | Chaîne vide | Cette valeur est ajoutée à la chaîne des options de montage DrvFs par défaut. **Seules les options propres à DrvFs peuvent être spécifiées.** Les options que le fichier binaire de montage analyse normalement dans un indicateur ne sont pas prises en charge. Si vous souhaitez spécifier explicitement ces options, vous devez inclure chaque lecteur pour lequel vous souhaitez le faire dans /etc/fstab. |
 
 Par défaut, WSL définit les options uid et gid sur la valeur de l’utilisateur par défaut (dans une distribution Ubuntu, l’utilisateur par défaut est créé avec uid=1000,gid=1000). Si l’utilisateur spécifie une option gid ou uid explicitement par le biais de cette clé, la valeur associée est remplacée. Dans le cas contraire, la valeur par défaut est toujours ajoutée.
 
-**Remarque :** Ces options sont appliquées en tant qu’options de montage pour tous les lecteurs montés automatiquement. Pour changer les options d’un lecteur spécifique uniquement, utilisez /etc/fstab à la place.
+**Remarque :** Ces options sont appliquées en tant qu’options de montage pour tous les lecteurs montés automatiquement. Pour changer les options d’un lecteur spécifique uniquement, utilisez /etc/fstab à la place.
 
 #### <a name="mount-options"></a>Options de montage
 
-La définition des différentes options de montage pour les lecteurs Windows (DrvFs) peut contrôler la façon dont les autorisations de fichier sont calculées pour les fichiers Windows. Les options suivantes sont disponibles :
+La définition des différentes options de montage pour les lecteurs Windows (DrvFs) peut contrôler la façon dont les autorisations de fichier sont calculées pour les fichiers Windows. Les options suivantes sont disponibles :
 
-| Clé | Description | Default |
+| Clé | Description | Par défaut |
 |:----|:----|:----|
 |uid| identifiant utilisateur utilisé pour le propriétaire de tous les fichiers | identifiant utilisateur par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
 |gid| identifiant de groupe utilisé pour le propriétaire de tous les fichiers | identifiant de groupe par défaut de votre distribution WSL (à la première installation, la valeur par défaut est 1000)
@@ -270,16 +281,16 @@ La définition des différentes options de montage pour les lecteurs Windows (Dr
 |fmask | masque octal des autorisations à exclure pour tous les fichiers | 000
 |dmask | masque octal des autorisations à exclure pour tous les répertoires | 000
 
-**Remarque :** Les masques d’autorisation sont placés via une opération OR logique avant d’être appliqués aux fichiers ou aux répertoires. 
+**Remarque :** Les masques d’autorisation passent par une opération OR logique avant d’être appliqués aux fichiers et aux répertoires. 
 
 #### <a name="network"></a>réseau
 
 Étiquette de section : `[network]`
 
-| key | value | default | HDInsight|
+| key | value | default | Remarques|
 |:----|:----|:----|:----|
-| generateHosts | boolean | `true` | `true` : WSL génère `/etc/hosts`. Le fichier `hosts` contient une carte statique de noms d’hôtes correspondant à l’adresse IP. |
-| generateResolvConf | boolean | `true` | `true` : WSL génère `/etc/resolv.conf`. `resolv.conf` contient une liste de noms DNS capables de résoudre un nom d’hôte donné en son adresse IP. | 
+| generateHosts | booléen | `true` | `true` : WSL génère `/etc/hosts`. Le fichier `hosts` contient une carte statique de noms d’hôtes correspondant à l’adresse IP. |
+| generateResolvConf | booléen | `true` | `true` : WSL génère `/etc/resolv.conf`. `resolv.conf` contient une liste de noms DNS capables de résoudre un nom d’hôte donné en son adresse IP. | 
 
 #### <a name="interop"></a>interop
 
@@ -287,10 +298,10 @@ La définition des différentes options de montage pour les lecteurs Windows (Dr
 
 Ces options sont disponibles dans Insider build 17713 et ultérieures.
 
-| key | value | default | HDInsight|
+| key | value | default | Remarques|
 |:----|:----|:----|:----|
-| enabled | boolean | `true` | La définition de cette clé permet de déterminer si WSL prend en charge le lancement des processus Windows. |
-| appendWindowsPath | boolean | `true` | La définition de cette clé détermine si WSL ajoute des éléments de chemin Windows à la variable d’environnement $PATH. |
+| enabled | booléen | `true` | La définition de cette clé permet de déterminer si WSL prend en charge le lancement des processus Windows. |
+| appendWindowsPath | booléen | `true` | La définition de cette clé détermine si WSL ajoute des éléments de chemin Windows à la variable d’environnement $PATH. |
 
 #### <a name="user"></a>utilisateur
 

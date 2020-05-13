@@ -5,7 +5,7 @@ Si vous trouvez des problèmes ou des erreurs dans le document ou si vous avez u
 
 > **Remarque :** Ce suivi des problèmes de référentiel est destiné uniquement à la création de rapports sur les documents WSL. Autres problèmes liés à référentiel :
 > * WSLhttps://github.com/Microsoft/WSL/
-> * Console Windows :https://github.com/Microsoft/Console/
+> * Console Windows :https://github.com/Microsoft/Terminal/
 
 ## <a name="external-links"></a>Liens externes
 
