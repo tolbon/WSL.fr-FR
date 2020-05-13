@@ -1,0 +1,40 @@
+- name: Documentation WSL
+  href: index.md
+- name: Vue d’ensemble
+  items:
+    - name: "Qu’est-ce que WSL\_?"
+      href: about.md
+    - name: "Nouveautés de WSL\_2"
+      href: wsl2-index.md
+    - name: "Comparaison entre WSL\_2 et WSL\_1"
+      href: compare-versions.md
+- name: Démarrage rapide
+  items:
+    - name: "Installer WSL et le mettre à jour vers WSL\_2"
+      href: install-win10.md
+    - name: Installation sur Windows Server
+      href: install-on-server.md
+    - name: Créer un compte d’utilisateur et un mot de passe
+      href: user-support.md
+- name: Aide et Astuces
+  items:
+    - name: Commandes d’interopérabilité
+      href: interop.md
+    - name: Commandes et configurations de lancement
+      href: wsl-config.md
+    - name: Autorisations de fichier
+      href: file-permissions.md
+    - name: Configurer WSL pour votre entreprise
+      href: enterprise.md
+    - name: Créer une distribution personnalisée
+      href: build-custom-distro.md
+    - name: Information de référence sur la ligne de commande
+      href: reference.md
+- name: Forum Aux Questions
+  href: faq.md
+- name: "FAQ WSL\_2"
+  href: wsl2-faq.md
+- name: Résolution des problèmes
+  href: troubleshooting.md
+- name: Notes de publication
+  href: release-notes.md
