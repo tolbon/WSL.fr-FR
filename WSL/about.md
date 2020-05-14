@@ -1,51 +1,64 @@
 ---
-title: En savoir plus sur le sous-système Windows pour Linux
-description: Apprenez-en plus sur le fonctionnement du sous-système Windows pour Linux.
+title: Vue d’ensemble du sous-système Windows pour Linux
+description: Découvrez le sous-système Windows pour Linux, les différentes versions et les différentes façons de les utiliser.
 keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, GNU, Linux
-ms.date: 07/11/2016
+ms.date: 05/12/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: fbb1ce5cf5d5c83e25d0a6a0cece7b70537a44a1
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 90a661c408cacbef95a869ac896a40381120d52e
+ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "74200192"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83270793"
 ---
-# <a name="windows-subsystem-for-linux-documentation"></a>Documentation sur le sous-système Windows pour Linux
+# <a name="what-is-the-windows-subsystem-for-linux"></a>Qu’est-ce que le sous-système Windows pour Linux ?
 
-Le sous-système Windows pour Linux permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle.  
+Le sous-système Windows pour Linux permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle.
 
 Vous pouvez :
 
-1. Choisir vos distributions GNU/Linux préférées à partir du [Microsoft Store](https://aka.ms/wslstore)
-1. Exécuter des logiciels en ligne de commande courants gratuits tels que `grep`, `sed` et `awk` ou d’autres fichiers binaires ELF-64 
-1. Exécuter des scripts de shell Bash et des applications en ligne de commande GNU/Linux, notamment :  
-    * Outils : vim, emacs, tmux
-    * Langages : Javascript/node.js, Ruby, Python, C/C++, C# & F#, Rust, Go, etc.
-    * Services : SSHD, MySQL, Apache, lighttpd
-1. Installer des logiciels supplémentaires en utilisant votre propre gestionnaire de package de distribution GNU/Linux
-1. Appeler des applications Windows à l’aide d’un shell de ligne de commande de type UNIX
-1. Appeler des applications GNU/Linux sur Windows
+* Choisir vos distributions GNU/Linux préférées à partir du [Microsoft Store](https://aka.ms/wslstore)
+* Exécuter des outils en ligne de commande courants tels que `grep`, `sed` et `awk`, ou d’autres fichiers binaires ELF-64.
+* Exécuter des scripts de shell Bash et des applications en ligne de commande GNU/Linux, notamment :  
+    * Outils : vim, emacs, tmux *Langages : [NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2), Javascript, [Python](https://docs.microsoft.com/windows/python/web-frameworks), Ruby, C/C++, C# & F#, Rust, Go, etc. *Services : SSHD, MySQL, Apache, lighttpd, [MongoDB](https://docs.microsoft.com/windows/nodejs/databases), [PostgreSQL](https://docs.microsoft.com/windows/python/databases).
+* Installer des logiciels supplémentaires en utilisant votre propre gestionnaire de package de distribution GNU/Linux
+* Appeler des applications Windows à l’aide d’un shell de ligne de commande de type UNIX
+* Appeler des applications GNU/Linux sur Windows
 
-## <a name="getting-started"></a>Prise en main
+## <a name="what-is-wsl-2"></a>Qu’est-ce que WSL 2 ?
 
-* [Installer Linux sur Windows 10](install-win10.md)
-* [Consulter les informations de référence sur les commandes](reference.md)
-* [Consulter le forum aux questions](faq.md)
+WSL 2 est une nouvelle version de l’architecture du sous-système Windows pour Linux qui sous-tend le sous-système Windows pour Linux afin d’exécuter les binaires ELF64 Linux sur Windows. Ses principaux objectifs consistent à **augmenter les performances du système de fichiers**, ainsi qu’à ajouter la **compatibilité complète des appels système**.
 
-## <a name="team-blogs"></a>Blogs de l’équipe
-*  [Billet de présentation offrant un ensemble de vidéos et de blogs](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
-* [Blog sur les lignes de commande](https://blogs.msdn.microsoft.com/commandline/) (actif)
-* [Blog sur le sous-système Windows pour Linux](https://blogs.msdn.microsoft.com/wsl/) (historique)
+Cette nouvelle architecture change la façon dont ces fichiers binaires Linux interagissent avec Windows et votre matériel informatique, mais offre toujours la même expérience utilisateur que dans WSL 1 (la version actuellement largement disponible).
 
-## <a name="posts--articles"></a>Billets et articles
-* [Run Bash on Ubuntu on Windows](https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/)
-* [Developers Can Run Bash And Usermode Ubuntu Linux Binaries On Windows 10](https://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
-* [Ubuntu on Windows – The Ubuntu Userspace for Windows Developers](https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/) 
+Les distributions Linux individuelles peuvent être exécutées avec l’architecture WSL 1 ou WSL 2. Chaque distribution peut être mise à niveau ou rétrogradée à tout moment et vous pouvez exécuter des distributions WSL 1 et WSL 2 côte à côte. WSL 2 exploite une architecture entièrement nouvelle qui tire profit de l’exécution d’un véritable noyau Linux.
 
-## <a name="provide-feedback"></a>Commentaires
-* [Outil de suivi des problèmes GitHub](https://github.com/Microsoft/BashOnWindows/issues)
+## <a name="next-steps"></a>Étapes suivantes
 
+* [Installer WSL 1 et le mettre à jour vers WSL 2](./install-win10.md)
+
+* [Comparer WSL 2 et WSL 1](./compare-versions.md)
+
+* [Créer un compte d’utilisateur et un mot de passe pour votre nouvelle distribution Linux](./user-support.md)
+
+* [Consulter les questions fréquentes](./faq.md)
+
+* [Consulter les questions fréquentes sur WSL 2](./wsl2-faq.md)
+
+* [Résolution des problèmes](./troubleshooting.md)
+
+* [Exécuter des commandes d’interopérabilité entre Windows et Linux](./interop.md)
+
+* [Exécuter des commandes et des configurations de lancement](./wsl-config.md)
+
+* [Configurer les autorisations de fichier](./file-permissions.md)
+
+* [Configurer WSL pour les entreprises](./enterprise.md)
+
+* [Référencer les commandes WSL](./reference.md)
+
+* [Créer une distribution personnalisée](./build-custom-distro.md)
+
+* [Consulter les notes de publication de WSL](./release-notes.md)

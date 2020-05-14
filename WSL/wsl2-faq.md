@@ -7,14 +7,14 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 6a70cf1c3a139610785ff506d78b8c3621620b4c
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 35edad06775e75eef6d81d018355d8f28d772deb
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80307459"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235892"
 ---
-# <a name="wsl-2-faq"></a>FAQ WSL 2
+# <a name="wsl-2-faqs"></a>FAQ WSL 2
 
 Vous trouverez ci-dessous une liste de questions fréquemment posées (FAQ) sur le sous-système Windows pour Linux 2.
 
@@ -52,9 +52,9 @@ Veillez à remplacer « &lt;VMName&gt; » par le nom de votre machine virtuell
 
 ## <a name="can-i-use-wslconf-in-wsl-2"></a>Puis-je utiliser wsl.conf dans WSL 2 ?
 
-WSL 2 prend en charge le même fichier wsl.conf que WSL 1 utilise. Cela signifie que toutes les options de configuration que vous aviez définies dans une distribution WSL 1, telles que le montage automatique de lecteurs Windows, l’activation ou la désactivation de l’interopérabilité, le changement du répertoire où les lecteurs Windows sont montés, etc., fonctionneront aussi dans WSL 2. Vous pouvez en apprendre davantage sur les options de configuration dans WSL dans la page [Gestion des distributions](./wsl-config.md). 
+WSL 2 prend en charge le même fichier wsl.conf que WSL 1 utilise. Cela signifie que toutes les options de configuration que vous aviez définies dans une distribution WSL 1, telles que le montage automatique de lecteurs Windows, l’activation ou la désactivation de l’interopérabilité, le changement du répertoire où les lecteurs Windows sont montés, etc., fonctionneront aussi dans WSL 2. Vous pouvez en apprendre davantage sur les options de configuration dans WSL dans la page [Gestion des distributions](./wsl-config.md).
 
  [1]: https://www.virtualbox.org/wiki/Changelog-6.0
- [2]: https://docs.microsoft.com/en-us/virtualization/api/
+ [2]: https://docs.microsoft.com/virtualization/api/
  [3]: https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/
  [4]: https://blogs.vmware.com/workstation/2020/01/vmware-workstation-tech-preview-20h1.html
