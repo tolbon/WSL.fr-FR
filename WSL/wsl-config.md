@@ -4,12 +4,12 @@ description: Lister les références et configurer plusieurs distributions Linux
 keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: e72822bdec0ef5788bd384a5795a91d746428800
-ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
+ms.openlocfilehash: 914bce22b789d379420823d44d063bc84ec39ac1
+ms.sourcegitcommit: 509691ed3d42c9e0171e6a44e09003d4eb24f9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83343892"
+ms.locfileid: "83380426"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>Commandes WSL et configurations de lancement
 
@@ -317,11 +317,24 @@ Ces options sont disponibles dans Build 18980 et versions ultérieures.
 
 > **Disponible dans Windows Build 19041 et versions ultérieures**
 
-Vous pouvez configurer des options globales de WSL en plaçant un `.wslconfig` fichier dans le répertoire racine de votre dossier utilisateurs : `C:\Users\<yourUserName>\.wslconfig` . Ce fichier peut contenir les options suivantes :
+Vous pouvez configurer des options globales de WSL en plaçant un `.wslconfig` fichier dans le répertoire racine de votre dossier utilisateurs : `C:\Users\<yourUserName>\.wslconfig` . 
+
+Voici un exemple de fichier. wslconfig :
+
+```console
+[wsl2]
+kernel=C:\\temp\\myCustomKernel
+memory=4GB # Limits VM memory in WSL 2 to 4 GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+```
+
+Ce fichier peut contenir les options suivantes :
 
 ### <a name="wsl-2-settings"></a>Paramètres WSL 2
 
-Ces paramètres affectent la machine virtuelle qui alimente toute distribution WSL 2. 
+Étiquette de section : `[wsl2]`
+
+Ces paramètres affectent la machine virtuelle qui alimente toute distribution WSL 2.
 
 | key | value | default | HDInsight|
 |:----|:----|:----|:----|
