@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 5651b0869ff97899a768985ce6efa006afa77a9b
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 3c3681b0e0e8317917b4ec7c37c9bb2f0bbe9c95
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77624933"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343898"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Forum aux questions sur le sous-système Windows pour Linux
 
@@ -202,9 +202,9 @@ Dans certains cas, la désactivation du pare-feu permet d’obtenir l’accès. 
 ## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>Comment accéder à un port à partir de WSL dans Windows ?
 WSL partage l’adresse IP de Windows, car il s’exécute sur Windows. Par conséquent, vous pouvez accéder à n’importe quel port sur localhost ; par exemple, si vous avez du contenu web sur le port 1234, vous pouvez utiliser https://localhost:1234 dans votre navigateur Windows.
 
-## <a name="how-can-i-back-up-my-wsl-distros"></a>Comment sauvegarder mes distributions WSL ?
+## <a name="how-can-i-back-up-my-wsl-distros-or-move-them-from-one-drive-to-another"></a>Comment sauvegarder mes distributions WSL ou les déplacer d’un lecteur à un autre ?
 
-La meilleure façon de sauvegarder vos distributions est disponible dans la version 1809 et ultérieure de Windows. Vous pouvez exporter l’intégralité de votre distribution vers un tarball à l’aide de la commande `wsl --export`. Vous pouvez ensuite réimporter cette distribution dans WSL à l’aide de la commande `wsl --import`, ce qui vous permet de sauvegarder et d’enregistrer les états de vos distributions WSL. 
+La meilleure façon de sauvegarder ou de déplacer vos distributions consiste à utiliser les commandes d’exportation/importation disponibles dans Windows version 1809 et ultérieure. Vous pouvez exporter l’intégralité de votre distribution vers un tarball à l’aide de la commande `wsl --export`. Vous pouvez ensuite réimporter cette distribution dans WSL à l’aide de la commande `wsl --import`, ce qui peut nommer un nouvel emplacement de lecteur pour l’importation. Vous pouvez ainsi sauvegarder et enregistrer les états de vos distributions WSL, ou déplacer ces dernières. 
 
 Notez que les services de sauvegarde classiques qui sauvegardent les fichiers dans vos dossiers Appdata (comme la sauvegarde Windows) n’endommageront pas vos fichiers Linux.
 

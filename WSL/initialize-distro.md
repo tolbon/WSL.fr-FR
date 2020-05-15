@@ -1,50 +1,50 @@
 ---
-title: Initialisation d’une nouvelle distribution Linux WSL
+title: Initialiser une nouvelle distribution Linux WSL
 description: Après avoir installé une distribution Linux pour WSL, effectuez l’initialisation en suivant ces étapes simples.
 keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu, debian, suse, windows 10
 ms.date: 07/24/2018
 ms.topic: article
-ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: c33d349a6d39c325b079ccbf7ed6350bed796e33
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 7ce4455dd4ab5e75d69ba841d7dfb7963af9c891
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "71269587"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235790"
 ---
-# <a name="initializing-a-newly-installed-distro"></a>Initialisation d’une distribution nouvellement installée
-Une fois votre distribution téléchargée et installée, vous devez effectuer l’initialisation de la nouvelle distribution :
+# <a name="initializing-a-newly-installed-distribution"></a>Initialisation d’une distribution nouvellement installée
 
-## <a name="launch-a-distro"></a>Lancer une distribution
-Pour effectuer l’initialisation de votre distribution nouvellement installée, lancez une nouvelle instance. Pour ce faire, vous pouvez cliquer sur le bouton « Lancer » dans l’application Microsoft Store ou lancer la distribution à partir du menu Démarrer :
+Une fois votre distribution téléchargée et installée, vous devez l’initialiser :
+
+## <a name="launch-a-distribution"></a>Lancer une distribution
+
+Pour effectuer l’initialisation de votre distribution nouvellement installée, lancez une nouvelle instance. Pour ce faire, cliquez sur le bouton « Lancer » dans l’application Microsoft Store ou lancez la distribution à partir du menu Démarrer :
 
 > Astuce : Vous pouvez épingler vos distributions les plus fréquemment utilisées à votre menu Démarrer et/ou à votre barre des tâches.
 
 ![Lancer les distributions à partir du menu Démarrer](media/start-menu.png)
 
-> Sur Windows Server, vous pouvez lancer l’exécutable du lanceur de votre distribution `<distro>.exe` à partir du dossier d’installation de la distribution.
+> Sur Windows Server, vous pouvez lancer l’exécutable du lanceur `<distribution>.exe` de votre distribution à partir du dossier d’installation de cette dernière.
 
-La première fois qu’une distribution nouvellement installée s’exécute, une fenêtre de console s’ouvre et vous êtes invité à attendre une minute ou deux, le temps que l’installation se termine.
+Lors de la première exécution d’une distribution nouvellement installée, une fenêtre de console s’ouvre et vous êtes invité à attendre une minute ou deux, le temps que l’installation se termine.
 
-> Au cours de cette dernière étape de l’installation, les fichiers de la distribution sont décompressés et stockés sur votre PC, prêts à être utilisés. Cette opération peut prendre environ une minute ou plus en fonction des performances des dispositifs de stockage de votre PC. Cette phase d’installation initiale est requise uniquement lors d’une nouvelle installation d’une distribution : tous les lancements ultérieurs doivent prendre moins d’une seconde.
+> Au cours de cette dernière étape de l’installation, les fichiers de la distribution sont décompressés et stockés sur votre PC, prêts à être utilisés. Cette opération peut prendre environ une minute ou plus en fonction des performances des dispositifs de stockage de votre PC. Cette phase d’installation initiale est nécessaire uniquement lors d’une nouvelle installation d’une distribution : tous les lancements ultérieurs doivent normalement prendre moins d’une seconde.
 
 ## <a name="setting-up-a-new-linux-user-account"></a>Configuration d’un nouveau compte d’utilisateur Linux
 
-Une fois l’installation terminée, vous êtes invité à créer un compte d’utilisateur (et son mot de passe). 
+Une fois l’installation terminée, vous êtes invité à créer un compte d’utilisateur (et son mot de passe).
 
 ![Décompression Ubuntu dans la console Windows](media/UbuntuInstall.png)
 
 Ce compte d’utilisateur est destiné à l’utilisateur non-administrateur normal sous lequel vous vous connectez par défaut lors du lancement d’une distribution.
 
-> Vous pouvez choisir le nom d’utilisateur et le mot de passe de votre choix : ils n’ont aucun impact sur votre nom d’utilisateur Windows. 
+> Vous pouvez choisir le nom d’utilisateur et le mot de passe de votre choix : ils n’ont aucun impact sur votre nom d’utilisateur Windows.
 
 Quand vous ouvrez une nouvelle instance de la distribution, vous n’êtes pas invité à entrer votre mot de passe, mais **si vous élevez un processus à l’aide de `sudo`, vous devez l’entrer**. Veillez donc à choisir un mot de passe facile à mémoriser ! Pour plus d’informations, consultez la page du [support utilisateur](user-support.md).
 
-## <a name="update--upgrade-your-distros-packages"></a>Mettre à jour et mettre à niveau les packages de votre distribution
+## <a name="update--upgrade-your-distributions-packages"></a>Mettre à jour et mettre à niveau les packages de votre distribution
 
-La plupart des distributions sont livrées avec un catalogue de packages vides/minimaux. Nous vous recommandons vivement de mettre à jour régulièrement le catalogue de packages et de mettre à niveau vos packages installés à l’aide du gestionnaire de package par défaut de votre distribution. Sur Debian/Ubuntu, vous utilisez apt :
+La plupart des distributions sont livrées avec un catalogue de packages vide/minimal. Nous vous recommandons vivement de mettre à jour régulièrement votre catalogue de packages et de mettre à niveau vos packages installés à l’aide du gestionnaire de package par défaut de votre distribution. Sur Debian/Ubuntu, vous utilisez apt :
 
 ```bash
 sudo apt update && sudo apt upgrade

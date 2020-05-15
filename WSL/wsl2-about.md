@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: f11aed3a5583d1a68f4a0e095103eb0315ca2c45
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 70044105820dd485246ae3fc731cbd6f06183f8a
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80256382"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343881"
 ---
 # <a name="about-wsl-2"></a>À propos de WSL 2
 
@@ -34,4 +34,4 @@ Les opérations gourmandes en fichiers, telles que `git clone`, `npm install`, `
 
 ## <a name="full-system-call-compatibility"></a>Compatibilité complète des appels système
 
-Les binaires Linux utilisent des appels système pour effectuer de nombreuses fonctions, telles que l’accès aux fichiers, la demande de mémoire, la création de processus et bien plus encore. Alors que WSL 1 utilisait une couche de traduction créée par l’équipe WSL, WSL 2 inclut son propre noyau Linux avec compatibilité complète des appels système. Cela introduit un tout nouvel ensemble d’applications que vous pouvez exécuter au sein de WSL, telles que Docker et plus encore. En outre, toutes les mises à jour du noyau Linux pourront être prêtes à être ajoutées immédiatement à votre ordinateur et vous n’aurez plus besoin d’attendre que l’équipe WSL implémente les modifications pour les ajouter.
+Les binaires Linux utilisent des appels système pour effectuer de nombreuses fonctions, telles que l’accès aux fichiers, la demande de mémoire, la création de processus et bien plus encore. Alors que WSL 1 utilisait une couche de traduction créée par l’équipe WSL, WSL 2 inclut son propre noyau Linux avec compatibilité complète des appels système. Cela introduit un tout nouvel ensemble d’applications que vous pouvez exécuter au sein de WSL, telles que Docker et plus encore. En outre, toutes les mises à jour du noyau Linux peuvent être ajoutées immédiatement à votre ordinateur, et vous n’avez pas besoin d’attendre que l’équipe WSL implémente les modifications pour les ajouter.

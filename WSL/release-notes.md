@@ -1,19 +1,17 @@
 ---
 title: Notes de publication pour le sous-système Windows pour Linux
 description: Notes de publication pour le sous-système Windows pour Linux.  Mise à jour hebdomadaire.
-keywords: BashOnWindows, bash, wsl, Windows, sous-système Windows pour Linux, sous-système windows, ubuntu
+keywords: notes de publication, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu
 author: benhillis
-ms.date: 07/31/2017
+ms.date: 05/15/2020
 ms.topic: article
-ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 31bf975afb202a6cfd9a2879cff29a77b2969fce
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 3df4d4b4e0c542a3e87306c01a14b7073eb5e677
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76911703"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235941"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
 
@@ -188,7 +186,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 18890, v
 * Mise à jour de l’en-tête resolv.conf pour faire référence à wsl.conf [description dans GH 3928]
 * Blocage dans le code de suppression epoll [GH 3922]
 * Gestion des espaces dans les arguments --import et –export [GH 3932]
-* L’extension des fichiers mmap ne fonctionne pas correctement [GH 3939]
+* L’extension des fichiers mmap ne fonctionne pas correctement [GH 3939]
 * Correction du problème où l’accès ARM64 \\\\wsl$ ne fonctionnait pas correctement
 * Ajout d’une meilleure icône par défaut pour wsl.exe
 
@@ -219,7 +217,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 18305, v
 
 ### <a name="wsl"></a>WSL
 * Perte d’accès des pthreads aux fichiers lors de la sortie du thread principal [GH 3589]
-* TIOCSCTTY doit ignorer le paramètre « force » sauf s’il est obligatoire [GH 3652]
+* TIOCSCTTY doit ignorer le paramètre « force » sauf s’il est obligatoire [GH 3652]
 * Améliorations de la ligne de commande wsl.exe et ajout de fonctionnalités d’importation/exportation.
 ```
 Usage: wsl.exe [Argument] [Options...] [CommandLine]
@@ -291,7 +289,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 18277, v
 Pour obtenir des informations Windows d’ordre général sur la build 18272, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/).
 
 ### <a name="wsl"></a>WSL
-* **AVERTISSEMENT :** Un problème existant dans cette build rend WSL inopérable. Quand vous essayez de lancer votre distribution, une erreur « Interface non prise en charge » s’affiche. Le problème est résolu et sa résolution va être intégrée à la build Insider Fast de la semaine prochaine. Si vous avez installé cette build, vous pouvez revenir à la build Windows précédente en utilisant « Rétrograder vers la version précédente de Windows 10 » dans Paramètres->Mise à jour et sécurité->Récupération.
+* **AVERTISSEMENT :** Un problème existant dans cette build rend WSL inopérable. Quand vous essayez de lancer votre distribution, une erreur « Aucune interface de ce type n’est prise en charge » s’affiche. Le problème est résolu et sa résolution va être intégrée à la build Insider Fast de la semaine prochaine. Si vous avez installé cette build, vous pouvez revenir à la build Windows précédente en utilisant « Rétrograder vers la version précédente de Windows 10 » dans Paramètres->Mise à jour et sécurité->Récupération.
 
 ## <a name="build-18267"></a>Build 18267
 Pour obtenir des informations Windows d’ordre général sur la build 18267, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/).
@@ -526,7 +524,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 17627, v
     * Notez qu’actuellement, les priorités ne sont pas une fonctionnalité de WSL prise en charge. Il existe donc des limitations, mais l’utilisation standard doit être débloquée.
 * Prise en charge du pare-feu Windows pour les processus WSL. [GH 1852]
     * Par exemple, pour autoriser le processus python WSL à écouter sur n’importe quel port, utilisez la commande Windows avec élévation de privilèges : ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
-    * Pour plus d’informations sur l’ajout de règles de pare-feu, consultez [lien](https://support.microsoft.com/en-us/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
+    * Pour plus d’informations sur l’ajout de règles de pare-feu, consultez [lien](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
 * Respectez le shell par défaut de l’utilisateur lors de l’utilisation de wsl.exe. [GH 2372]
 * Signalisation de toutes les interfaces réseau en tant qu’Ethernet. [GH 2996]
 * Meilleure gestion du fichier /etc/passwd endommagé. [GH 3001]
@@ -556,7 +554,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 17110, v
 ### <a name="wsl"></a>WSL
 * Autorisation de l’arrêt de /init à partir de Windows [GH 2928].
 * DrvFs utilise désormais par défaut le respect de la casse par répertoire (ce qui équivaut à l’option de montage « case=dir »).
-    * L’utilisation de « case=force » (ancien comportement) demande la définition d’une clé de Registre. Exécutez la commande suivante pour activer « case=force » si vous avez besoin de l’utiliser : reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1
+    * L’utilisation de « case=force » (ancien comportement) exige la définition d’une clé de Registre. Exécutez la commande suivante pour activer « case=force » si vous avez besoin de l’utiliser : reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1
     * Si vous avez des répertoires existants créés avec WSL dans une version antérieure de Windows qui ont besoin d’être sensibles à la casse, utilisez fsutil.exe pour les marquer comme sensibles à la casse : fsutil.exe file setcasesensitiveinfo <path> enable
 * Chaînes d’arrêt NULL retournées par uname syscall.
 
@@ -611,7 +609,7 @@ Quand vous démarrez WSL pour la première fois après la mise à niveau vers ce
         * case=force : tous les répertoires sont traités comme sensibles à la casse (à l’exception de la racine du lecteur). Les nouveaux répertoires créés avec WSL sont marqués comme sensibles à la casse. Il s’agit du comportement hérité, à l’exception du marquage de nouveaux répertoires sensibles à la casse.
         * case=dir : seuls les répertoires avec l’indicateur de respect de la casse par répertoire sont traités comme sensibles à la casse ; les autres répertoires ne sont pas sensibles à la casse. Les nouveaux répertoires créés avec WSL sont marqués comme sensibles à la casse.
         * case=off : seuls les répertoires avec l’indicateur de respect de la casse par répertoire sont traités comme sensibles à la casse ; les autres répertoires ne sont pas sensibles à la casse. Les nouveaux répertoires créés avec WSL sont marqués comme insensibles à la casse.
-    * Remarque : cet indicateur n’est pas défini pour les répertoires créés par WSL dans les versions précédentes, donc ils ne sont pas traités comme sensibles à la casse si vous utilisez l’option « case=dir ». Un moyen de définir cet indicateur sur des répertoires existants sera bientôt disponible.
+    * Remarque : Cet indicateur n’est pas défini pour les répertoires créés par WSL dans les versions précédentes. Ces répertoires ne sont donc pas traités comme sensibles à la casse si vous utilisez l’option « case=dir ». Un moyen de définir cet indicateur sur des répertoires existants sera bientôt disponible.
     * Exemple de montage avec ces options (pour les lecteurs existants, vous devez d’abord démonter avant de pouvoir monter avec des options différentes) : sudo mount -t drvfs C: /mnt/c -o case=dir
     * Pour le moment, case=force est toujours l’option par défaut. Celle-ci sera remplacée par case=dir à l’avenir.
 * Vous pouvez maintenant utiliser des barres obliques dans les chemins Windows lors du montage de DrvFs, par exemple : sudo mount -t drvfs //server/share /mnt/share
@@ -625,7 +623,7 @@ Quand vous démarrez WSL pour la première fois après la mise à niveau vers ce
 Nous avons ajouté une méthode pour vous permettre de configurer automatiquement certaines fonctionnalités dans WSL afin qu’elles soient appliquées chaque fois que vous lancez le sous-système. Cela comprend les options de montage automatique et la configuration réseau. Découvrez-en davantage dans notre billet de blog sur : https://aka.ms/wslconf
 
 #### <a name="af_unix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a>AF_UNIX autorise les connexions de sockets entre les processus Linux sur WSL et les processus natifs Windows
-Les applications WSL et Windows peuvent maintenant communiquer entre elles par le biais de sockets Unix. Imaginez que vous souhaitez exécuter un service dans Windows et le rendre disponible aux applications à la fois Windows et WSL. Désormais, cela est possible avec des sockets Unix. Pour en savoir plus, consultez notre billet de blog sur https://aka.ms/afunixinterop
+Les applications WSL et Windows peuvent maintenant communiquer entre elles par le biais de sockets Unix. Imaginez que vous souhaitez exécuter un service dans Windows et le rendre disponible aux applications à la fois Windows et WSL. Désormais, cela est possible avec les sockets Unix. Pour en savoir plus, consultez notre billet de blog sur https://aka.ms/afunixinterop
 
 ### <a name="wsl"></a>WSL
 * Prise en charge de mmap() avec MAP_NORESERVE [GH 121, 2784]
@@ -766,9 +764,9 @@ Pour obtenir des informations Windows d’ordre général sur la build 17046, v
       -a    force result to absolute path format
       -u    translate from a Windows path to a WSL path (default)
       -w    translate from a WSL path to a Windows path
-      -m    translate from a WSL path to a Windows path, with ‘/’ instead of ‘\\’
+      -m    translate from a WSL path to a Windows path, with '/' instead of '\\'
 
-      EX: wslpath ‘c:\users’
+      EX: wslpath 'c:\users'
   ```
   #### <a name="console"></a>Console
 - Aucun correctif.
@@ -1315,7 +1313,7 @@ Pour obtenir des informations Windows d’ordre général sur la Build 15007, v
 
 ### <a name="known-issue"></a>Problème connu
 
-- Il existe un bogue connu dans lequel la console ne reconnaît pas une entrée Ctrl+<key>.  Est concernée la commande Ctrl+C qui agit comme une touche « C » normale.
+- Il existe un bogue connu dans lequel la console ne reconnaît pas une entrée Ctrl+<key>.  Cela inclut la commande Ctrl+C qui agit comme une touche « C » normale.
 
   - Solution : Mappez une autre touche à Ctrl+C. Par exemple, pour mapper Ctrl+K à Ctrl+C, procédez comme suit : `stty intr \^k`.  Ce mappage s’effectue par terminal et doit être effectué à *chaque* lancement de bash. Les utilisateurs peuvent explorer l’option permettant de l’inclure dans leur `.bashrc`
 
@@ -1341,7 +1339,7 @@ Pour obtenir des informations Windows d’ordre général sur la Build 15002, v
 ### <a name="known-issue"></a>Problème connu
 
 Deux problèmes connus :
-- Il existe un bogue connu dans lequel la console ne reconnaît pas une entrée Ctrl+<key>.  Est concernée la commande Ctrl+C qui agit comme une touche « C » normale.
+- Il existe un bogue connu dans lequel la console ne reconnaît pas une entrée Ctrl+<key>.  Cela inclut la commande Ctrl+C qui agit comme une touche « C » normale.
 
   - Solution : Mappez une autre touche à Ctrl+C. Par exemple, pour mapper Ctrl+K à Ctrl+C, procédez comme suit : `stty intr \^k`.  Ce mappage s’effectue par terminal et doit être effectué à *chaque* lancement de bash. Les utilisateurs peuvent explorer l’option permettant de l’inclure dans leur `.bashrc`
 
@@ -1371,7 +1369,7 @@ Deux problèmes connus :
 - Correction de l’erreur où le nom du raccourci n’est pas localisé correctement (GH #696)
 - Correction de la logique d’analyse elf qui valide incorrectement les en-têtes de programme devant être inférieurs (ou égaux) à PATH_MAX. (GH #1048)
 - Implémentation du rappel statfs pour procfs, sysfs, cgroupfs et binfmtfs (GH #1378)
-- Correction des fenêtres AptPackageIndexUpdate qui ne se ferment pas (GH #1184, également décrit dans GH #1193)
+- Correction des fenêtres AptPackageIndexUpdate qui ne se ferment pas (GH #1184, également décrit dans GH #1193)
 - Ajout de la prise en charge de la personnalité ASLR ADDR_NO_RANDOMIZE. (GH #1148, 1128)
 - Amélioration de PTRACE_GETSIGINFO, SIGSEGV, pour les arborescences des appels de procédure gdb appropriées pendant AV (GH #875)
 - L’analyse elf n’échoue plus pour les binaires patchelf. (GH #471)
@@ -1416,7 +1414,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14986, v
 - Correction du problème où ping retourne une heure de 0.000ms (GH #1296)
 - Retour d’un code d’erreur correct quand un nombre de fichiers trop élevé sont ouverts.
 - Résolution d’un problème dans WSL où la demande Netlink de données d’interface réseau échoue avec EINVAL si l’adresse matérielle de l’interface correspond à 32 octets (comme l’interface Teredo)
-   - Notez que l’utilitaire « ip » Linux contient un bogue qui entraîne un incident si WSL signale une adresse matérielle à 32 octets. Il s’agit d’un bogue dans « ip », et non WSL. L’utilitaire « ip » code en dur la longueur du tampon de chaîne utilisé pour imprimer l’adresse matérielle et ce tampon est trop petit pour imprimer une adresse matérielle à 32 octets.
+   - Notez que l’utilitaire « ip » Linux contient un bogue qui entraîne un incident si WSL signale une adresse matérielle à 32 octets. Il s’agit d’un bogue dans « ip », et non WSL. L’utilitaire « ip » code en dur la longueur du tampon de chaînes utilisé pour imprimer l’adresse matérielle et ce tampon est trop petit pour imprimer une adresse matérielle à 32 octets.
 - Correctifs et améliorations supplémentaires
 
 ### <a name="ltp-results"></a>Résultats LTP :
@@ -1544,7 +1542,7 @@ Les binaires Windows peuvent désormais être appelés directement à partir de 
 D’autres informations sont disponibles ici :
 
 - [Blog de l’équipe WSL pour Interop](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
-- [Documentation MSDN Interop](https://msdn.microsoft.com/en-us/commandline/wsl/interop)<br/>
+- [Documentation MSDN Interop](https://msdn.microsoft.com/commandline/wsl/interop)<br/>
 
 ### <a name="fixed"></a>Fixe
 
@@ -1594,7 +1592,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14942, v
 
 ### <a name="fixed"></a>Fixe
 
-- Traitement de plusieurs vérifications de bogues, notamment l’incident de la mise en réseau « ATTEMPTED EXECUTE OF NOEXECUTE MEMORY » qui bloque SSH
+- Traitement de plusieurs vérifications d’erreur, notamment le plantage de la mise en réseau « ATTEMPTED EXECUTE OF NOEXECUTE MEMORY » qui bloquait SSH
 - Prise en charge d’inotifiy pour les notifications générées à partir d’applications Windows sur DrvFs
 - Implémentation de TCP_KEEPIDLE et TCP_KEEPINTVL pour mongod. (GH #695)
 - Implémentation de l’appel système pivot_root
@@ -1621,7 +1619,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14936, v
 Remarque : WSL va installer Ubuntu version 16.04 (Xenial) au lieu d’Ubuntu 14.04 (Trusty) dans une prochaine version.  Cette modification s’appliquera aux versions Insiders qui installent de nouvelles instances (lxrun.exe /install ou première exécution de bash.exe).  Les instances existantes avec Trusty ne sont pas mises à niveau automatiquement. Les utilisateurs peuvent mettre à niveau leur image Trusty vers Xenial à l’aide de la commande do-release-upgrade.
 
 ### <a name="known-issue"></a>Problème connu
-WSL rencontre un problème avec certaines implémentations de sockets.  La vérification de bogue se manifeste comme un incident avec l’erreur « ATTEMPTED EXECUTE OF NOEXECUTE MEMORY ».  La manifestation la plus courante de ce problème est un incident lors de l’utilisation de ssh.  La cause racine est résolue sur les builds internes et envoyée (push) aux versions Insiders dès que possible.
+WSL rencontre un problème avec certaines implémentations de sockets.  La vérification d’erreur se manifeste comme un plantage avec l’erreur « ATTEMPTED EXECUTE OF NOEXECUTE MEMORY ».  La manifestation la plus courante de ce problème est un incident lors de l’utilisation de ssh.  La cause racine est résolue sur les builds internes et envoyée (push) aux versions Insiders dès que possible.
 
 ### <a name="fixed"></a>Fixe
 
@@ -1816,7 +1814,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14361, v
   - Les utilisateurs peuvent utiliser case.txt et CASE.TXT sur leurs lecteurs /mnt/c
   - Le respect de la casse est pris en charge uniquement dans bash sur Ubuntu sur Windows. En dehors de Bash, le système NTFS signale les fichiers correctement, mais un comportement inattendu peut se produire lors de l’interaction avec les fichiers à partir de Windows.
   - La racine de chaque volume (c.-à-d. /mnt/c) n’est pas sensible à la casse
-  - Pour plus d’informations sur la gestion de ces fichiers dans Windows, consultez [cet article](https://support.microsoft.com/en-us/kb/100625).
+  - Pour plus d’informations sur la gestion de ces fichiers dans Windows, consultez [cet article](https://support.microsoft.com/kb/100625).
 - Prise en charge considérablement améliorée de pty/tty.  Prise en charge d’applications comme TMUX (GH #40)
 - Résolution d’un problème d’installation où les comptes d’utilisateur ne sont pas toujours créés
 - Optimisation de la structure d’arguments de la ligne de commande permettant une liste d’arguments extrêmement longue. (GH #153)
@@ -1831,7 +1829,7 @@ Pour obtenir des informations Windows d’ordre général sur la build 14361, v
 - Fermeture correcte de strace
 - Autorisation de la rouverture des canaux par le biais de /proc/self/fd (GH #222)
 - Masquage des répertoires sous %LOCALAPPDATA%\lxss à partir de DrvFs (GH #270)
-- Meilleure gestion de bash.exe ~.  Prise en charge des commandes comme « bash ~ -c ls » (GH #467)
+- Meilleure gestion de bash.exe ~.  Prise en charge des commandes comme « bash ~ -c ls » (GH #467)
 - Les sockets notifient désormais la lecture epoll disponible pendant l’arrêt (GH #271)
 - Meilleure suppresion des fichiers et dossiers par lxrun /uninstall
 - Correction de ps -f (GH #246)
@@ -1864,8 +1862,8 @@ Pour obtenir des informations Windows d’ordre général sur la build 14352, v
 - Résolution d’un problème lié à WSL qui autorise des noms de fichiers contenant plus de 255 caractères
 - Amélioration de la prise en charge des caractères non anglais
 - Ajout et définition par défaut des données de fuseau horaire Windows actuelles
-- ID d’appareil unique pour chaque point de montage (correctif jre – GH #49)
-- Correction du problème liés aux chemins contenant « . » et « .. »
+- ID d’appareil unique pour chaque point de montage (correctif JRE - GH #49)
+- Correction du problème lié aux chemins contenant « . » et « .. »
 - Ajout de la prise en charge FIFO (GH #71)
 - Mise à jour du format de resolv.conf pour correspondre au format Ubuntu natif
 - Nettoyage de certains procfs
@@ -1909,7 +1907,7 @@ Pour plus d’informations sur VolFs et DriveFs, consultez le [blog WSL](https:/
 - Corrections de bogues et améliorations supplémentaires
 
 ### <a name="known-issues"></a>Problèmes connus
-- Résolution incorrecte de « .. » sur DriveFs dans certains cas
+- Résolution impossible de « .. » sur DriveFs dans certains cas
 
 ### <a name="syscall-support"></a>Prise en charge de syscall
 Voici la liste des syscalls nouveaux ou améliorés qui ont une implémentation dans WSL. Les syscalls figurant dans cette liste sont pris en charge dans au moins un scénario, mais il est possible que tous les paramètres ne soient pas pris en charge pour l’instant.
