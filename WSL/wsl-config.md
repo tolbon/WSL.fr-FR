@@ -4,12 +4,12 @@ description: Lister les références et configurer plusieurs distributions Linux
 keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 914bce22b789d379420823d44d063bc84ec39ac1
-ms.sourcegitcommit: 509691ed3d42c9e0171e6a44e09003d4eb24f9ae
+ms.openlocfilehash: dc488ab988d8e158b5eff7a486a2fe707dbedfd7
+ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380426"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84153117"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>Commandes WSL et configurations de lancement
 
@@ -18,7 +18,7 @@ ms.locfileid: "83380426"
 Il existe plusieurs façons d’exécuter une distribution Linux avec WSL une fois qu’elle est [installée](install-win10.md).
 
 1. Ouvrez votre distribution Linux en visitant le menu Démarrer de Windows et en tapant le nom de vos distributions installées. Par exemple : « Ubuntu ».
-2. À partir de l’invite de commandes Windows ou de PowerShell, entrez le nom de votre distribution installée. Par exemple : `ubuntu`
+2. À partir de l’invite de commandes Windows ou de PowerShell, entrez le nom de votre distribution installée. Par exemple : `ubuntu`
 3. À partir de l’invite de commandes Windows ou de PowerShell, pour ouvrir votre distribution Linux par défaut à l’intérieur de la ligne de commande actuelle, entrez : `wsl.exe` .
 4. À partir de l’invite de commandes Windows ou de PowerShell, pour ouvrir votre distribution Linux par défaut à l’intérieur de la ligne de commande actuelle, entrez : `wsl [command]` .
 
@@ -340,11 +340,11 @@ Ces paramètres affectent la machine virtuelle qui alimente toute distribution W
 |:----|:----|:----|:----|
 | noyau | string | Boîte de réception fournie par le noyau Microsoft | Chemin Windows absolu vers un noyau Linux personnalisé. |
 | memory | taille | 80% de la mémoire totale sur Windows | Quantité de mémoire à affecter à la machine virtuelle WSL 2. |
-| processeurs | nombre | Le même nombre de processeurs sur Windows | Nombre de processeurs à assigner à la machine virtuelle WSL 2. |
+| processeurs | nombre | Le même nombre de processeurs sur Windows | Nombre de processeurs à affecter à la machine virtuelle WSL 2. |
 | localhostForwarding | boolean | `true` | Valeur booléenne spécifiant si les ports liés à un caractère générique ou localhost dans la machine virtuelle WSL 2 doivent être connectés à partir de l’hôte via localhost : port. |
 | kernelCommandLine | string | Vide | Arguments de ligne de commande du noyau supplémentaires. |
 | swap | taille | 25% de la taille de la mémoire sur Windows arrondie aux Go les plus proches | Espace d’échange à ajouter à la machine virtuelle WSL 2, 0 pour aucun fichier d’échange. |
-| Échange | taille | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | Chemin d’accès Windows absolu au disque dur virtuel d’échange. |
+| Échange | string | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | Chemin d’accès Windows absolu au disque dur virtuel d’échange. |
 
 Les entrées avec la `path` valeur doivent être des chemins d’accès Windows avec des barres obliques inverses par échappement, par exemple :`C:\\Temp\\myCustomKernel`
 
