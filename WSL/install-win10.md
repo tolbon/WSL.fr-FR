@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, s
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ec24bbe6ed3ecc4413e623d12d12f9a92c6db9e6
-ms.sourcegitcommit: f0b33cdd1ce7b461e7f657d44e9798094ef55b55
+ms.openlocfilehash: 3914e8d3be84f922424cba1000ea45ea8ce22cd8
+ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83683032"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84211725"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Guide d’installation du sous-système Windows pour Linux pour Windows 10
 
@@ -24,16 +24,13 @@ Ouvrez PowerShell en tant qu’administrateur et exécutez :
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-Pour installer WSL 1 uniquement, vous devez redémarrer votre ordinateur maintenant et ensuite passer à [Installer la distribution Linux de votre choix](./install-win10.md#install-your-linux-distribution-of-choice). Sinon, attendez pour redémarrer et passez à la mise à jour vers WSL 2. Apprenez-en davantage sur la [comparaison entre WSL 2 et WSL 1](./compare-versions.md).
+Pour installer uniquement WSL 1, vous devez maintenant redémarrer votre ordinateur et passer à [Installer la distribution Linux de votre choix](./install-win10.md#install-your-linux-distribution-of-choice). Sinon, attendez de redémarrer et passez à la mise à jour vers WSL 2. Découvrez plus en détail la [comparaison entre WSL 2 et WSL 1](./compare-versions.md).
 
 ## <a name="update-to-wsl-2"></a>Mettre à jour vers WSL 2
 
 Pour effectuer une mise à jour vers WSL 2, vous devez respecter les critères suivants :
 
 - Exécution de Windows 10, [mis à jour vers la version 2004](ms-settings:windowsupdate), **build 19041** ou ultérieure.
-
-> [!IMPORTANT]
-> Actuellement, pour effectuer une mise à jour vers Windows 10, version 2004 (build 19041), vous devez [rejoindre le programme Windows Insider](https://insider.windows.com/insidersigninboth/) et sélectionner l’anneau « Release Preview ». La version publique devrait arriver d’ici fin mai.
 
 - Vérifiez votre version de Windows en sélectionnant la **touche Windows + R**, tapez **winver** et sélectionnez **OK**. (Ou entrez la commande `ver` dans l’invite de commandes Windows). Effectuez la [mise à jour vers la dernière version de Windows](ms-settings:windowsupdate) si votre build est antérieure à la build 19041. [Procurez-vous l’Assistant Windows Update](https://www.microsoft.com/software-download/windows10).
 
@@ -57,6 +54,9 @@ Exécutez la commande suivante dans PowerShell pour définir WSL 2 comme versio
 wsl --set-default-version 2
 ```
 
+> [!NOTE]
+> L’exécution de la mise à jour de WSL 1 vers WSL 2 peut prendre plusieurs minutes en fonction de la taille de votre distribution ciblée.
+
 ## <a name="install-your-linux-distribution-of-choice"></a>Installer la distribution Linux de votre choix
 
 1. Ouvrez le [Microsoft Store](https://aka.ms/wslstore) et sélectionnez votre distribution Linux préférée.
@@ -67,6 +67,7 @@ wsl --set-default-version 2
 
     - [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9)
     - [Ubuntu 18.04 LTS](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    - [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
     - [openSUSE Leap 15.1](https://www.microsoft.com/store/apps/9NJFZK00FGKV)
     - [SUSE Linux Enterprise Server 12 SP5](https://www.microsoft.com/store/apps/9MZ3D1TRP8T1)
     - [SUSE Linux Enterprise Server 15 SP1](https://www.microsoft.com/store/apps/9PN498VPMF3Z)

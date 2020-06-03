@@ -1,18 +1,16 @@
 ---
 title: Télécharger manuellement des distributions du sous-système Windows pour Linux (WSL)
 description: Instructions sur la façon de télécharger manuellement des distributions du sous-système Windows pour Linux.
-keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, WSL, sous-système windows, distribution, ubuntu, openSUSE, SLES, debian, kali
-ms.date: 07/24/2018
+keywords: wsl, sous-système Windows pour Linux, installation manuelle, installer manuellement, microsoft store, Windows 10, curl, Add-AppxPackage, maintenance à long terme, LTSC
+ms.date: 05/28/2020
 ms.topic: article
-ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
-ms.custom: seodec18
-ms.localizationpriority: high
-ms.openlocfilehash: b1720d01d492f1dccce8c2e1d2ff430f7769a42e
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.localizationpriority: medium
+ms.openlocfilehash: 621b2619d6c62e0b6c4e53f7791fc587c1c8f878
+ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235822"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84211715"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Télécharger manuellement des packages de distribution du sous-système Windows pour Linux
 
@@ -40,7 +38,7 @@ Cela entraîne le téléchargement des packages `<distro>.appx` dans un dossier 
 Si vous préférez, vous pouvez également télécharger vos distributions préférées via la ligne de commande :
 
  ### <a name="download-using-powershell"></a>Télécharger à l’aide de PowerShell
- Pour télécharger des distributions à l’aide de PowerShell, utilisez l’applet de commande [Invoke-WebRequest](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest). Voici un exemple d’instruction permettant de télécharger Ubuntu 16.04.
+ Pour télécharger des distributions à l’aide de PowerShell, utilisez l’applet de commande [Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-5.1). Voici un exemple d’instruction permettant de télécharger Ubuntu 16.04.
 
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
@@ -68,4 +66,4 @@ Add-AppxPackage .\app_name.appx
 
 Si vous utilisez Windows Server, vous trouverez les instructions d’installation dans la page de documentation de [Windows Server](install-on-server.md).
 
-Une fois votre distribution installée, reportez-vous à la page [Étapes d’initialisation](initialize-distro.md) pour initialiser votre nouvelle distribution.
+Une fois votre distribution installée, suivez les instructions normales pour [mettre à jour WSL 2](./install-win10.md#update-to-wsl-2) ou [créer un compte d’utilisateur et un mot de passe](./user-support.md).
