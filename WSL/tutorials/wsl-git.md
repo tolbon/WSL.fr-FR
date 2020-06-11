@@ -5,12 +5,12 @@ keywords: WSL, Windows, windowssubsystem, GNU, Linux, bash, git, GitHub, contrô
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 94166371fc0928d6be3b3cfd6cb595c6fac76608
-ms.sourcegitcommit: d95bdbc2fea991ba14a4c9ec53ee0ec19d6bbdb4
+ms.openlocfilehash: 687a12186d11343a2d4131e0fdeeef3bcec902fb
+ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84457791"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84671009"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>Prise en main de Git sur le sous-système Windows pour Linux
 
@@ -18,12 +18,12 @@ Git est le système de contrôle de version le plus couramment utilisé. Avec gi
 
 ## <a name="git-can-be-installed-on-windows-and-on-wsl"></a>Git peut être installé sur Windows et sur WSL
 
-Remarque importante : lorsque vous activez WSL et installez une distribution Linux, vous installez un nouveau système de fichiers, séparé de Windows NTFS C:\ sur votre ordinateur. Dans Linux, les lecteurs ne disposent pas de lettres. Ils reçoivent des points de montage. La racine de votre système de fichiers `/` est le point de montage de votre partition racine, ou dossier, dans le cas de WSL. Tout ce qui `/` se trouve sous est le même lecteur. Par exemple, sur mon ordinateur portable, j’ai installé deux versions d’Ubuntu (20,04 et 18,01), ainsi que Debian. Si j’ouvre ces distributions, sélectionnez le répertoire racine à l’aide de la commande `cd ~` , puis entrez la commande `explorer.exe .` , l’Explorateur de fichiers Windows s’ouvre et affiche le chemin d’accès au répertoire pour cette distribution.
+Remarque importante : lorsque vous activez WSL et installez une distribution Linux, vous installez un nouveau système de fichiers, séparé de Windows NTFS C:\ sur votre ordinateur. Dans Linux, les lecteurs ne disposent pas de lettres. Ils reçoivent des points de montage. La racine de votre système de fichiers `/` est le point de montage de votre partition racine, ou dossier, dans le cas de WSL. Tout ce qui `/` se trouve sous est le même lecteur. Par exemple, sur mon ordinateur portable, j’ai installé deux versions d’Ubuntu (20,04 et 18,04), ainsi que Debian. Si j’ouvre ces distributions, sélectionnez le répertoire racine à l’aide de la commande `cd ~` , puis entrez la commande `explorer.exe .` , l’Explorateur de fichiers Windows s’ouvre et affiche le chemin d’accès au répertoire pour cette distribution.
 
 | Distribution Linux | Chemin Windows pour accéder au dossier de destination |
 | ----------- | ----------- |
 | Ubuntu 20.04 | `\\wsl$\Ubuntu-20.04\home\username` |
-| Ubuntu 18,01 | `\\wsl$\Ubuntu-18.04\home\username` |
+| Ubuntu 18.04 | `\\wsl$\Ubuntu-18.04\home\username` |
 | Debian | `\\wsl$\Debian\home\username` |
 | Windows PowerShell | `C:\Users\username` |
 
