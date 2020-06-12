@@ -16,7 +16,7 @@
       href: install-on-server.md
     - name: Créer un compte d’utilisateur et un mot de passe
       href: user-support.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: Bien démarrer avec VS Code
       href: tutorials/wsl-vscode.md
@@ -43,4 +43,8 @@
 - name: Résolution des problèmes
   href: troubleshooting.md
 - name: Notes de publication
-  href: release-notes.md
+  items:
+    - name: Notes de publication générales
+      href: release-notes.md
+    - name: Notes de publication du noyau Linux
+      href: kernel-release-notes.md
