@@ -4,12 +4,12 @@ description: Lister les références et configurer plusieurs distributions Linux
 keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, sous-système windows, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: dc488ab988d8e158b5eff7a486a2fe707dbedfd7
-ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
+ms.openlocfilehash: e97b1030d5891bf8aa1cb656646a4d9e1d480a3d
+ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84153117"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85336082"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>Commandes WSL et configurations de lancement
 
@@ -317,7 +317,7 @@ Ces options sont disponibles dans Build 18980 et versions ultérieures.
 
 > **Disponible dans Windows Build 19041 et versions ultérieures**
 
-Vous pouvez configurer des options globales de WSL en plaçant un `.wslconfig` fichier dans le répertoire racine de votre dossier utilisateurs : `C:\Users\<yourUserName>\.wslconfig` . 
+Vous pouvez configurer des options globales de WSL en plaçant un `.wslconfig` fichier dans le répertoire racine de votre dossier utilisateurs : `C:\Users\<yourUserName>\.wslconfig` . La plupart de ces fichiers sont liés à WSL 2. n’oubliez pas que vous devrez peut-être exécuter `wsl --shutdown` pour arrêter la machine virtuelle WSL 2, puis redémarrer votre instance WSL pour que ces modifications prennent effet.
 
 Voici un exemple de fichier. wslconfig :
 
