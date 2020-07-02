@@ -5,71 +5,57 @@ keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, s
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 805b7d266020c62e0c6f58889541517d44db3726
-ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
+ms.openlocfilehash: ebcd7f6b10d2b734b1f2a66f64a5e3292855bcf4
+ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84153077"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84671019"
 ---
-# <a name="windows-server-installation-guide"></a><span data-ttu-id="c6b54-104">Guide d’installation sur Windows Server</span><span class="sxs-lookup"><span data-stu-id="c6b54-104">Windows Server Installation Guide</span></span>
+# <a name="windows-server-installation-guide"></a><span data-ttu-id="d37e2-104">Guide d’installation sur Windows Server</span><span class="sxs-lookup"><span data-stu-id="d37e2-104">Windows Server Installation Guide</span></span>
 
-<span data-ttu-id="c6b54-105">Le sous-système Windows pour Linux peut être installé sur Windows Server 2019 (version 1709) et ultérieur.</span><span class="sxs-lookup"><span data-stu-id="c6b54-105">The Windows Subsystem for Linux is available for installation on Windows Server 2019 (version 1709) and later.</span></span> <span data-ttu-id="c6b54-106">Ce guide vous accompagne tout au long des étapes d’activation de WSL sur votre ordinateur.</span><span class="sxs-lookup"><span data-stu-id="c6b54-106">This guide will walk through the steps of enabling WSL on your machine.</span></span>
+<span data-ttu-id="d37e2-105">Le sous-système Windows pour Linux peut être installé sur Windows Server 2019 (version 1709) et ultérieur.</span><span class="sxs-lookup"><span data-stu-id="d37e2-105">The Windows Subsystem for Linux is available for installation on Windows Server 2019 (version 1709) and later.</span></span> <span data-ttu-id="d37e2-106">Ce guide vous accompagne tout au long des étapes d’activation de WSL sur votre ordinateur.</span><span class="sxs-lookup"><span data-stu-id="d37e2-106">This guide will walk through the steps of enabling WSL on your machine.</span></span>
 
-## <a name="enable-the-windows-subsystem-for-linux"></a><span data-ttu-id="c6b54-107">Activer le sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="c6b54-107">Enable the Windows Subsystem for Linux</span></span>
+## <a name="enable-the-windows-subsystem-for-linux"></a><span data-ttu-id="d37e2-107">Activer le sous-système Windows pour Linux</span><span class="sxs-lookup"><span data-stu-id="d37e2-107">Enable the Windows Subsystem for Linux</span></span>
 
-<span data-ttu-id="c6b54-108">Avant de pouvoir exécuter les distributions Linux sur Windows, vous devez activer la fonctionnalité facultative « Sous-système Windows pour Linux » et redémarrer.</span><span class="sxs-lookup"><span data-stu-id="c6b54-108">Before you can run Linux distros on Windows, you must enable the "Windows Subsystem for Linux" optional feature and reboot.</span></span>
+<span data-ttu-id="d37e2-108">Avant de pouvoir exécuter les distributions Linux sur Windows, vous devez activer la fonctionnalité facultative « Sous-système Windows pour Linux » et redémarrer.</span><span class="sxs-lookup"><span data-stu-id="d37e2-108">Before you can run Linux distros on Windows, you must enable the "Windows Subsystem for Linux" optional feature and reboot.</span></span>
 
-<span data-ttu-id="c6b54-109">Ouvrez PowerShell en tant qu’administrateur et exécutez :</span><span class="sxs-lookup"><span data-stu-id="c6b54-109">Open PowerShell as Administrator and run:</span></span>
+<span data-ttu-id="d37e2-109">Ouvrez PowerShell en tant qu’administrateur et exécutez :</span><span class="sxs-lookup"><span data-stu-id="d37e2-109">Open PowerShell as Administrator and run:</span></span>
 
 ```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
 ```
 
-<span data-ttu-id="c6b54-110">**Si vous recherchez une compatibilité à 100 % des appels système et des performances d’E/S plus rapides, lisez ce qui suit pour installer WSL 2.**</span><span class="sxs-lookup"><span data-stu-id="c6b54-110">**If you're looking for 100% system call compatibility and faster IO performance, read below to install WSL 2!**</span></span>
+## <a name="download-a-linux-distribution"></a><span data-ttu-id="d37e2-110">Télécharger une distribution Linux</span><span class="sxs-lookup"><span data-stu-id="d37e2-110">Download a Linux distribution</span></span>
 
-<span data-ttu-id="c6b54-111">WSL 2 est disponible uniquement dans Windows 10, version 2004, build 19041 ou ultérieure.</span><span class="sxs-lookup"><span data-stu-id="c6b54-111">WSL 2 is only available in Windows 10, Version 2004, Build 19041 or higher.</span></span> <span data-ttu-id="c6b54-112">Vous devrez peut-être [mettre à jour votre version de Windows](ms-settings:windowsupdate).</span><span class="sxs-lookup"><span data-stu-id="c6b54-112">You may need to [update your Windows version](ms-settings:windowsupdate).</span></span>
+<span data-ttu-id="d37e2-111">Suivez [ces instructions](install-manual.md) pour télécharger votre distribution Linux préférée.</span><span class="sxs-lookup"><span data-stu-id="d37e2-111">Follow [these instructions](install-manual.md) to download your favorite Linux distribution.</span></span>
 
-<span data-ttu-id="c6b54-113">**Si vous continuez avec WSL 1, redémarrez votre ordinateur lorsque vous y êtes invité et poursuivez l’installation [ici](./install-on-server.md#download-a-linux-distribution)**</span><span class="sxs-lookup"><span data-stu-id="c6b54-113">**If continuing with WSL 1, restart your machine when prompted and continue with installation [here](./install-on-server.md#download-a-linux-distribution)**</span></span>
+## <a name="extract-and-install-a-linux-distribution"></a><span data-ttu-id="d37e2-112">Extraire et installer une distribution Linux</span><span class="sxs-lookup"><span data-stu-id="d37e2-112">Extract and install a Linux distribution</span></span>
 
-## <a name="enable-the-virtual-machine-platform-optional-component"></a><span data-ttu-id="c6b54-114">Activer le composant facultatif Plateforme de machine virtuelle</span><span class="sxs-lookup"><span data-stu-id="c6b54-114">Enable the Virtual Machine Platform optional component</span></span>
+<span data-ttu-id="d37e2-113">Maintenant que vous avez téléchargé une distribution Linux, afin d’extraire son contenu et de l’installer manuellement, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="d37e2-113">Now that you've downloaded a Linux distribution, in order to extract its contents and manually install, follow these steps:</span></span>
 
-<span data-ttu-id="c6b54-115">Veillez à ce que le composant facultatif « Plateforme de machine virtuelle » soit installé.</span><span class="sxs-lookup"><span data-stu-id="c6b54-115">Ensure the 'Virtual Machine Platform' optional component is installed.</span></span> <span data-ttu-id="c6b54-116">Pour ce faire, exécutez la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="c6b54-116">You can do that by running the following command in PowerShell:</span></span>
-
-```powershell
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-
-## <a name="download-a-linux-distribution"></a><span data-ttu-id="c6b54-117">Télécharger une distribution Linux</span><span class="sxs-lookup"><span data-stu-id="c6b54-117">Download a Linux distribution</span></span>
-
-<span data-ttu-id="c6b54-118">Suivez [ces instructions](install-manual.md) pour télécharger votre distribution Linux préférée.</span><span class="sxs-lookup"><span data-stu-id="c6b54-118">Follow [these instructions](install-manual.md) to download your favorite Linux distribution.</span></span>
-
-## <a name="extract-and-install-a-linux-distribution"></a><span data-ttu-id="c6b54-119">Extraire et installer une distribution Linux</span><span class="sxs-lookup"><span data-stu-id="c6b54-119">Extract and install a Linux distribution</span></span>
-
-<span data-ttu-id="c6b54-120">Maintenant que vous avez téléchargé une distribution Linux, afin d’extraire son contenu et de l’installer manuellement, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="c6b54-120">Now that you've downloaded a Linux distribution, in order to extract its contents and manually install, follow these steps:</span></span>
-
-1. <span data-ttu-id="c6b54-121">Extrayez le contenu du package `<distro>.appx` à l’aide de PowerShell :</span><span class="sxs-lookup"><span data-stu-id="c6b54-121">Extract the `<distro>.appx` package's contents, using PowerShell:</span></span>
+1. <span data-ttu-id="d37e2-114">Extrayez le contenu du package `<distro>.appx` à l’aide de PowerShell :</span><span class="sxs-lookup"><span data-stu-id="d37e2-114">Extract the `<distro>.appx` package's contents, using PowerShell:</span></span>
 
     ```powershell
     Rename-Item .\Ubuntu.appx .\Ubuntu.zip
     Expand-Archive .\Ubuntu.zip .\Ubuntu
     ```
 
-2. <span data-ttu-id="c6b54-122">Exécutez l’application de lancement de distribution dans le dossier cible.</span><span class="sxs-lookup"><span data-stu-id="c6b54-122">Run the distribution launcher application in the target folder.</span></span> <span data-ttu-id="c6b54-123">Le lanceur est généralement nommé `<distro>.exe` (par exemple, `ubuntu.exe`).</span><span class="sxs-lookup"><span data-stu-id="c6b54-123">The launcher is typically named `<distro>.exe` (for example, `ubuntu.exe`).</span></span>
+2. <span data-ttu-id="d37e2-115">Exécutez l’application de lancement de distribution dans le dossier cible.</span><span class="sxs-lookup"><span data-stu-id="d37e2-115">Run the distribution launcher application in the target folder.</span></span> <span data-ttu-id="d37e2-116">Le lanceur est généralement nommé `<distro>.exe` (par exemple, `ubuntu.exe`).</span><span class="sxs-lookup"><span data-stu-id="d37e2-116">The launcher is typically named `<distro>.exe` (for example, `ubuntu.exe`).</span></span>
 
     ![Distribution Ubuntu développée sur Windows Server](media/server-appx-expand.png)
 
 > [!CAUTION]
-> <span data-ttu-id="c6b54-125">**Échec de l’installation avec l’erreur 0x8007007e** : Si vous recevez cette erreur, votre système ne prend pas en charge WSL.</span><span class="sxs-lookup"><span data-stu-id="c6b54-125">**Installation failed with error 0x8007007e**: If you receive this error, then your system doesn't support WSL.</span></span> <span data-ttu-id="c6b54-126">Veillez à exécuter la build 16215 ou ultérieure de Windows.</span><span class="sxs-lookup"><span data-stu-id="c6b54-126">Ensure that you're running Windows build 16215 or later.</span></span> <span data-ttu-id="c6b54-127">[Vérifiez votre build](troubleshooting.md#check-your-build-number).</span><span class="sxs-lookup"><span data-stu-id="c6b54-127">[Check your build](troubleshooting.md#check-your-build-number).</span></span> <span data-ttu-id="c6b54-128">[Vérifiez également que WSL est activé](troubleshooting.md#confirm-wsl-is-enabled) et que votre ordinateur a été redémarré après l’activation de la fonctionnalité.</span><span class="sxs-lookup"><span data-stu-id="c6b54-128">Also check to [confirm that WSL is enabled](troubleshooting.md#confirm-wsl-is-enabled) and your computer was restarted after the feature was enabled.</span></span>  
+> <span data-ttu-id="d37e2-118">**Échec de l’installation avec l’erreur 0x8007007e** : Si vous recevez cette erreur, votre système ne prend pas en charge WSL.</span><span class="sxs-lookup"><span data-stu-id="d37e2-118">**Installation failed with error 0x8007007e**: If you receive this error, then your system doesn't support WSL.</span></span> <span data-ttu-id="d37e2-119">Veillez à exécuter la build 16215 ou ultérieure de Windows.</span><span class="sxs-lookup"><span data-stu-id="d37e2-119">Ensure that you're running Windows build 16215 or later.</span></span> <span data-ttu-id="d37e2-120">[Vérifiez votre build](troubleshooting.md#check-your-build-number).</span><span class="sxs-lookup"><span data-stu-id="d37e2-120">[Check your build](troubleshooting.md#check-your-build-number).</span></span> <span data-ttu-id="d37e2-121">[Vérifiez également que WSL est activé](troubleshooting.md#confirm-wsl-is-enabled) et que votre ordinateur a été redémarré après l’activation de la fonctionnalité.</span><span class="sxs-lookup"><span data-stu-id="d37e2-121">Also check to [confirm that WSL is enabled](troubleshooting.md#confirm-wsl-is-enabled) and your computer was restarted after the feature was enabled.</span></span>  
 
-<span data-ttu-id="c6b54-129">3. Ajoutez votre chemin de distribution à la variable PATH de chemin d’environnement Windows (`C:\Users\Administrator\Ubuntu` dans cet exemple), à l’aide de PowerShell :</span><span class="sxs-lookup"><span data-stu-id="c6b54-129">3.Add your distro path to the Windows environment PATH (`C:\Users\Administrator\Ubuntu` in this example), using PowerShell:</span></span>
+<span data-ttu-id="d37e2-122">3. Ajoutez votre chemin de distribution à la variable PATH de chemin d’environnement Windows (`C:\Users\Administrator\Ubuntu` dans cet exemple), à l’aide de PowerShell :</span><span class="sxs-lookup"><span data-stu-id="d37e2-122">3.Add your distro path to the Windows environment PATH (`C:\Users\Administrator\Ubuntu` in this example), using PowerShell:</span></span>
 
 ```powershell
 $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Users\Administrator\Ubuntu", "User")
 ```
 
-<span data-ttu-id="c6b54-130">Vous pouvez maintenant lancer votre distribution à partir de n’importe quel chemin en tapant `<distro>.exe`.</span><span class="sxs-lookup"><span data-stu-id="c6b54-130">You can now launch your distribution from any path by typing `<distro>.exe`.</span></span> <span data-ttu-id="c6b54-131">Par exemple : `ubuntu.exe`.</span><span class="sxs-lookup"><span data-stu-id="c6b54-131">For example: `ubuntu.exe`.</span></span>
+<span data-ttu-id="d37e2-123">Vous pouvez maintenant lancer votre distribution à partir de n’importe quel chemin en tapant `<distro>.exe`.</span><span class="sxs-lookup"><span data-stu-id="d37e2-123">You can now launch your distribution from any path by typing `<distro>.exe`.</span></span> <span data-ttu-id="d37e2-124">Par exemple : `ubuntu.exe`.</span><span class="sxs-lookup"><span data-stu-id="d37e2-124">For example: `ubuntu.exe`.</span></span>
 
-<span data-ttu-id="c6b54-132">Maintenant qu’elle est installée, vous devez [initialiser votre nouvelle instance de distribution](initialize-distro.md) avant de l’utiliser.</span><span class="sxs-lookup"><span data-stu-id="c6b54-132">Now that it is installed, you must [initialize your new distribution instance](initialize-distro.md) before using it.</span></span>
+<span data-ttu-id="d37e2-125">Maintenant qu’elle est installée, vous devez [initialiser votre nouvelle instance de distribution](initialize-distro.md) avant de l’utiliser.</span><span class="sxs-lookup"><span data-stu-id="d37e2-125">Now that it is installed, you must [initialize your new distribution instance](initialize-distro.md) before using it.</span></span>
