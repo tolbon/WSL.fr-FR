@@ -6,14 +6,30 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 3df4d4b4e0c542a3e87306c01a14b7073eb5e677
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 2fcf24719f037a29bab7652fc75ac82cc0b6176a
+ms.sourcegitcommit: 031a74801e03a90aed4b34c4fd5bfe964fc30994
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235941"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84942593"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-20150"></a>Build 20150
+Pour obtenir des informations Windows d’ordre général sur la Build 20150, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
+
+* Pour plus d’informations sur le GPU compute dans WSL2, consultez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
+* Introduction de l’option de ligne de commande wsl.exe --install pour configurer facilement WSL.
+* Introduction de l’option de ligne de commande wsl.exe --update pour gérer les mises à jour du noyau WSL2. 
+* WSL2 défini par défaut.
+* Augmentation du délai d’arrêt normal de la machine virtuelle WSL2.
+* Correction de la condition de concurrence critique virtio-9p lors du mappage de la mémoire de l’appareil.
+* N’exécutez pas un serveur 9p avec élévation de privilèges si le contrôle de compte d’utilisateur est désactivé.
+
+## <a name="build-19640"></a>Build 19640
+Pour des informations Windows d’ordre général sur la build 19640, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/).
+
+* [WSL2] Améliorations de la stabilité pour virtio-9p (drvfs).
 
 ## <a name="build-19555"></a>Build 19555
 Pour des informations Windows d’ordre général sur la build 19555, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).

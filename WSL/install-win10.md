@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, sous-système windows pour linux, s
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 3914e8d3be84f922424cba1000ea45ea8ce22cd8
-ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
+ms.openlocfilehash: 0f59fda8aa093487f09c1817acf47bd88eaae8cc
+ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84211725"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85336092"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Guide d’installation du sous-système Windows pour Linux pour Windows 10
 
@@ -54,8 +54,10 @@ Exécutez la commande suivante dans PowerShell pour définir WSL 2 comme versio
 wsl --set-default-version 2
 ```
 
+Ce message peut s’afficher après l’exécution de la commande suivante : `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`. Suivez le lien [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel), puis installez le MSI à partir de cette page dans notre documentation pour installer sur votre ordinateur un noyau Linux accessible à WSL 2. Une fois le noyau installé, réexécutez la commande. L’opération doit alors se dérouler correctement sans afficher le message. 
+
 > [!NOTE]
-> L’exécution de la mise à jour de WSL 1 vers WSL 2 peut prendre plusieurs minutes en fonction de la taille de votre distribution ciblée.
+> L’exécution de la mise à jour de WSL 1 vers WSL 2 peut prendre plusieurs minutes en fonction de la taille de votre distribution ciblée. Si vous exécutez une ancienne installation (héritée) de WSL 1 à partir de Windows 10 version Mise à jour anniversaire ou Creators Update, une erreur de mise à jour peut se produire. Suivez ces instructions pour [désinstaller et supprimer les distributions héritées](https://docs.microsoft.com/windows/wsl/install-legacy#uninstallingremoving-the-legacy-distro).
 
 ## <a name="install-your-linux-distribution-of-choice"></a>Installer la distribution Linux de votre choix
 
@@ -137,4 +139,4 @@ Vous trouverez ci-dessous des erreurs associées et des suggestions de correctio
   - Vérifiez le [thread GitHub WSL n° 4103](https://github.com/microsoft/WSL/issues/4103) où ce problème est suivi pour obtenir des informations mises à jour.
 
 - **Le terme « wsl » n’est pas reconnu comme nom d’applet de commande, fonction, fichier de script ou programme exécutable.**
-  - Assurez-vous que le [composant facultatif Sous-système Windows pour Linux est installé](./install-win10.md#enable-the-virtual-machine-platform-optional-component). De plus, si vous utilisez un appareil Arm64 et exécutez cette commande à partir de PowerShell, vous recevrez cette erreur. Au lieu de cela, exécutez `wsl.exe` à partir de [PowerShell Core](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6) ou d’une invite de commandes.
+  - Assurez-vous que le [composant facultatif Sous-système Windows pour Linux est installé](./install-win10.md#enable-the-virtual-machine-platform-optional-component). De plus, si vous utilisez un appareil ARM64 et exécutez cette commande à partir de PowerShell, vous recevrez cette erreur. Au lieu de cela, exécutez `wsl.exe` à partir de [PowerShell Core](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6) ou d’une invite de commandes.

@@ -6,12 +6,12 @@ ms.date: 01/14/2020
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.localizationpriority: high
-ms.openlocfilehash: 66cded36fb7182a54a05e7794250808665bd4cf1
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 81d4cfa1ae57cdd077ba8cbd614111881724718a
+ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235852"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85336072"
 ---
 # <a name="file-permissions-for-wsl"></a>Autorisations de fichier pour WSL
 
@@ -108,4 +108,4 @@ Tous les fichiers créés, modifiés ou consultés dans le système de fichiers 
 
 Vous pouvez configurer vos autorisations de fichier à l’intérieur de vos lecteurs Windows à l’aide des options de montage figurant dans wsl.conf. Les options de montage vous permettent de définir des masques d’autorisations `umask`, `dmask` et `fmask`. Le masque `umask` est appliqué à tous les fichiers, le masque `dmask` est appliqué uniquement aux répertoires et le masque `fmask` est appliqué uniquement aux fichiers. Ces masques d’autorisations passent ensuite par une opération OR logique lorsqu’ils sont appliqués aux fichiers, p. ex. : Si vous avez une valeur `umask` de `023` et une valeur `fmask` de `022`, le masque d’autorisations résultant pour les fichiers sera `023`.
 
-Consultez l’article [Configurer les paramètres de lancement avec wslconf](./wsl-config.md#configure-launch-settings-with-wslconf) pour obtenir des instructions sur la procédure à suivre.
+Pour obtenir des instructions sur la procédure à suivre, consultez l’article [Configurer les paramètres de lancement par distribution avec wslconf](./wsl-config.md#configure-per-distro-launch-settings-with-wslconf).

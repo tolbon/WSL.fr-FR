@@ -4,12 +4,12 @@ description: Décrit l’interopérabilité Windows avec les distributions Linux
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: b1c7a64a86cf088159d1abee3b341328151428f6
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: 2a9b6c8ac65fe28e029ada7f86475c44220a93fe
+ms.sourcegitcommit: cb8a61e7de08b1c18622fc78bc5dfa38786e921a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270843"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84663132"
 ---
 # <a name="windows-interoperability-with-linux"></a>Interopérabilité Windows avec Linux
 
@@ -147,6 +147,7 @@ Propriétés de la variable `WSLENV` :
 * Elle est partagée et existe dans les environnements Windows et WSL.
 * Il s’agit d’une liste de variables d’environnement à partager entre Windows et WSL.
 * Elle peut mettre en forme des variables d’environnement pour fonctionner correctement dans Windows et WSL.
+* Elle peut faciliter le flux entre WSL et Win32.
 
 > [!NOTE]
 > Avant la build 17063, la seule variable d’environnement Windows à laquelle WSL pouvait accéder était `PATH` (par conséquent, vous pouviez lancer des exécutables Win32 sous WSL). Avec la build 17063, `WSLENV` commence à être pris en charge.
@@ -163,6 +164,8 @@ Indicateurs `WSLENV` :
 * `/w` : indique que cette variable d’environnement doit être incluse uniquement lors de l’exécution de Win32 à partir de WSL.
 
 Les indicateurs peuvent être combinés en fonction des besoins.
+
+Pour en savoir plus sur WSLENV, [consultez ce blog](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/). Vous y trouverez notamment des questions fréquentes et des exemples pour définir la valeur de WSLENV avec une concaténation de variables d’environnement prédéfinies, chaque variable ayant pour suffixe une barre oblique suivie d’indicateurs pour spécifier comment la valeur doit être traduite. Vous apprendrez également à passer des variables avec un script. Cet article contient aussi un exemple montrant comment configurer un environnement de développement avec le [langage de programmation Go](https://golang.org/) pour partager un GOPATH entre WSL et Win32.
 
 ## <a name="disable-interoperability"></a>Désactiver l’interopérabilité
 
