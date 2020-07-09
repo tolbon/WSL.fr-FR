@@ -22,6 +22,8 @@
       href: tutorials/wsl-vscode.md
     - name: Bien démarrer avec Git
       href: tutorials/wsl-git.md
+    - name: Bien démarrer avec les bases de données
+      href: tutorials/wsl-database.md
     - name: Configurer l’accélération de GPU (NVIDIA CUDA/DirectML)
       href: tutorials/gpu-compute.md
 - name: Aide et Astuces
