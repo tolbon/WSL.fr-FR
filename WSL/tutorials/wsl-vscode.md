@@ -5,12 +5,12 @@ keywords: WSL, Windows, windowssubsystem, GNU, Linux, bash, vs code, extension d
 ms.date: 05/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 416862201094ba28474918dca8e7d9ce316844cc
-ms.sourcegitcommit: d95bdbc2fea991ba14a4c9ec53ee0ec19d6bbdb4
+ms.openlocfilehash: f5d7bd4f582f504ea3c4bd814454b1dc881ffed2
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84457781"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948653"
 ---
 # <a name="get-started-using-visual-studio-code-with-windows-subsystem-for-linux"></a>Prise en main de l’utilisation de Visual Studio Code avec le sous-système Windows pour Linux
 
@@ -34,7 +34,7 @@ Visual Studio Code, avec l’extension WSL distante, vous permet d’utiliser WS
 * Installez le [Pack d’extension de développement distant](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). Ce pack d’extension comprend l’extension WSL distante, en plus des extensions Remote-SSH et Remote-Containers, ce qui vous permet d’ouvrir n’importe quel dossier dans un conteneur, sur un ordinateur distant ou dans WSL.
 
 > [!IMPORTANT]
-> Pour installer l’extension WSL à distance, vous avez besoin de la version [1,35 de mai](https://code.visualstudio.com/updates/v1_35) ou d’une version ultérieure de vs code. Nous vous déconseillons d’utiliser WSL dans VS Code sans l’extension WSL distante, car vous perdrez la prise en charge de la saisie semi-automatique, du débogage, du découpage, etc. Fait amusant : cette extension WSL est installée dans $HOME/.vscode-Server/Extensions.
+> Pour installer l’extension WSL à distance, vous avez besoin de la version [1,35 de mai](https://code.visualstudio.com/updates/v1_35) ou d’une version ultérieure de vs code. Nous vous déconseillons d’utiliser WSL dans VS Code sans l’extension WSL distante, car vous perdrez la prise en charge de la saisie semi-automatique, du débogage, du découpage, etc. Fait amusant : cette extension WSL est installée dans $HOME/.vscode/extensions (entrez la commande `ls $HOME\.vscode\extensions\` dans PowerShell).
 
 ## <a name="update-your-linux-distribution"></a>Mettre à jour votre distribution Linux
 
