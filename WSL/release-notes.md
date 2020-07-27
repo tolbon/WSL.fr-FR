@@ -6,14 +6,24 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 2fcf24719f037a29bab7652fc75ac82cc0b6176a
-ms.sourcegitcommit: 031a74801e03a90aed4b34c4fd5bfe964fc30994
+ms.openlocfilehash: 1de8f5e287d70c4992e9e6694d8980cbd305957b
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942593"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948683"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Notes de publication pour le sous-système Windows pour Linux
+
+## <a name="build-20175"></a>Build 20175
+Pour des informations Windows d’ordre général sur la build 20175, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/).
+
+* Réglage de l’affectation de la mémoire par défaut de la machine virtuelle WSL2 sur 50 % de mémoire hôte ou 8 Go, selon la valeur la moins élevée [GH 4166].
+* Remplacement du préfixe \\\\wsl$ par \\\\wsl pour prendre en charge l’analyse d’URI. L’ancien chemin \\\\wsl$ est toujours pris en charge.
+* Activation de la virtualisation imbriquée pour WSL2 par défaut sur amd64. Vous pouvez désactiver cette valeur via %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false).
+* Activation de la demande wsl.exe --update pour démarrer Microsoft Update.
+* Prise en charge du renommage d’un fichier en lecture seule dans DrvFs.
+* Garantie que les messages d’erreur sont toujours affichés dans la page de code appropriée.
 
 ## <a name="build-20150"></a>Build 20150
 Pour obtenir des informations Windows d’ordre général sur la Build 20150, visitez le [blog Windows](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).
@@ -1547,13 +1557,13 @@ Pour obtenir des informations Windows d’ordre général sur la build 14951, v
 ### <a name="new-feature-windows--ubuntu-interoperability"></a>Nouvelle fonctionnalité : Interopérabilité Windows/Ubuntu
 Les binaires Windows peuvent désormais être appelés directement à partir de la ligne de commande WSL.  Cela permet aux utilisateurs d’interagir avec leurs environnement et système Windows d’une manière qui n’était auparavant pas possible.  En guise d’exemple rapide, il est maintenant possible pour les utilisateurs d’exécuter les commandes suivantes :
 
-    ```
-    $ export PATH=$PATH:/mnt/c/Windows/System32
-    $ notepad.exe
-    $ ipconfig.exe | grep IPv4 | cut -d: -f2
-    $ ls -la | findstr.exe foo.txt
-    $ cmd.exe /c dir
-    ```
+```bash
+$ export PATH=$PATH:/mnt/c/Windows/System32
+$ notepad.exe
+$ ipconfig.exe | grep IPv4 | cut -d: -f2
+$ ls -la | findstr.exe foo.txt
+$ cmd.exe /c dir
+```
 
 D’autres informations sont disponibles ici :
 

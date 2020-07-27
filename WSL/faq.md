@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 3c3681b0e0e8317917b4ec7c37c9bb2f0bbe9c95
-ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
+ms.openlocfilehash: 8e3ebb44c139b5e7b8c25e8e813766b0107426dc
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83343898"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948633"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Forum aux questions sur le sous-système Windows pour Linux
 
@@ -34,6 +34,10 @@ WSL fournit une application appelée Bash.exe qui, lorsqu’elle est démarrée,
 Vous pouvez également accéder au système de fichiers de votre ordinateur local à partir de l’interpréteur de commandes Bash Linux ; vous trouverez vos lecteurs locaux montés sous le dossier `/mnt`. Par exemple, votre lecteur `C:` est monté sous `/mnt/c` :  
 
 ![Capture d’écran du lecteur C monté](media/ls.png)
+
+## <a name="could-you-describe-a-typical-development-workflow-that-incorporates-wsl"></a>Pouvez-vous décrire un workflow de développement typique qui incorpore WSL ?
+
+WSL cible une audience de développeur avec l’intention d’être utilisé dans le cadre d’une boucle de développement interne. Supposons que Sam crée un pipeline CI/CD (intégration continue et livraison continue) et qu’il souhaite le tester d’abord sur un ordinateur local (portable) avant de le déployer dans le cloud. Sam peut activer WSL (et WSL 2 pour améliorer la vitesse et les performances), puis utiliser une vraie instance Linux Ubuntu en local (sur l’ordinateur portable) avec les commandes et les outils Bash qu’ils préfèrent. Une fois le pipeline de développement vérifié localement, Sam peut alors envoyer (push) ce pipeline CI/CD vers le cloud (par ex. Azure) en le plaçant dans un conteneur Docker et en envoyant le conteneur à une instance cloud où il s’exécutera sur une machine virtuelle Ubuntu prête pour la production.
 
 ## <a name="what-is-bash"></a>Qu’est-ce que Bash ?
 
@@ -83,7 +87,7 @@ WSL prend en charge les processeurs x64 et ARM.
 
 Des points de montage pour les disques durs sur l’ordinateur local sont créés automatiquement et offrent un accès facile au système de fichiers Windows.
 
-**/mnt/\<lettre de lecteur>/**
+**/mnt/\<drive letter>/**
 
 Un exemple d’utilisation serait `cd /mnt/c` pour accéder à c:\
 

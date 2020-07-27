@@ -1,17 +1,17 @@
 ---
-title: Vue d’ensemble du sous-système Windows pour Linux
+title: À propos du Sous-système Windows pour Linux
 description: Découvrez le sous-système Windows pour Linux, les différentes versions et les différentes façons de les utiliser.
 keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, GNU, Linux
 ms.date: 05/12/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
-ms.localizationpriority: high
-ms.openlocfilehash: 75da6389beec4af7ac684ec7ee2ef31431e14071
-ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
+ROBOTS: NOINDEX
+ms.openlocfilehash: ddc242360adf67e3c5b6cd14d35fb6c869b83b2d
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85336062"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948623"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>Qu’est-ce que le sous-système Windows pour Linux ?
 

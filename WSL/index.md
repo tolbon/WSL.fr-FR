@@ -1,17 +1,19 @@
 ---
-title: Vue d’ensemble du sous-système Windows pour Linux
+title: Vue d’ensemble du Sous-système Windows pour Linux
 description: Explorez la documentation sur le sous-système Windows pour Linux.
 keywords: BashOnWindows, Bash, WSL, Windows, sous-système Windows, GNU, Linux
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: eac5ab3a4406d7e3b1ba89c0d9e6212fa602d852
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 81ff05f03172e3e3a167ffba4ce846ec2edb3d1c
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83270487"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948583"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>Documentation sur le sous-système Windows pour Linux
+
+Le Sous-système Windows pour Linux permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle traditionnelle ou d’une configuration à double démarrage.
 
 ## <a name="learn-more-here"></a>En savoir plus ici
 

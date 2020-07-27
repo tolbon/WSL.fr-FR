@@ -1,18 +1,18 @@
 ---
-title: Vue d’ensemble du sous-système Windows pour Linux
+title: Comparaison de WSL version 1 et 2
 description: Découvrez le sous-système Windows pour Linux, les différentes versions et les différentes façons de les utiliser.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubuntu, debian, suse, windows 10, changements de l’expérience utilisateur, WSL 2, noyau linux, applications réseau, localhost, IPv6, disque matériel virtuel, VHD, limitations VHD, erreur VHD
-ms.date: 05/12/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 8354e9c35d1e97f38c4cf6aa53a861c2c5e290be
-ms.sourcegitcommit: 386d47a1c53a85b91f5a2b0f1f99ce2c46b20a77
+ms.openlocfilehash: 139bf2200b47f7d1465312f16ed0a3449491dc89
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86093279"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948643"
 ---
-# <a name="comparing-wsl-2-and-wsl-1"></a>Comparaison entre WSL 2 et WSL 1
+# <a name="comparing-wsl-1-and-wsl-2"></a>Comparaison entre WSL 1 et WSL 2
 
 Les principaux objectifs de la mise à jour du sous-système Windows pour Linux vers une nouvelle version sont d’**augmenter les performances du système de fichiers** et de prendre en charge la **compatibilité complète des appels système**. 
 
@@ -77,7 +77,7 @@ Le [noyau Linux WSL 2 est disponible en open source](https://github.com/microso
 
 ### <a name="increased-file-io-performance"></a>Amélioration des performances d’E/S de fichier
 
-Les opérations gourmandes en fichiers, telles que git clone, npm install, apt update, apt upgrade, etc., sont toutes nettement plus rapides avec WSL 2.
+Les opérations gourmandes en fichiers, comme par exemple git clone, npm install, apt update, apt upgrade, sont nettement plus rapides avec WSL 2.
 
 L’augmentation de la vitesse réelle dépend de l’application que vous exécutez et de la manière dont elle interagit avec le système de fichiers. Les versions initiales de WSL 2 s’exécutent jusqu’à 20 fois plus vite que WSL 1 lors de la décompression d’un tarball compressé, et environ 2 à 5 fois plus vite lors de l’utilisation de git clone, npm install et cmake sur divers projets.
 
