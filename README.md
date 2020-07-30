@@ -4,7 +4,7 @@
 Si vous trouvez des problèmes ou des erreurs dans le document ou si vous avez une amélioration que vous souhaitez suggérer, veuillez signaler un problème et/ou envoyer une demande de tirage (pull-request). en particulier :)
 
 > **Remarque :** Ce suivi des problèmes de référentiel est destiné uniquement à la création de rapports sur les documents WSL. Autres problèmes liés à référentiel :
-> * WSLhttps://github.com/Microsoft/WSL/
+> * WSL :https://github.com/Microsoft/WSL/
 > * Console Windows :https://github.com/Microsoft/Terminal/
 
 ## <a name="external-links"></a>Liens externes
