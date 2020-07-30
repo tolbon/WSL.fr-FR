@@ -1,16 +1,16 @@
 ---
-title: Comparaison de WSL version 1 et 2
-description: Découvrez le sous-système Windows pour Linux, les différentes versions et les différentes façons de les utiliser.
+title: Comparaison entre WSL 2 et WSL 1
+description: Comparez la version 1 et la version 2 du Sous-système Windows pour Linux. Conseil - La version 2 exécute un vrai noyau Linux et a une vitesse de performance plus rapide, mais WSL 1 fonctionne mieux si vous travaillez à la fois sur des systèmes de fichiers Windows ET Linux.
 keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, gnu, linux, ubuntu, debian, suse, windows 10, changements de l’expérience utilisateur, WSL 2, noyau linux, applications réseau, localhost, IPv6, disque matériel virtuel, VHD, limitations VHD, erreur VHD
 ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 139bf2200b47f7d1465312f16ed0a3449491dc89
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: ea2c92030a895076be17ad2b99fe34719f84a47f
+ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948643"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87235463"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>Comparaison entre WSL 1 et WSL 2
 
