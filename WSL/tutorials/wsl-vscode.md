@@ -103,7 +103,7 @@ Le nouveau terminal Windows active plusieurs onglets (basculer rapidement entre 
 * [Développement à distance VS Code](https://code.visualstudio.com/docs/remote/remote-overview)
 * [Conseils et astuces pour le développement à distance](https://code.visualstudio.com/docs/remote/troubleshooting)
 * [Didacticiel sur le développement à distance avec WSL](https://code.visualstudio.com/remote-tutorials/wsl/getting-started)
-* [Utilisation de Dockr avec WSL 2 et VS Code](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2)
+* [Utilisation de Docker avec WSL 2 et VS Code](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2)
 * [Utilisation de C++ et de WSL dans VS Code](https://code.visualstudio.com/docs/cpp/config-wsl)
 * [Service R à distance pour Linux](https://docs.microsoft.com/visualstudio/rtvs/setting-up-remote-r-service-on-linux?view=vs-2017)
 
